@@ -261,3 +261,51 @@ display:block;
 }
 
 }
+/* ===== Orange Light Sweep Effect ===== */
+
+.header::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-35%;
+
+width:30%;
+
+height:100%;
+
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,140,0,0.08),
+rgba(255,170,0,0.45),
+rgba(255,140,0,0.08),
+transparent
+);
+
+transform:skewX(-25deg);
+
+animation:headerLight 6s linear infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes headerLight{
+
+0%{
+
+left:-35%;
+
+}
+
+100%{
+
+left:135%;
+
+}
+
+}
