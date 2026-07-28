@@ -1,17 +1,24 @@
-window.addEventListener("scroll",function(){
+const menuBtn = document.querySelector(".menu-btn");
+const navbar = document.querySelector(".navbar");
 
-const header=document.querySelector(".header");
+menuBtn.addEventListener("click", () => {
 
-if(window.scrollY>50){
+    navbar.classList.toggle("active");
 
-header.style.background="rgba(0,0,0,.90)";
+});
 
-}
+window.addEventListener("scroll", () => {
 
-else{
+    const header = document.querySelector(".header");
 
-header.style.background="rgba(0,0,0,.55)";
+    if(window.scrollY > 50){
 
-}
+        header.style.background="rgba(0,0,0,.95)";
+
+    }else{
+
+        header.style.background="rgba(0,0,0,.55)";
+
+    }
 
 });
