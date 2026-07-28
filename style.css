@@ -309,9 +309,9 @@ left:135%;
 }
 
 }
-/*==========================================
-      PREMIUM BRAND MOTION BANNER
-==========================================*/
+/*=================================================
+        MAHAVEER SIGNATURE BRAND STRIP
+=================================================*/
 
 .brand-banner{
 
@@ -319,50 +319,46 @@ left:135%;
 
     margin-top:110px;
 
-    width:100%;
-
-    height:90px;
-
-    background:#050505;
+    height:58px;
 
     overflow:hidden;
 
-    border-top:1px solid rgba(255,255,255,.08);
+    background:rgba(8,8,8,.75);
 
-    border-bottom:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
 
 }
 
 
-/* Orange Speed Trail */
+/* Metallic Lines */
 
-.speed-trail{
+.banner-line{
 
     position:absolute;
 
-    top:50%;
+    left:0;
 
-    right:-500px;
+    width:100%;
 
-    width:420px;
+    height:1px;
 
-    height:10px;
+}
 
-    transform:translateY(-50%);
+.top-line{
 
-    background:linear-gradient(
-        90deg,
-        rgba(255,180,0,0),
-        rgba(255,150,0,.3),
-        rgba(255,120,0,.8),
-        rgba(255,80,0,1)
-    );
+    top:0;
 
-    border-radius:50px;
+    background:linear-gradient(90deg,#333,#888,#fff,#888,#333);
 
-    filter:blur(8px);
+}
 
-    animation:trailMove 8s linear infinite;
+.bottom-line{
+
+    bottom:0;
+
+    background:linear-gradient(90deg,#ff6a00,#ffd700,#ff6a00);
 
 }
 
@@ -373,304 +369,189 @@ left:135%;
 
     position:absolute;
 
-    height:62px;
+    height:42px;
 
-    top:14px;
+    top:8px;
 
-    right:-420px;
+    right:-260px;
 
     z-index:5;
 
-    filter:
+    animation:carMove 8s ease-in-out infinite;
 
-        drop-shadow(0 0 8px rgba(255,120,0,.35))
-
-        drop-shadow(0 0 18px rgba(255,80,0,.25));
-
-    animation:carMove 8s linear infinite;
+    filter:drop-shadow(0 0 8px rgba(255,120,0,.45));
 
 }
 
 
-/* Brand Name */
+/* Headlight */
 
-.brand-title{
+.headlight{
+
+    position:absolute;
+
+    top:21px;
+
+    right:-180px;
+
+    width:220px;
+
+    height:16px;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,255,255,.95),
+        rgba(255,180,0,.45),
+        transparent
+    );
+
+    filter:blur(8px);
+
+    animation:lightMove 8s ease-in-out infinite;
+
+}
+
+
+/* Speed Trail */
+
+.speed-trail{
+
+    position:absolute;
+
+    top:27px;
+
+    right:-350px;
+
+    width:260px;
+
+    height:5px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,170,0,.2),
+        rgba(255,120,0,.9)
+    );
+
+    filter:blur(5px);
+
+    animation:trailMove 8s ease-in-out infinite;
+
+}
+
+
+/* Text */
+
+.brand-content{
 
     position:absolute;
 
     left:50%;
+
     top:50%;
 
     transform:translate(-50%,-50%);
 
-    font-size:42px;
-    font-weight:900;
-    letter-spacing:8px;
-
-    white-space:nowrap;
-
-    color:#ffffff;
-
-    text-transform:uppercase;
-
-    background:linear-gradient(
-        90deg,
-        #ffffff,
-        #ffd27a,
-        #ff9b00,
-        #ff6a00,
-        #ffffff
-    );
-
-    background-size:220% auto;
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-
-    background-clip:text;
-
-    text-shadow:
-        0 0 8px rgba(255,170,0,.6),
-        0 0 18px rgba(255,120,0,.5),
-        0 0 35px rgba(255,80,0,.4);
-
-    width:0;
-
-    overflow:hidden;
-
-    animation:writeText 8s linear infinite;
-
-}
-.brand-title::after{
-
-content:"";
-
-position:absolute;
-
-top:0;
-left:-30%;
-
-width:25%;
-
-height:100%;
-
-background:linear-gradient(
-90deg,
-transparent,
-rgba(255,255,255,.9),
-transparent
-);
-
-transform:skewX(-25deg);
-
-animation:textLight 8s linear infinite;
+    text-align:center;
 
 }
 
+.brand-content h2{
 
-/* Decorative Sparks */
+    margin:0;
 
-.sparks{
+    color:#fff;
 
-    position:absolute;
+    font-size:27px;
 
-    width:8px;
+    letter-spacing:7px;
 
-    height:8px;
-
-    border-radius:50%;
-
-    background:#ff9500;
-
-    box-shadow:
-
-        0 0 10px #ff9500,
-
-        0 0 20px #ff6600,
-
-        30px -8px 0 #ff9500,
-
-        55px 6px 0 #ff6600,
-
-        80px -4px 0 #ff9500,
-
-        110px 5px 0 #ff6600;
+    font-weight:800;
 
     opacity:0;
 
-    top:40px;
+    animation:titleShow 8s ease-in-out infinite;
 
-    right:120px;
-
-    animation:sparkMove 8s linear infinite;
+    text-shadow:0 0 12px rgba(255,150,0,.35);
 
 }
 
+.chrome-line{
 
+    width:0;
 
-/*============================
-      Animations
-============================*/
+    height:2px;
 
+    margin:4px auto;
 
+    background:linear-gradient(90deg,#bbb,#fff,#bbb);
+
+    animation:chromeLine 8s ease-in-out infinite;
+
+}
+
+.brand-content p{
+
+    margin:0;
+
+    font-size:11px;
+
+    letter-spacing:5px;
+
+    color:#d8d8d8;
+
+    opacity:0;
+
+    animation:subShow 8s ease-in-out infinite;
+
+}
 @keyframes carMove{
 
-0%{
+0%{right:-260px;}
 
-right:-420px;
+55%{right:110%;}
 
-}
-
-55%{
-
-right:110%;
+100%{right:110%;}
 
 }
 
-100%{
+@keyframes lightMove{
 
-right:110%;
+0%{right:-180px;opacity:0;}
+
+8%{opacity:1;}
+
+55%{right:110%;opacity:1;}
+
+65%{opacity:0;}
+
+100%{right:110%;opacity:0;}
 
 }
-
-}
-
-
 
 @keyframes trailMove{
 
-0%{
+0%{right:-350px;opacity:0;}
 
-right:-600px;
+10%{opacity:1;}
+
+55%{right:110%;opacity:.8;}
+
+68%{opacity:0;}
+
+100%{right:110%;opacity:0;}
+
+}
+
+@keyframes titleShow{
+
+0%,60%{
 
 opacity:0;
 
-}
-
-8%{
-
-opacity:1;
-
-}
-
-55%{
-
-right:110%;
-
-opacity:.9;
-
-}
-
-70%{
-
-opacity:0;
-
-}
-
-100%{
-
-opacity:0;
-
-right:110%;
-
-}
-
-}
-
-
-
-@keyframes sparkMove{
-
-0%{
-
-opacity:0;
-
-right:-300px;
-
-}
-
-12%{
-
-opacity:1;
-
-}
-
-55%{
-
-right:105%;
-
-opacity:1;
-
-}
-
-68%{
-
-opacity:0;
-
-}
-
-100%{
-
-opacity:0;
-
-right:105%;
-
-}
-
-}
-
-
-
-@keyframes writeText{
-
-0%{
-
-width:0;
-opacity:0;
-
-}
-
-58%{
-
-width:0;
-opacity:0;
-
-}
-
-65%{
-
-opacity:1;
-width:0;
-
-}
-
-78%{
-
-width:720px;
-
-}
-
-90%{
-
-width:720px;
-opacity:1;
-
-}
-
-100%{
-
-width:0;
-opacity:0;
-
-}
-
-}
-@keyframes textLight{
-
-0%{
-
-left:-30%;
-opacity:0;
+transform:translateY(6px);
 
 }
 
@@ -678,95 +559,82 @@ opacity:0;
 
 opacity:1;
 
+transform:translateY(0);
+
 }
 
-90%{
+92%{
 
-left:130%;
 opacity:1;
 
 }
 
 100%{
 
-left:130%;
 opacity:0;
 
 }
 
 }
-@keyframes bannerFlash{
 
-0%,72%{
+@keyframes chromeLine{
+
+0%,68%{
+
+width:0;
+
+}
+
+80%{
+
+width:320px;
+
+}
+
+95%{
+
+width:320px;
+
+}
+
+100%{
+
+width:0;
+
+}
+
+}
+
+@keyframes subShow{
+
+0%,74%{
 
 opacity:0;
-
-}
-
-74%{
-
-opacity:.95;
-
-}
-
-78%{
-
-opacity:.35;
 
 }
 
 82%{
 
-opacity:0;
+opacity:1;
 
 }
 
-100%{
-
-opacity:0;
-
-}
-
-}
-
-
-@keyframes ambientGlow{
-
-0%,70%{
-
-opacity:0;
-
-}
-
-74%{
+95%{
 
 opacity:1;
 
 }
 
-88%{
-
-opacity:.4;
-
-}
-
 100%{
 
 opacity:0;
 
 }
-
-
-
-/*============================
-      Mobile
-============================*/
-
-@media(max-width:768px){
+      @media(max-width:768px){
 
 .brand-banner{
 
-height:70px;
+height:50px;
 
 margin-top:95px;
 
@@ -774,79 +642,32 @@ margin-top:95px;
 
 .race-car{
 
-height:46px;
+height:34px;
 
-top:12px;
-
-}
-
-.speed-trail{
-
-width:220px;
-
-height:6px;
+top:8px;
 
 }
 
-.brand-title{
+.brand-content h2{
 
-font-size:20px;
+font-size:16px;
 
-letter-spacing:3px;
-
-}
-
-}
-/*==========================================
-      CINEMATIC FLASH EFFECT
-==========================================*/
-
-.banner-flash{
-
-    position:absolute;
-
-    inset:0;
-
-    background:linear-gradient(
-        90deg,
-        rgba(255,120,0,0),
-        rgba(255,170,0,.18),
-        rgba(255,255,255,.25),
-        rgba(255,170,0,.18),
-        rgba(255,120,0,0)
-    );
-
-    opacity:0;
-
-    pointer-events:none;
-
-    z-index:3;
-
-    animation:bannerFlash 8s linear infinite;
+letter-spacing:2px;
 
 }
 
+.brand-content p{
 
-/* Soft orange glow while the flash happens */
+font-size:8px;
 
-.brand-banner::after{
+letter-spacing:2px;
 
-    content:"";
+}
 
-    position:absolute;
+.chrome-line{
 
-    inset:0;
+display:none;
 
-    background:radial-gradient(
-        circle at center,
-        rgba(255,120,0,.14),
-        transparent 70%
-    );
-
-    opacity:0;
-
-    pointer-events:none;
-
-    animation:ambientGlow 8s linear infinite;
+}
 
 }
