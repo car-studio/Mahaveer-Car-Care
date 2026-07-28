@@ -21,7 +21,7 @@ left:0;
 
 width:100%;
 
-padding:12px 0;
+padding:6px 28px;
 
 background:rgba(0,0,0,.55);
 
@@ -462,7 +462,7 @@ left:135%;
 
     margin:0;
 
-    color:#fff;
+    color:#c85d00;
 
     font-size:27px;
 
@@ -474,10 +474,13 @@ left:135%;
 
     animation:titleShow 8s ease-in-out infinite;
 
-    text-shadow:0 0 12px rgba(255,150,0,.35);
+    text-shadow:
+
+        0 0 4px rgba(200,93,0,.25),
+
+        0 0 10px rgba(255,140,0,.15);
 
 }
-
 .chrome-line{
 
     width:0;
