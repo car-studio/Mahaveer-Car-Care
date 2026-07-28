@@ -674,3 +674,88 @@ display:none;
 }
 
 }
+/*==========================================
+      RESPONSIVE BRAND STRIP
+==========================================*/
+
+@media (max-width:768px){
+
+.brand-banner{
+
+    margin-top:85px;
+
+    height:44px;
+
+    width:100%;
+
+    border-radius:0;
+
+}
+
+.race-car{
+
+    height:28px;
+
+    top:8px;
+
+    right:-180px;
+
+}
+
+.headlight{
+
+    width:120px;
+
+    height:8px;
+
+    top:18px;
+
+}
+
+.speed-trail{
+
+    width:140px;
+
+    height:3px;
+
+    top:21px;
+
+}
+
+.brand-content{
+
+    width:100%;
+
+    left:50%;
+
+}
+
+.brand-content h2{
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    white-space:nowrap;
+
+}
+
+.chrome-line{
+
+    width:120px;
+
+    margin:2px auto;
+
+}
+
+.brand-content p{
+
+    font-size:7px;
+
+    letter-spacing:1.5px;
+
+    white-space:nowrap;
+
+}
+
+}
