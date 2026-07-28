@@ -309,3 +309,431 @@ left:135%;
 }
 
 }
+/*==========================================
+      PREMIUM BRAND MOTION BANNER
+==========================================*/
+
+.brand-banner{
+
+    position:relative;
+
+    margin-top:110px;
+
+    width:100%;
+
+    height:90px;
+
+    background:#050505;
+
+    overflow:hidden;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+
+/* Orange Speed Trail */
+
+.speed-trail{
+
+    position:absolute;
+
+    top:50%;
+
+    right:-500px;
+
+    width:420px;
+
+    height:10px;
+
+    transform:translateY(-50%);
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,180,0,0),
+        rgba(255,150,0,.3),
+        rgba(255,120,0,.8),
+        rgba(255,80,0,1)
+    );
+
+    border-radius:50px;
+
+    filter:blur(8px);
+
+    animation:trailMove 8s linear infinite;
+
+}
+
+
+/* Car */
+
+.race-car{
+
+    position:absolute;
+
+    height:62px;
+
+    top:14px;
+
+    right:-420px;
+
+    z-index:5;
+
+    filter:
+
+        drop-shadow(0 0 8px rgba(255,120,0,.35))
+
+        drop-shadow(0 0 18px rgba(255,80,0,.25));
+
+    animation:carMove 8s linear infinite;
+
+}
+
+
+/* Brand Name */
+
+.brand-title{
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    font-size:42px;
+    font-weight:900;
+    letter-spacing:8px;
+
+    white-space:nowrap;
+
+    color:#ffffff;
+
+    text-transform:uppercase;
+
+    background:linear-gradient(
+        90deg,
+        #ffffff,
+        #ffd27a,
+        #ff9b00,
+        #ff6a00,
+        #ffffff
+    );
+
+    background-size:220% auto;
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+    text-shadow:
+        0 0 8px rgba(255,170,0,.6),
+        0 0 18px rgba(255,120,0,.5),
+        0 0 35px rgba(255,80,0,.4);
+
+    width:0;
+
+    overflow:hidden;
+
+    animation:writeText 8s linear infinite;
+
+}
+.brand-title::after{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-30%;
+
+width:25%;
+
+height:100%;
+
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.9),
+transparent
+);
+
+transform:skewX(-25deg);
+
+animation:textLight 8s linear infinite;
+
+}
+
+
+/* Decorative Sparks */
+
+.sparks{
+
+    position:absolute;
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#ff9500;
+
+    box-shadow:
+
+        0 0 10px #ff9500,
+
+        0 0 20px #ff6600,
+
+        30px -8px 0 #ff9500,
+
+        55px 6px 0 #ff6600,
+
+        80px -4px 0 #ff9500,
+
+        110px 5px 0 #ff6600;
+
+    opacity:0;
+
+    top:40px;
+
+    right:120px;
+
+    animation:sparkMove 8s linear infinite;
+
+}
+
+
+
+/*============================
+      Animations
+============================*/
+
+
+@keyframes carMove{
+
+0%{
+
+right:-420px;
+
+}
+
+55%{
+
+right:110%;
+
+}
+
+100%{
+
+right:110%;
+
+}
+
+}
+
+
+
+@keyframes trailMove{
+
+0%{
+
+right:-600px;
+
+opacity:0;
+
+}
+
+8%{
+
+opacity:1;
+
+}
+
+55%{
+
+right:110%;
+
+opacity:.9;
+
+}
+
+70%{
+
+opacity:0;
+
+}
+
+100%{
+
+opacity:0;
+
+right:110%;
+
+}
+
+}
+
+
+
+@keyframes sparkMove{
+
+0%{
+
+opacity:0;
+
+right:-300px;
+
+}
+
+12%{
+
+opacity:1;
+
+}
+
+55%{
+
+right:105%;
+
+opacity:1;
+
+}
+
+68%{
+
+opacity:0;
+
+}
+
+100%{
+
+opacity:0;
+
+right:105%;
+
+}
+
+}
+
+
+
+@keyframes writeText{
+
+0%{
+
+width:0;
+opacity:0;
+
+}
+
+58%{
+
+width:0;
+opacity:0;
+
+}
+
+65%{
+
+opacity:1;
+width:0;
+
+}
+
+78%{
+
+width:720px;
+
+}
+
+90%{
+
+width:720px;
+opacity:1;
+
+}
+
+100%{
+
+width:0;
+opacity:0;
+
+}
+
+}
+@keyframes textLight{
+
+0%{
+
+left:-30%;
+opacity:0;
+
+}
+
+70%{
+
+opacity:1;
+
+}
+
+90%{
+
+left:130%;
+opacity:1;
+
+}
+
+100%{
+
+left:130%;
+opacity:0;
+
+}
+
+}
+
+
+
+/*============================
+      Mobile
+============================*/
+
+@media(max-width:768px){
+
+.brand-banner{
+
+height:70px;
+
+margin-top:95px;
+
+}
+
+.race-car{
+
+height:46px;
+
+top:12px;
+
+}
+
+.speed-trail{
+
+width:220px;
+
+height:6px;
+
+}
+
+.brand-title{
+
+font-size:20px;
+
+letter-spacing:3px;
+
+}
+
+}
