@@ -21,7 +21,7 @@ left:0;
 
 width:100%;
 
-padding:18px 0;
+padding:12px 0;
 
 background:rgba(0,0,0,.55);
 
@@ -61,13 +61,15 @@ gap:15px;
 
 .logo img{
 
-width:70px;
+width:95px;
 
-height:70px;
+height:95px;
 
 border-radius:50%;
 
 object-fit:cover;
+
+transition:0.3s ease;
 
 }
 
