@@ -695,6 +695,66 @@ opacity:0;
 }
 
 }
+@keyframes bannerFlash{
+
+0%,72%{
+
+opacity:0;
+
+}
+
+74%{
+
+opacity:.95;
+
+}
+
+78%{
+
+opacity:.35;
+
+}
+
+82%{
+
+opacity:0;
+
+}
+
+100%{
+
+opacity:0;
+
+}
+
+}
+
+
+@keyframes ambientGlow{
+
+0%,70%{
+
+opacity:0;
+
+}
+
+74%{
+
+opacity:1;
+
+}
+
+88%{
+
+opacity:.4;
+
+}
+
+100%{
+
+opacity:0;
+
+}
 
 
 
@@ -735,5 +795,58 @@ font-size:20px;
 letter-spacing:3px;
 
 }
+
+}
+/*==========================================
+      CINEMATIC FLASH EFFECT
+==========================================*/
+
+.banner-flash{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,120,0,0),
+        rgba(255,170,0,.18),
+        rgba(255,255,255,.25),
+        rgba(255,170,0,.18),
+        rgba(255,120,0,0)
+    );
+
+    opacity:0;
+
+    pointer-events:none;
+
+    z-index:3;
+
+    animation:bannerFlash 8s linear infinite;
+
+}
+
+
+/* Soft orange glow while the flash happens */
+
+.brand-banner::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:radial-gradient(
+        circle at center,
+        rgba(255,120,0,.14),
+        transparent 70%
+    );
+
+    opacity:0;
+
+    pointer-events:none;
+
+    animation:ambientGlow 8s linear infinite;
 
 }
