@@ -682,31 +682,29 @@ display:none;
 
 .brand-banner{
 
-    margin-top:85px;
+    margin-top:82px;
 
-    height:44px;
+    height:42px;
 
-    width:100%;
-
-    border-radius:0;
+    overflow:hidden;
 
 }
 
 .race-car{
 
-    height:28px;
+    height:24px;
 
-    top:8px;
+    top:9px;
 
-    right:-180px;
+    right:-120px;
 
 }
 
 .headlight{
 
-    width:120px;
+    width:90px;
 
-    height:8px;
+    height:6px;
 
     top:18px;
 
@@ -714,11 +712,11 @@ display:none;
 
 .speed-trail{
 
-    width:140px;
+    width:110px;
 
     height:3px;
 
-    top:21px;
+    top:20px;
 
 }
 
@@ -728,11 +726,13 @@ display:none;
 
     left:50%;
 
+    transform:translate(-50%,-50%);
+
 }
 
 .brand-content h2{
 
-    font-size:14px;
+    font-size:13px;
 
     letter-spacing:2px;
 
@@ -740,21 +740,15 @@ display:none;
 
 }
 
-.chrome-line{
+.brand-content p{
 
-    width:120px;
-
-    margin:2px auto;
+    display:none;
 
 }
 
-.brand-content p{
+.chrome-line{
 
-    font-size:7px;
-
-    letter-spacing:1.5px;
-
-    white-space:nowrap;
+    display:none;
 
 }
 
