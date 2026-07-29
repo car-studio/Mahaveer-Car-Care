@@ -1394,3 +1394,316 @@ premiumPulse 2.5s ease-in-out infinite;
 }
 
 }
+/*==========================================
+            ABOUT SECTION
+==========================================*/
+
+.about{
+
+    padding:120px 0;
+
+    background:#0b0b0b;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.about::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    top:-200px;
+
+    right:-150px;
+
+    background:rgba(255,120,0,.08);
+
+    filter:blur(120px);
+
+}
+
+.about-container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+/* Floating Cards */
+
+.about-image-card,
+.about-content-card{
+
+    position:relative;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+    animation:aboutFloat 5s ease-in-out infinite;
+
+    transition:.45s;
+
+}
+
+.about-content-card{
+
+    padding:60px;
+
+    animation-delay:.8s;
+
+}
+
+.about-image-card{
+
+    height:620px;
+
+}
+
+/* Workshop Image */
+
+.about-image-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.7s;
+
+}
+
+/* Hidden Overlay */
+
+.image-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:rgba(0,0,0,.55);
+
+    opacity:0;
+
+    transition:.45s;
+
+}
+
+.image-overlay h3{
+
+    color:#fff;
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.image-overlay p{
+
+    color:#ddd;
+
+}
+
+/* Right Content */
+
+.about-tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:40px;
+
+    background:rgba(255,120,0,.08);
+
+    color:#ffb347;
+
+    border:1px solid rgba(255,170,0,.35);
+
+    letter-spacing:2px;
+
+    font-size:13px;
+
+}
+
+.about-content-card h2{
+
+    margin-top:28px;
+
+    font-size:56px;
+
+    color:#fff;
+
+    line-height:1.1;
+
+}
+
+.about-content-card h2 span{
+
+    color:#ff8c00;
+
+}
+
+.about-content-card p{
+
+    margin-top:28px;
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+
+/* Features */
+
+.about-features{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.feature{
+
+    padding:16px 18px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.04);
+
+    color:#fff;
+
+    transition:.35s;
+
+}
+
+.feature i{
+
+    color:#ff8c00;
+
+    margin-right:10px;
+
+}
+
+.feature:hover{
+
+    background:#ff8c00;
+
+    transform:translateY(-5px);
+
+}
+
+.feature:hover i{
+
+    color:white;
+
+}
+
+/* Button */
+
+.about-btn{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    background:#ff7a00;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.about-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(255,120,0,.35);
+
+}
+
+/* Card Hover */
+
+.about-image-card:hover,
+.about-content-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#ff8c00;
+
+}
+
+/* Floating Animation */
+
+@keyframes aboutFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
