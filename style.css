@@ -1278,15 +1278,15 @@ premiumPulse 2.5s ease-in-out infinite;
 
     position:absolute;
 
-    right:30px;
+    right:60px;
 
-    bottom:50px;
+    bottom:45px;
 
     display:flex;
 
-    gap:18px;
+    gap:20px;
 
-    z-index:20;
+    z-index:30;
 
 }
 .trust-card{
@@ -1303,7 +1303,7 @@ premiumPulse 2.5s ease-in-out infinite;
 
     align-items:center;
 
-    background:rgba(255,255,255,.08);
+    background:rgba(25,25,25,.45);
 
     backdrop-filter:blur(18px);
 
