@@ -1765,8 +1765,7 @@ premiumPulse 2.5s ease-in-out infinite;
     backdrop-filter:blur(2px);
 
 }
-.about-container:hover .about-content-card{
-
+.about-container.banner-open .about-content-card{
     opacity:0;
 
     transform:scale(.95);
@@ -1784,7 +1783,7 @@ premiumPulse 2.5s ease-in-out infinite;
 
 }
 
-.about-container:hover .about-image-card{
+.about-container.banner-open .about-image-card{
 
     position:absolute;
 
@@ -1807,7 +1806,7 @@ premiumPulse 2.5s ease-in-out infinite;
         0 0 70px rgba(255,120,0,.30);
 
 }
-.about-container:hover .about-image-card img{
+.about-container.banner-open .about-image-card img{
 
     transform:scale(1.05);
 
@@ -1815,7 +1814,7 @@ premiumPulse 2.5s ease-in-out infinite;
 
 }
 
-.about-container:hover .image-overlay{
+.about-container.banner-open .image-overlay{
 
     opacity:1;
 
