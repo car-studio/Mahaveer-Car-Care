@@ -1723,13 +1723,15 @@ premiumPulse 2.5s ease-in-out infinite;
 
 .about-container:hover .about-image-card{
 
-    transform:scale(1.05);
+    transform:scale(1);
 
 }
 
 .about-image-card:hover{
 
-    width:120%;
+    transform:scale(1.18);
+
+    transform-origin:left center;
 
     z-index:20;
 
