@@ -1433,19 +1433,20 @@ premiumPulse 2.5s ease-in-out infinite;
 .about-container{
 
     width:90%;
-
     max-width:1400px;
 
     margin:auto;
 
     display:grid;
-
     grid-template-columns:1fr 1fr;
 
     gap:60px;
 
     align-items:center;
 
+    position:relative;
+
+    overflow:visible;
 }
 
 /* Floating Cards */
@@ -1491,6 +1492,12 @@ premiumPulse 2.5s ease-in-out infinite;
 
     height:620px;
 
+    position:relative;
+
+    z-index:2;
+
+    transition:.7s cubic-bezier(.2,.8,.2,1);
+
 }
 
 /* Workshop Image */
@@ -1498,14 +1505,11 @@ premiumPulse 2.5s ease-in-out infinite;
 .about-image-card img{
 
     width:100%;
-
     height:100%;
 
     object-fit:cover;
 
-    display:block;
-
-    transition:.7s;
+    transition:1s;
 
 }
 
@@ -1711,5 +1715,46 @@ premiumPulse 2.5s ease-in-out infinite;
         transform:translateY(-10px);
 
     }
+
+}
+/*==========================================
+        ABOUT IMAGE HOVER EFFECT
+==========================================*/
+
+.about-container:hover .about-image-card{
+
+    transform:scale(1.05);
+
+}
+
+.about-image-card:hover{
+
+    width:120%;
+
+    z-index:20;
+
+    box-shadow:
+        0 30px 80px rgba(255,120,0,.35),
+        0 0 60px rgba(255,120,0,.18);
+
+}
+
+.about-image-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.about-image-card:hover .image-overlay{
+
+    opacity:1;
+
+}
+
+.about-container:hover .about-content-card{
+
+    transform:scale(.92) translateX(35px);
+
+    opacity:.88;
 
 }
