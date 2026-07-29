@@ -309,69 +309,263 @@ left:135%;
 }
 
 }
-/*=================================================
-        MAHAVEER PREMIUM BRAND BANNER
-=================================================*/
+/*==================================================
+        MAHAVEER CINEMATIC INTRO
+==================================================*/
 
 .brand-banner{
+
     position:relative;
+
     margin-top:110px;
-    height:90px;
+
+    height:100px;
+
     overflow:hidden;
-    background:rgba(10,10,10,.88);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+
+    background:#050505;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
 }
 
 /* Metallic Border */
 
-.banner-line{
+.top-line,
+.bottom-line{
+
     position:absolute;
+
     left:0;
+
     width:100%;
+
     height:1px;
+
 }
 
 .top-line{
+
     top:0;
-    background:linear-gradient(90deg,#333,#999,#fff,#999,#333);
+
+    background:
+    linear-gradient(
+    90deg,
+    #222,
+    #999,
+    white,
+    #999,
+    #222);
+
 }
 
 .bottom-line{
+
     bottom:0;
-    background:linear-gradient(90deg,#ff6a00,#ffb000,#ff6a00);
+
+    background:
+    linear-gradient(
+    90deg,
+    #ff6a00,
+    #ffb300,
+    #ff6a00);
+
 }
+/*==================================================
+            CINEMATIC SMOKE SYSTEM
+==================================================*/
 
-/* Brand Text */
+/* Smoke Layer */
 
-.reveal-mask{
-    position:relative;
-    width:100%;
-    display:flex;
-    justify-content:center;
+.smoke-layer{
+
+    position:absolute;
+
+    inset:0;
+
     overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:2;
+
 }
 
-.reveal-mask h2{
+/* Main Smoke */
 
-    color:#d96b00;
-    font-size:44px;
-    font-weight:800;
-    letter-spacing:12px;
-    white-space:nowrap;
-    text-transform:uppercase;
+.smoke-layer::before{
 
-    clip-path:inset(0 100% 0 0);
+    content:"";
 
-    animation:textReveal 8s linear infinite;
+    position:absolute;
 
-    text-shadow:
-        0 0 6px rgba(255,140,0,.25),
-        0 0 18px rgba(255,140,0,.15);
+    top:18px;
+
+    right:-420px;
+
+    width:520px;
+
+    height:65px;
+
+    border-radius:60px;
+
+    background:
+    radial-gradient(circle at 20% 50%,
+    rgba(255,255,255,.55),
+    rgba(220,220,220,.35) 35%,
+    rgba(170,170,170,.18) 60%,
+    transparent 100%);
+
+    filter:blur(18px);
+
+    animation:smokeMain 8s ease-in-out infinite;
+
 }
+
+/* Secondary Smoke */
+
+.smoke-layer::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:10px;
+
+    right:-520px;
+
+    width:700px;
+
+    height:85px;
+
+    border-radius:100px;
+
+    background:
+    radial-gradient(circle at 30% 50%,
+    rgba(255,255,255,.18),
+    rgba(180,180,180,.12) 45%,
+    transparent 100%);
+
+    filter:blur(32px);
+
+    animation:smokeSoft 8s ease-in-out infinite;
+
+}
+
+
+/* Smoke Animation */
+
+@keyframes smokeMain{
+
+0%{
+
+    right:-420px;
+
+    opacity:0;
+
+    transform:scale(.75);
+
+}
+
+12%{
+
+    opacity:.95;
+
+}
+
+45%{
+
+    right:18%;
+
+    opacity:.85;
+
+    transform:scale(1);
+
+}
+
+65%{
+
+    right:58%;
+
+    opacity:.45;
+
+    transform:scale(1.25);
+
+}
+
+82%{
+
+    opacity:.18;
+
+}
+
+100%{
+
+    right:115%;
+
+    opacity:0;
+
+    transform:scale(1.55);
+
+}
+
+}
+
+
+@keyframes smokeSoft{
+
+0%{
+
+    right:-520px;
+
+    opacity:0;
+
+    transform:scale(.9);
+
+}
+
+15%{
+
+    opacity:.55;
+
+}
+
+48%{
+
+    right:10%;
+
+    opacity:.45;
+
+}
+
+72%{
+
+    right:55%;
+
+    opacity:.18;
+
+    transform:scale(1.4);
+
+}
+
+100%{
+
+    right:115%;
+
+    opacity:0;
+
+    transform:scale(1.7);
+
+}
+
+}
+/*==================================================
+            PART 3 - CAR & HEADLIGHT
+==================================================*/
 
 /* Car */
 
@@ -379,123 +573,398 @@ left:135%;
 
     position:absolute;
 
-    height:46px;
-
-    top:20px;
+    top:18px;
 
     right:-260px;
 
-    z-index:5;
+    height:48px;
 
-    animation:carMove 8s linear infinite;
+    z-index:20;
 
-    filter:drop-shadow(0 0 10px rgba(255,120,0,.55));
+    filter:
+        drop-shadow(0 0 10px rgba(255,120,0,.45))
+        drop-shadow(0 0 20px rgba(255,80,0,.25));
+
+    animation:carRun 8s cubic-bezier(.55,.02,.28,.98) infinite;
+
 }
 
-/* Headlight */
+
+/* Headlight Beam */
 
 .headlight{
 
     position:absolute;
 
-    top:35px;
+    top:34px;
 
-    right:-230px;
+    right:-215px;
 
     width:260px;
 
-    height:14px;
+    height:18px;
 
-    background:linear-gradient(
+    z-index:15;
+
+    border-radius:40px;
+
+    background:
+    linear-gradient(
         90deg,
         rgba(255,255,255,.95),
-        rgba(255,180,0,.45),
+        rgba(255,220,120,.75),
+        rgba(255,165,0,.45),
         transparent
     );
 
     filter:blur(9px);
 
-    animation:lightMove 8s linear infinite;
+    transform-origin:right center;
+
+    animation:headlightRun 8s cubic-bezier(.55,.02,.28,.98) infinite;
+
 }
 
-/* Animations */
 
-@keyframes carMove{
+/* Small Orange Glow under Car */
+
+.race-car::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:25%;
+
+    bottom:-6px;
+
+    width:60px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:rgba(255,120,0,.45);
+
+    filter:blur(8px);
+
+}
+
+
+/* Car Motion */
+
+@keyframes carRun{
 
 0%{
-right:-260px;
+
+    right:-260px;
+
+    transform:scale(.92);
+
+}
+
+10%{
+
+    transform:scale(1);
+
 }
 
 55%{
-right:110%;
+
+    right:110%;
+
+    transform:scale(1);
+
 }
 
 100%{
-right:110%;
-}
+
+    right:110%;
+
+    transform:scale(1);
 
 }
 
-@keyframes lightMove{
+}
+
+
+/* Headlight Motion */
+
+@keyframes headlightRun{
 
 0%{
-right:-230px;
-opacity:0;
-}
 
-5%{
-opacity:1;
-}
+    right:-215px;
 
-55%{
-right:110%;
-opacity:1;
-}
-
-70%{
-opacity:0;
-}
-
-100%{
-right:110%;
-opacity:0;
-}
+    opacity:0;
 
 }
 
-@keyframes textReveal{
+6%{
 
-0%,35%{
-
-opacity:0;
-clip-path:inset(0 100% 0 0);
+    opacity:1;
 
 }
 
 55%{
 
-opacity:1;
-clip-path:inset(0 0 0 0);
+    right:110%;
+
+    opacity:1;
 
 }
 
-80%{
+72%{
 
-opacity:1;
-clip-path:inset(0 0 0 0);
+    opacity:0;
 
 }
 
 100%{
 
-opacity:0;
-clip-path:inset(0 0 0 100%);
+    right:110%;
+
+    opacity:0;
 
 }
 }
-/*=================================================
-            MOBILE BRAND BANNER
-=================================================*/
+/*==================================================
+            PART 4 - FIRE BRAND TITLE
+==================================================*/
+
+.brand-text{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:100%;
+
+    text-align:center;
+
+    z-index:10;
+
+    font-size:68px;
+
+    font-weight:900;
+
+    letter-spacing:12px;
+
+    text-transform:uppercase;
+
+    white-space:nowrap;
+
+    color:#ff8c00;
+
+    opacity:0;
+
+    user-select:none;
+
+    text-shadow:
+        0 0 6px rgba(255,150,0,.25),
+        0 0 14px rgba(255,120,0,.20);
+
+    animation:
+        brandReveal 8s ease-in-out infinite,
+        fireGlow 2.2s ease-in-out infinite;
+
+}
+
+
+/*--------------------------------------------------
+        BRAND REVEAL
+--------------------------------------------------*/
+
+@keyframes brandReveal{
+
+0%,48%{
+
+    opacity:0;
+
+    filter:
+        blur(18px);
+
+    transform:
+        translate(-50%,-50%)
+        scale(.96);
+
+}
+
+58%{
+
+    opacity:1;
+
+    filter:
+        blur(4px);
+
+}
+
+65%{
+
+    opacity:1;
+
+    filter:
+        blur(0);
+
+    transform:
+        translate(-50%,-50%)
+        scale(1);
+
+}
+
+82%{
+
+    opacity:1;
+
+}
+
+92%{
+
+    opacity:.35;
+
+    filter:
+        blur(4px);
+
+}
+
+100%{
+
+    opacity:0;
+
+    filter:
+        blur(14px);
+
+    transform:
+        translate(-50%,-50%)
+        scale(1.02);
+
+}
+
+}
+
+
+/*--------------------------------------------------
+        HOT METAL / FIRE GLOW
+--------------------------------------------------*/
+
+@keyframes fireGlow{
+
+0%{
+
+color:#ff7a00;
+
+text-shadow:
+
+0 0 6px rgba(255,120,0,.25),
+0 0 14px rgba(255,140,0,.18);
+
+}
+
+25%{
+
+color:#ffb347;
+
+text-shadow:
+
+0 0 8px rgba(255,170,0,.45),
+0 0 18px rgba(255,120,0,.30),
+0 0 28px rgba(255,90,0,.18);
+
+}
+
+50%{
+
+color:#ffd27a;
+
+text-shadow:
+
+0 0 10px rgba(255,190,0,.55),
+0 0 24px rgba(255,130,0,.35),
+0 0 40px rgba(255,70,0,.20);
+
+}
+
+75%{
+
+color:#ffae42;
+
+text-shadow:
+
+0 0 8px rgba(255,160,0,.40),
+0 0 18px rgba(255,120,0,.25);
+
+}
+
+100%{
+
+color:#ff7a00;
+
+text-shadow:
+
+0 0 6px rgba(255,120,0,.25),
+0 0 14px rgba(255,120,0,.18);
+
+}
+
+}
+/*==================================================
+        PART 5 - FINAL POLISH
+==================================================*/
+
+/* Smooth Rendering */
+
+.brand-banner,
+.brand-text,
+.race-car,
+.headlight,
+.smoke-layer{
+
+    will-change:transform,opacity,filter;
+
+    backface-visibility:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+/* Slightly brighter while visible */
+
+@keyframes premiumPulse{
+
+0%,100%{
+
+filter:brightness(1);
+
+}
+
+50%{
+
+filter:brightness(1.08);
+
+}
+
+}
+
+.brand-text{
+
+animation:
+
+brandReveal 8s ease-in-out infinite,
+
+fireGlow 2.5s ease-in-out infinite,
+
+premiumPulse 2.5s ease-in-out infinite;
+
+}
+
+
+/*==================================================
+            MOBILE VERSION
+==================================================*/
 
 @media (max-width:768px){
 
@@ -503,17 +972,15 @@ clip-path:inset(0 0 0 100%);
 
     margin-top:82px;
 
-    height:60px;
+    height:68px;
 
 }
 
 .race-car{
 
-    height:28px;
+    height:30px;
 
-    top:16px;
-
-    right:-140px;
+    top:18px;
 
 }
 
@@ -521,23 +988,73 @@ clip-path:inset(0 0 0 100%);
 
     width:120px;
 
-    height:6px;
+    height:7px;
 
-    top:27px;
-
-    right:-120px;
+    top:30px;
 
 }
 
-.reveal-mask h2{
+.smoke-layer::before{
 
-    font-size:18px;
+    height:42px;
 
-    letter-spacing:3px;
+    width:260px;
+
+    top:14px;
+
+}
+
+.smoke-layer::after{
+
+    height:52px;
+
+    width:320px;
+
+    top:10px;
+
+}
+
+.brand-text{
+
+    font-size:26px;
+
+    letter-spacing:2px;
 
     padding:0 10px;
 
-    text-align:center;
+}
+
+}
+
+
+/*==================================================
+            TABLET
+==================================================*/
+
+@media (min-width:769px) and (max-width:1199px){
+
+.brand-text{
+
+    font-size:46px;
+
+    letter-spacing:6px;
+
+}
+
+}
+
+
+/*==================================================
+            LARGE DESKTOP
+==================================================*/
+
+@media (min-width:1600px){
+
+.brand-text{
+
+    font-size:82px;
+
+    letter-spacing:18px;
 
 }
 
