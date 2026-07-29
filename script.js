@@ -29,18 +29,24 @@ window.addEventListener("scroll", () => {
 const aboutContainer = document.querySelector(".about-container");
 const aboutImage = document.querySelector(".about-image-card");
 
-if (aboutContainer && aboutImage) {
+let bannerOpen = false;
 
-    aboutImage.addEventListener("mouseenter", () => {
+aboutImage.addEventListener("mouseenter", () => {
+
+    if (!bannerOpen) {
+
+        bannerOpen = true;
 
         aboutContainer.classList.add("banner-open");
 
-    });
+    }
 
-    aboutContainer.addEventListener("mouseleave", () => {
+});
 
-        aboutContainer.classList.remove("banner-open");
+aboutContainer.addEventListener("mouseleave", () => {
 
-    });
+    bannerOpen = false;
 
-}
+    aboutContainer.classList.remove("banner-open");
+
+});
