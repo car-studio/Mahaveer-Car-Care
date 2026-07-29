@@ -22,3 +22,25 @@ window.addEventListener("scroll", () => {
     }
 
 });
+/*==========================================
+      ABOUT BANNER INTERACTION
+==========================================*/
+
+const aboutContainer = document.querySelector(".about-container");
+const aboutImage = document.querySelector(".about-image-card");
+
+if (aboutContainer && aboutImage) {
+
+    aboutImage.addEventListener("mouseenter", () => {
+
+        aboutContainer.classList.add("banner-open");
+
+    });
+
+    aboutContainer.addEventListener("mouseleave", () => {
+
+        aboutContainer.classList.remove("banner-open");
+
+    });
+
+}
