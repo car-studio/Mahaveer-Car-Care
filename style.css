@@ -1475,7 +1475,13 @@ premiumPulse 2.5s ease-in-out infinite;
 
 .about-content-card{
 
-    padding:60px;
+    padding:38px 42px;
+
+    min-height:620px;      /* Same as image */
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
 
     animation-delay:.8s;
 
@@ -1569,13 +1575,13 @@ premiumPulse 2.5s ease-in-out infinite;
 
 .about-content-card h2{
 
-    margin-top:28px;
+    margin-top:18px;
 
-    font-size:56px;
+    font-size:46px;
 
     color:#fff;
 
-    line-height:1.1;
+    line-height:1.08;
 
 }
 
@@ -1587,13 +1593,13 @@ premiumPulse 2.5s ease-in-out infinite;
 
 .about-content-card p{
 
-    margin-top:28px;
+    margin-top:18px;
 
     color:#d5d5d5;
 
-    line-height:1.9;
+    line-height:1.7;
 
-    font-size:17px;
+    font-size:16px;
 
 }
 
@@ -1605,15 +1611,15 @@ premiumPulse 2.5s ease-in-out infinite;
 
     grid-template-columns:1fr 1fr;
 
-    gap:18px;
+    gap:14px;
 
-    margin-top:35px;
+    margin-top:22px;
 
 }
 
 .feature{
 
-    padding:16px 18px;
+    padding:14px 16px;
 
     border-radius:14px;
 
@@ -1653,7 +1659,7 @@ premiumPulse 2.5s ease-in-out infinite;
 
     display:inline-block;
 
-    margin-top:40px;
+    margin-top:26px;
 
     padding:18px 40px;
 
