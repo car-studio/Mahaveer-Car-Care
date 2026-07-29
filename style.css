@@ -310,58 +310,68 @@ left:135%;
 
 }
 /*=================================================
-        MAHAVEER SIGNATURE BRAND STRIP
+        MAHAVEER PREMIUM BRAND BANNER
 =================================================*/
 
 .brand-banner{
-
     position:relative;
-
     margin-top:110px;
-
-    height:80px;
-
+    height:90px;
     overflow:hidden;
-
-    background:rgba(8,8,8,.75);
-
+    background:rgba(10,10,10,.88);
     backdrop-filter:blur(18px);
-
     -webkit-backdrop-filter:blur(18px);
-
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
-
-/* Metallic Lines */
+/* Metallic Border */
 
 .banner-line{
-
     position:absolute;
-
     left:0;
-
     width:100%;
-
     height:1px;
-
 }
 
 .top-line{
-
     top:0;
-
-    background:linear-gradient(90deg,#333,#888,#fff,#888,#333);
-
+    background:linear-gradient(90deg,#333,#999,#fff,#999,#333);
 }
 
 .bottom-line{
-
     bottom:0;
-
-    background:linear-gradient(90deg,#ff6a00,#ffd700,#ff6a00);
-
+    background:linear-gradient(90deg,#ff6a00,#ffb000,#ff6a00);
 }
 
+/* Brand Text */
+
+.reveal-mask{
+    position:relative;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.reveal-mask h2{
+
+    color:#d96b00;
+    font-size:44px;
+    font-weight:800;
+    letter-spacing:12px;
+    white-space:nowrap;
+    text-transform:uppercase;
+
+    clip-path:inset(0 100% 0 0);
+
+    animation:textReveal 8s linear infinite;
+
+    text-shadow:
+        0 0 6px rgba(255,140,0,.25),
+        0 0 18px rgba(255,140,0,.15);
+}
 
 /* Car */
 
@@ -369,20 +379,18 @@ left:135%;
 
     position:absolute;
 
-    height:42px;
+    height:46px;
 
-    top:8px;
+    top:20px;
 
     right:-260px;
 
     z-index:5;
 
-    animation:carMove 8s ease-in-out infinite;
+    animation:carMove 8s linear infinite;
 
-    filter:drop-shadow(0 0 8px rgba(255,120,0,.45));
-
+    filter:drop-shadow(0 0 10px rgba(255,120,0,.55));
 }
-
 
 /* Headlight */
 
@@ -390,13 +398,13 @@ left:135%;
 
     position:absolute;
 
-    top:21px;
+    top:35px;
 
-    right:-180px;
+    right:-230px;
 
-    width:220px;
+    width:260px;
 
-    height:16px;
+    height:14px;
 
     background:linear-gradient(
         90deg,
@@ -405,234 +413,89 @@ left:135%;
         transparent
     );
 
-    filter:blur(8px);
+    filter:blur(9px);
 
-    animation:lightMove 8s ease-in-out infinite;
-
+    animation:lightMove 8s linear infinite;
 }
 
+/* Animations */
 
-/* Speed Trail */
-
-.speed-trail{
-
-    position:absolute;
-
-    top:27px;
-
-    right:-350px;
-
-    width:260px;
-
-    height:5px;
-
-    border-radius:20px;
-
-    background:linear-gradient(
-        90deg,
-        transparent,
-        rgba(255,170,0,.2),
-        rgba(255,120,0,.9)
-    );
-
-    filter:blur(5px);
-
-    animation:trailMove 8s ease-in-out infinite;
-
-}
-
-
-/* Text */
-
-.brand-content{
-
-    position:absolute;
-
-    left:50%;
-
-    top:50%;
-
-    width:100%;
-
-    transform:translate(-50%,-50%);
-
-    text-align:center;
-
-}
-
-.brand-content h2{
-
-    margin:0;
-
-    color:#c85d00;
-
-    font-size:27px;
-
-    letter-spacing:7px;
-
-    font-weight:800;
-
-    opacity:0;
-
-    animation:titleShow 8s ease-in-out infinite;
-
-    text-shadow:
-
-        0 0 4px rgba(200,93,0,.25),
-
-        0 0 10px rgba(255,140,0,.15);
-
-}
-.chrome-line{
-
-    width:0;
-
-    height:2px;
-
-    margin:4px auto;
-
-    background:linear-gradient(90deg,#bbb,#fff,#bbb);
-
-    animation:chromeLine 8s ease-in-out infinite;
-
-}
-
-.brand-content p{
-
-    margin:0;
-
-    font-size:11px;
-
-    letter-spacing:5px;
-
-    color:#d8d8d8;
-
-    opacity:0;
-
-    animation:subShow 8s ease-in-out infinite;
-
-}
 @keyframes carMove{
 
-0%{right:-260px;}
+0%{
+right:-260px;
+}
 
-55%{right:110%;}
+55%{
+right:110%;
+}
 
-100%{right:110%;}
+100%{
+right:110%;
+}
 
 }
 
 @keyframes lightMove{
 
-0%{right:-180px;opacity:0;}
-
-8%{opacity:1;}
-
-55%{right:110%;opacity:1;}
-
-65%{opacity:0;}
-
-100%{right:110%;opacity:0;}
-
+0%{
+right:-230px;
+opacity:0;
 }
 
-@keyframes trailMove{
-
-0%{right:-350px;opacity:0;}
-
-10%{opacity:1;}
-
-55%{right:110%;opacity:.8;}
-
-68%{opacity:0;}
-
-100%{right:110%;opacity:0;}
-
+5%{
+opacity:1;
 }
 
-@keyframes titleShow{
-
-0%,60%{
-
-    opacity:0;
-
+55%{
+right:110%;
+opacity:1;
 }
 
 70%{
-
-    opacity:1;
-
-}
-
-92%{
-
-    opacity:1;
-
+opacity:0;
 }
 
 100%{
-
-    opacity:0;
-
+right:110%;
+opacity:0;
 }
 
 }
-@keyframes chromeLine{
 
-0%,68%{
+@keyframes textReveal{
 
-width:0;
+0%,35%{
+
+opacity:0;
+clip-path:inset(0 100% 0 0);
+
+}
+
+55%{
+
+opacity:1;
+clip-path:inset(0 0 0 0);
 
 }
 
 80%{
 
-width:320px;
-
-}
-
-95%{
-
-width:320px;
-
-}
-
-100%{
-
-width:0;
-
-}
-
-}
-
-@keyframes subShow{
-
-0%,74%{
-
-opacity:0;
-
-}
-
-82%{
-
 opacity:1;
-
-}
-
-95%{
-
-opacity:1;
+clip-path:inset(0 0 0 0);
 
 }
 
 100%{
 
 opacity:0;
+clip-path:inset(0 0 0 100%);
 
 }
-/*==========================================
-      RESPONSIVE BRAND STRIP
-==========================================*/
+}
+/*=================================================
+            MOBILE BRAND BANNER
+=================================================*/
 
 @media (max-width:768px){
 
@@ -640,83 +503,41 @@ opacity:0;
 
     margin-top:82px;
 
-    height:70px;
-
-    overflow:hidden;
+    height:60px;
 
 }
 
 .race-car{
 
-    height:24px;
+    height:28px;
 
-    top:9px;
+    top:16px;
 
-    right:-120px;
+    right:-140px;
 
 }
 
 .headlight{
 
-    width:90px;
+    width:120px;
 
     height:6px;
 
-    top:18px;
+    top:27px;
+
+    right:-120px;
 
 }
 
-.speed-trail{
+.reveal-mask h2{
 
-    width:110px;
+    font-size:18px;
 
-    height:3px;
+    letter-spacing:3px;
 
-    top:20px;
-
-}
-
-.brand-content h2{
-
-    font-size:11px;
-
-    letter-spacing:1px;
-
-    font-weight:700;
-
-    white-space:nowrap;
+    padding:0 10px;
 
     text-align:center;
-
-}
-
-.brand-content h2{
-
-    font-size:11px;
-
-    letter-spacing:1px;
-
-    font-weight:700;
-
-    width:100%;
-
-    white-space:nowrap;
-
-    text-align:center;
-
-    overflow:visible;
-
-}
-
-.brand-content p{
-
-    display:none;
-
-}
-
-.chrome-line{
-
-    display:none;
 
 }
 
