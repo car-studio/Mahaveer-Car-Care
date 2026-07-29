@@ -452,6 +452,8 @@ left:135%;
 
     top:50%;
 
+    width:100%;
+
     transform:translate(-50%,-50%);
 
     text-align:center;
@@ -554,7 +556,7 @@ left:135%;
 
 opacity:0;
 
-transform:translateY(6px);
+transform:translate(-50%,-50%) translateY(6px);
 
 }
 
@@ -562,7 +564,7 @@ transform:translateY(6px);
 
 opacity:1;
 
-transform:translateY(0);
+transform:translate(-50%,-50%) translateY(0);
 
 }
 
@@ -570,16 +572,19 @@ transform:translateY(0);
 
 opacity:1;
 
+transform:translate(-50%,-50%) translateY(0);
+
 }
 
 100%{
 
 opacity:0;
 
-}
+transform:translate(-50%,-50%) translateY(0);
 
 }
 
+}
 @keyframes chromeLine{
 
 0%,68%{
