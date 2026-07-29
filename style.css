@@ -1123,15 +1123,17 @@ premiumPulse 2.5s ease-in-out infinite;
 
     min-height:85vh;
 
-    background-position:72% center;
+    background-size:cover;
+
+    background-position:68% center;
 
 }
 
 .hero-content{
 
-    height:85vh;
-
     width:92%;
+
+    height:85vh;
 
 }
 
