@@ -554,33 +554,25 @@ left:135%;
 
 0%,60%{
 
-opacity:0;
-
-transform:translate(-50%,-50%) translateY(6px);
+    opacity:0;
 
 }
 
 70%{
 
-opacity:1;
-
-transform:translate(-50%,-50%) translateY(0);
+    opacity:1;
 
 }
 
 92%{
 
-opacity:1;
-
-transform:translate(-50%,-50%) translateY(0);
+    opacity:1;
 
 }
 
 100%{
 
-opacity:0;
-
-transform:translate(-50%,-50%) translateY(0);
+    opacity:0;
 
 }
 
@@ -684,23 +676,17 @@ opacity:0;
 
 }
 
-.brand-content{
+.brand-content h2{
 
-    position:absolute;
+    font-size:11px;
 
-    width:100%;
+    letter-spacing:1px;
 
-    left:50%;
+    font-weight:700;
 
-    top:58%;
+    white-space:nowrap;
 
-    transform:translate(-50%,-50%);
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
+    text-align:center;
 
 }
 
