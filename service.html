@@ -691,6 +691,92 @@ SERVICE OVERVIEW
     text-align:center;
 
 }
+  /*=============================
+OVERVIEW CONTENT
+=============================*/
+
+.overview-content{
+
+    display:grid;
+
+    grid-template-columns:1.3fr .9fr;
+
+    gap:70px;
+
+    margin-top:70px;
+
+    align-items:start;
+
+}
+
+.overview-left h3,
+.overview-right h3{
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+.overview-left p{
+
+    color:#c8c8c8;
+
+    line-height:2;
+
+    font-size:18px;
+
+    margin-bottom:40px;
+
+}
+
+.overview-right{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:25px;
+
+    padding:40px;
+
+}
+
+.overview-right ul{
+
+    list-style:none;
+
+}
+
+.overview-right li{
+
+    position:relative;
+
+    padding-left:35px;
+
+    margin-bottom:22px;
+
+    color:#dedede;
+
+    font-size:17px;
+
+}
+
+.overview-right li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:#ff7a00;
+
+    font-weight:bold;
+
+    font-size:20px;
+
+}
 
 </style>
 
@@ -831,50 +917,57 @@ SERVICE OVERVIEW
         <img src="over.png" alt="Exterior Wash">
 
     </div>
+<div class="overview-content">
 
-    <div class="overview-grid">
+    <div class="overview-left">
 
-        <div class="overview-card">
+        <h3>
+            Professional Exterior Wash
+        </h3>
 
-            <h3>Premium Foam</h3>
+        <p>
 
-            <p>
-                Thick active foam safely loosens dirt before washing.
-            </p>
+            Our exterior wash service is designed to safely remove dirt,
+            road grime, bugs, and environmental contaminants without
+            damaging your vehicle's paint. Using premium foam,
+            microfiber wash mitts, and pH-balanced shampoos, we restore
+            your vehicle's shine while protecting its finish.
 
-        </div>
+        </p>
 
-        <div class="overview-card">
+        <a href="#" class="btn primary">
 
-            <h3>Paint Safe</h3>
+            Book Appointment
 
-            <p>
-                pH-balanced shampoo protects your vehicle's finish.
-            </p>
-
-        </div>
-
-        <div class="overview-card">
-
-            <h3>Scratch-Free</h3>
-
-            <p>
-                Microfiber wash mitts prevent swirl marks.
-            </p>
-
-        </div>
-
-        <div class="overview-card">
-
-            <h3>Spot-Free Finish</h3>
-
-            <p>
-                Professional drying leaves a crystal-clear shine.
-            </p>
-
-        </div>
+        </a>
 
     </div>
+
+    <div class="overview-right">
+
+        <h3>
+            What's Included
+        </h3>
+
+        <ul>
+
+            <li>Premium Foam Wash</li>
+
+            <li>Paint Safe Shampoo</li>
+
+            <li>Scratch-Free Hand Wash</li>
+
+            <li>Microfiber Drying</li>
+
+            <li>Wheel & Tyre Cleaning</li>
+
+            <li>Crystal Clear Finish</li>
+
+        </ul>
+
+    </div>
+
+</div>
 
     <div class="overview-button">
 
