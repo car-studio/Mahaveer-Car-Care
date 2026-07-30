@@ -362,6 +362,214 @@ max-width:760px;
 margin:auto;
 
 }
+  /*======================================
+MAHAVEER SIGNATURE DIVIDER
+======================================*/
+
+.signature-divider{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin:70px auto 0;
+
+}
+
+.divider-line{
+
+    width:180px;
+
+    height:2px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+    90deg,
+    transparent,
+    #ff7a00,
+    #ffb347,
+    #ff7a00,
+    transparent
+    );
+
+    background-size:300% 100%;
+
+    animation:lineFlow 4s linear infinite;
+
+    box-shadow:
+    0 0 8px rgba(255,122,0,.35),
+    0 0 18px rgba(255,122,0,.25);
+
+}
+
+.divider-circle{
+
+    position:relative;
+
+    width:18px;
+    height:18px;
+
+    border:2px solid #ff7a00;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    box-shadow:
+    0 0 10px rgba(255,122,0,.8),
+    0 0 25px rgba(255,122,0,.45);
+
+    animation:ringPulse 2.8s ease-in-out infinite;
+
+}
+
+/* Small glowing center */
+
+.divider-circle::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:5px;
+    height:5px;
+
+    border-radius:50%;
+
+    background:#ffb347;
+
+    box-shadow:
+    0 0 8px #ffb347,
+    0 0 15px rgba(255,179,71,.8);
+
+}
+
+/* Expanding energy ring */
+
+.divider-circle::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-8px;
+
+    border:1px solid rgba(255,122,0,.25);
+
+    border-radius:50%;
+
+    animation:energyRing 2.8s ease-out infinite;
+
+}
+
+@keyframes ringPulse{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+        box-shadow:
+        0 0 18px rgba(255,122,0,.9),
+        0 0 40px rgba(255,122,0,.5);
+
+    }
+
+}
+
+@keyframes energyRing{
+
+    0%{
+
+        transform:scale(.7);
+
+        opacity:0;
+
+    }
+
+    40%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(1.7);
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes lineFlow{
+
+    from{
+
+        background-position:0%;
+
+    }
+
+    to{
+
+        background-position:300%;
+
+    }
+
+}
+
+@keyframes pulseGlow{
+
+    0%{
+
+        transform:scale(1);
+
+        box-shadow:
+        0 0 8px #ff7a00,
+        0 0 20px rgba(255,122,0,.6);
+
+    }
+
+    50%{
+
+        transform:scale(1.35);
+
+        box-shadow:
+        0 0 15px #ff7a00,
+        0 0 40px rgba(255,122,0,.9),
+        0 0 60px rgba(255,122,0,.5);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        box-shadow:
+        0 0 8px #ff7a00,
+        0 0 20px rgba(255,122,0,.6);
+
+    }
+
+}
 
 </style>
 
@@ -457,7 +665,19 @@ Call Now
         </p>
 
     </div>
+<!-- =========================
+     MAHAVEER SIGNATURE DIVIDER
+========================== -->
 
+<div class="signature-divider">
+
+    <div class="divider-line left"></div>
+
+    <div class="divider-circle"></div>
+
+    <div class="divider-line right"></div>
+
+</div>
 </section>
 
 <section class="section">
