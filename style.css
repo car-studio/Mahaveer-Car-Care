@@ -2124,33 +2124,33 @@ premiumPulse 2.5s ease-in-out infinite;
 
     margin:25px auto 0;
 
+    background:#ff7a00;
+
     border-radius:50px;
 
-    background:linear-gradient(
-        90deg,
-        transparent,
-        #ff7a00,
-        #ffb347,
-        #ff7a00,
-        transparent
-    );
-
-    animation:sectionGlow 4s ease-in-out infinite;
+    animation:sectionGlow 3.5s ease-in-out infinite;
 
 }
 
 @keyframes sectionGlow{
 
     0%,100%{
-        opacity:.45;
-        box-shadow:0 0 3px rgba(255,122,0,.15);
+
+        opacity:.7;
+
+        box-shadow:
+            0 0 3px rgba(255,122,0,.25);
+
     }
 
     50%{
+
         opacity:1;
+
         box-shadow:
-            0 0 8px rgba(255,122,0,.35),
-            0 0 15px rgba(255,179,71,.18);
+            0 0 10px rgba(255,122,0,.55),
+            0 0 18px rgba(255,179,71,.35);
+
     }
 
 }
