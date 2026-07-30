@@ -1835,10 +1835,15 @@ premiumPulse 2.5s ease-in-out infinite;
 ==========================================*/
 
 .services{
-     padding:120px 0 25px;
+
+    padding:60px 0 25px;
+
     background:#0b0b0b;
+
     position:relative;
+
     overflow:hidden;
+
 }
 
 .services::before{
@@ -1863,7 +1868,7 @@ premiumPulse 2.5s ease-in-out infinite;
 
 .section-title{
     text-align:center;
-    margin-bottom:85px;
+    margin-bottom:60px;
 }
 
 .section-title span{
