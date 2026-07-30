@@ -684,13 +684,41 @@ SERVICE OVERVIEW
 
 }
 
-.overview-button{
+.overview-btn{
 
     display:flex;
 
+    align-items:center;
+
     justify-content:center;
 
-    margin-top:50px;
+    width:360px;
+
+    height:72px;
+
+    margin:55px auto 0;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:60px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.overview-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 30px rgba(255,122,0,.45);
 
 }
 
@@ -981,11 +1009,9 @@ appearance and preserve its value.
 
 </p>
 
-     <div class="overview-button">
-
-    <a href="#" class="btn primary">
-        Book Appointment
-    </a>
+    <a href="#" class="overview-btn">
+    Book Appointment
+</a>
 
 </div>
     </div>
