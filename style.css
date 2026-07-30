@@ -1916,9 +1916,9 @@ premiumPulse 2.5s ease-in-out infinite;
 
     position:relative;
 
-    width:320px;
+    width:360px;
 
-    height:280px;
+    min-height:210px;
 
     background:#f5f5f5;
 
@@ -1928,14 +1928,13 @@ premiumPulse 2.5s ease-in-out infinite;
 
     border-radius:28px;
 
-   padding:55px 24px 22px;
+    padding:45px 22px 20px;
 
     text-align:center;
 
     transition:.45s;
 
-    box-shadow:
-    0 20px 40px rgba(0,0,0,.25);
+    box-shadow:0 18px 35px rgba(0,0,0,.22);
 
 }
 
@@ -1947,15 +1946,15 @@ premiumPulse 2.5s ease-in-out infinite;
 
     position:absolute;
 
-    top:-34px;
+    top:-28px;
 
     left:50%;
 
     transform:translateX(-50%);
 
-    width:72px;
+    width:64px;
 
-    height:72px;
+    height:64px;
 
     border-radius:50%;
 
@@ -1991,13 +1990,13 @@ premiumPulse 2.5s ease-in-out infinite;
 
 .service-card h3{
 
-    font-size:26px;
+    font-size:24px;
 
     font-weight:700;
 
     color:#111;
 
-    margin-bottom:18px;
+    margin-bottom:10px;
 
 }
 
@@ -2007,9 +2006,9 @@ premiumPulse 2.5s ease-in-out infinite;
 
     color:#5b5b5b;
 
-    line-height:1.7;
+    min-height:42px;
 
-    min-height:56px;
+    line-height:1.6;
 
 }
 
@@ -2025,7 +2024,7 @@ premiumPulse 2.5s ease-in-out infinite;
 
     align-items:center;
 
-    margin-top:22px;
+    margin-top:14px;
 
     width:185px;
 
