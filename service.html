@@ -368,35 +368,33 @@ MAHAVEER SIGNATURE DIVIDER
 
 .signature-divider{
 
-    width:100%;
-
     display:flex;
-
-    justify-content:center;
 
     align-items:center;
 
-    gap:18px;
+    width:100%;
 
     margin:70px auto 0;
+
+    gap:20px;
 
 }
 
 .divider-line{
 
-    width:180px;
+    flex:1;
 
     height:2px;
 
     border-radius:50px;
 
     background:linear-gradient(
-    90deg,
-    transparent,
-    #ff7a00,
-    #ffb347,
-    #ff7a00,
-    transparent
+        90deg,
+        transparent 0%,
+        #ff7a00 20%,
+        #ffb347 50%,
+        #ff7a00 80%,
+        transparent 100%
     );
 
     background-size:300% 100%;
@@ -404,8 +402,8 @@ MAHAVEER SIGNATURE DIVIDER
     animation:lineFlow 4s linear infinite;
 
     box-shadow:
-    0 0 8px rgba(255,122,0,.35),
-    0 0 18px rgba(255,122,0,.25);
+        0 0 10px rgba(255,122,0,.35),
+        0 0 20px rgba(255,122,0,.2);
 
 }
 
