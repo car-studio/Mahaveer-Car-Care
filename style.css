@@ -2111,3 +2111,35 @@ premiumPulse 2.5s ease-in-out infinite;
     0 0 28px rgba(255,120,0,.30);
 
 }
+.service-divider{
+    height:2px;
+    width:100%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #ff7a00,
+        #ffb347,
+        #ff7a00,
+        transparent
+    );
+
+    opacity:.75;
+
+    animation:dividerGlow 4s ease-in-out infinite;
+}
+
+@keyframes dividerGlow{
+
+    0%,100%{
+        opacity:.55;
+        box-shadow:
+            0 0 3px rgba(255,122,0,.15);
+    }
+
+    50%{
+        opacity:1;
+        box-shadow:
+            0 0 8px rgba(255,122,0,.45),
+            0 0 16px rgba(255,122,0,.20);
+    }
+}
