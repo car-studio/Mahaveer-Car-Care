@@ -1853,11 +1853,10 @@ premiumPulse 2.5s ease-in-out infinite;
 }
 
 .services-container{
-    width:90%;
-    max-width:1400px;
-    margin:auto;
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
 }
-
 /*==========================================
             SECTION TITLE
 ==========================================*/
@@ -1902,16 +1901,13 @@ premiumPulse 2.5s ease-in-out infinite;
 
     display:grid;
 
-    grid-template-columns:repeat(3,360px);
+    grid-template-columns:repeat(3,320px);
 
-    justify-content:center;
+    justify-content:space-between;
 
-    column-gap:55px;
-
-    row-gap:75px;
+    row-gap:70px;
 
 }
-
 /*==========================================
             SERVICE CARD
 ==========================================*/
@@ -1920,9 +1916,9 @@ premiumPulse 2.5s ease-in-out infinite;
 
     position:relative;
 
-    width:360px;
+    width:320px;
 
-    height:305px;
+    height:280px;
 
     background:#f5f5f5;
 
@@ -1932,7 +1928,7 @@ premiumPulse 2.5s ease-in-out infinite;
 
     border-radius:28px;
 
-    padding:65px 30px 28px;
+   padding:55px 24px 22px;
 
     text-align:center;
 
