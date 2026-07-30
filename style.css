@@ -1905,7 +1905,7 @@ premiumPulse 2.5s ease-in-out infinite;
 
     justify-content:space-between;
 
-    row-gap:70px;
+    row-gap:50px;
 
 }
 /*==========================================
@@ -2163,9 +2163,9 @@ premiumPulse 2.5s ease-in-out infinite;
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:22px;
+    gap:30px;
 
-    margin:45px 0 30px;
+    margin:18px 0 25px;
 
 }
 
@@ -2175,16 +2175,16 @@ premiumPulse 2.5s ease-in-out infinite;
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    gap:10px;
+    gap:14px;
 
-    width:220px;
-    height:58px;
+    width:270px;
+height:70px;
 
-    border-radius:50px;
+    border-radius:60px;
 
     text-decoration:none;
 
-    font-size:18px;
+    font-size:22px;
     font-weight:700;
 
     transition:.35s;
@@ -2228,5 +2228,11 @@ premiumPulse 2.5s ease-in-out infinite;
     border-color:#ff7a00;
 
     transform:translateY(-5px);
+
+}
+.services-book-btn i,
+.services-contact-btn i{
+
+    font-size:24px;
 
 }
