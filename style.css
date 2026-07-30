@@ -2117,20 +2117,22 @@ premiumPulse 2.5s ease-in-out infinite;
 
 .section-divider{
 
-    width:100%;
+    width:90%;
+    max-width:1400px;
+
     height:2px;
 
-    margin:90px auto;
+    margin:25px auto 0;
+
+    border-radius:50px;
 
     background:linear-gradient(
         90deg,
-        transparent 0%,
-        rgba(255,122,0,.15) 10%,
-        #ff7a00 25%,
-        #ffb347 50%,
-        #ff7a00 75%,
-        rgba(255,122,0,.15) 90%,
-        transparent 100%
+        transparent,
+        #ff7a00,
+        #ffb347,
+        #ff7a00,
+        transparent
     );
 
     animation:sectionGlow 4s ease-in-out infinite;
@@ -2140,22 +2142,15 @@ premiumPulse 2.5s ease-in-out infinite;
 @keyframes sectionGlow{
 
     0%,100%{
-
-        opacity:.55;
-
-        box-shadow:
-            0 0 4px rgba(255,122,0,.12);
-
+        opacity:.45;
+        box-shadow:0 0 3px rgba(255,122,0,.15);
     }
 
     50%{
-
         opacity:1;
-
         box-shadow:
-            0 0 10px rgba(255,122,0,.35),
-            0 0 20px rgba(255,179,71,.18);
-
+            0 0 8px rgba(255,122,0,.35),
+            0 0 15px rgba(255,179,71,.18);
     }
 
 }
