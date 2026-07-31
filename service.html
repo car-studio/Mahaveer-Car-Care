@@ -1486,7 +1486,285 @@ PROCESS TIMELINE
     box-shadow:0 0 20px rgba(255,122,0,.6);
 
 }
-  
+/*====================================
+          PRICING SECTION
+=====================================*/
+
+.pricing-section{
+
+    padding:120px 8%;
+    background:#0b0b0b;
+
+}
+
+.pricing-heading{
+
+    max-width:850px;
+    margin:0 auto 80px;
+    text-align:center;
+
+}
+
+.pricing-heading h2{
+
+    font-size:58px;
+    color:#fff;
+    margin:20px 0;
+
+}
+
+.pricing-heading p{
+
+    max-width:700px;
+    margin:auto;
+    color:#bdbdbd;
+    line-height:1.8;
+    font-size:18px;
+
+}
+
+.pricing-divider{
+
+    width:200px;
+    height:4px;
+    margin:0 auto 30px;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,122,0,0),
+        rgba(255,122,0,.6) 20%,
+        #ff7a00 50%,
+        rgba(255,122,0,.6) 80%,
+        rgba(255,122,0,0)
+    );
+
+    border-radius:50px;
+    box-shadow:0 0 20px rgba(255,122,0,.6);
+
+}
+
+.pricing-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+
+}
+  .pricing-card{
+
+    position:relative;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:26px;
+
+    padding:45px;
+
+    transition:.35s;
+
+}
+
+.pricing-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ff7a00;
+
+    box-shadow:0 25px 45px rgba(255,122,0,.18);
+
+}
+
+.premium-card{
+
+    border:1px solid rgba(255,122,0,.45);
+
+}
+
+.plan-tag{
+
+    display:inline-block;
+
+    padding:8px 22px;
+
+    border-radius:40px;
+
+    background:rgba(255,122,0,.12);
+
+    color:#ff7a00;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.popular-tag{
+
+    position:absolute;
+
+    top:-14px;
+
+    right:25px;
+
+    padding:8px 18px;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+.pricing-card h3{
+
+    margin-top:28px;
+
+    color:#fff;
+
+    font-size:34px;
+
+}
+
+.plan-desc{
+
+    margin:18px 0 30px;
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+}
+  .vehicle-pricing{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-bottom:35px;
+
+}
+
+.vehicle-box{
+
+    flex:1;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    background:#111;
+
+    border:1px solid rgba(255,122,0,.2);
+
+    text-align:center;
+
+}
+
+.vehicle-box span{
+
+    color:#bdbdbd;
+
+    display:block;
+
+    margin-bottom:12px;
+
+}
+
+.vehicle-box h4{
+
+    color:#ff7a00;
+
+    font-size:34px;
+
+}
+
+.pricing-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 35px;
+
+}
+
+.pricing-card ul li{
+
+    color:#ddd;
+
+    margin-bottom:16px;
+
+    padding-left:28px;
+
+    position:relative;
+
+}
+
+.pricing-card ul li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:#ff7a00;
+
+    font-weight:700;
+
+}
+
+.price-btn{
+
+    display:block;
+
+    text-align:center;
+
+    padding:16px;
+
+    border-radius:50px;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.price-btn:hover{
+
+    background:#ff922e;
+
+}
+  @media(max-width:992px){
+
+    .pricing-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .vehicle-pricing{
+
+        flex-direction:column;
+
+    }
+
+}
 
 </style>
 
@@ -2125,7 +2403,154 @@ appearance and preserve its value.
   
 </section>
   <div class="benefits-divider"></div>
+<!--==============================
+        PRICING SECTION
+===============================-->
 
+<section class="pricing-section">
+
+    <div class="pricing-heading">
+
+        <span class="section-badge">
+            PRICING
+        </span>
+
+        <h2>
+            Choose the Perfect Exterior Wash
+            for Your Vehicle
+        </h2>
+
+        <div class="pricing-divider"></div>
+
+        <p>
+            Whether you need a quick exterior refresh or a premium finish, choose the package that best suits your vehicle.
+        </p>
+
+    </div>
+
+    <div class="pricing-grid">
+
+        <!-- STANDARD -->
+
+        <div class="pricing-card">
+
+            <div class="plan-tag">
+                STANDARD
+            </div>
+
+            <h3>Regular Exterior Wash</h3>
+
+            <p class="plan-desc">
+                Perfect for routine cleaning and maintaining your vehicle's shine.
+            </p>
+
+            <div class="vehicle-pricing">
+
+                <div class="vehicle-box">
+
+                    <span>Small Vehicle</span>
+
+                    <h4>₹350</h4>
+
+                </div>
+
+                <div class="vehicle-box">
+
+                    <span>Large Vehicle</span>
+
+                    <h4>₹500</h4>
+
+                </div>
+
+            </div>
+
+            <ul>
+
+                <li>Premium Foam Wash</li>
+
+                <li>Scratch-Free Hand Wash</li>
+
+                <li>Wheel Cleaning</li>
+
+                <li>Exterior Glass Cleaning</li>
+
+                <li>Spot-Free Drying</li>
+
+                <li>Final Quality Inspection</li>
+
+            </ul>
+
+            <a href="#" class="price-btn">
+                Book Standard Wash
+            </a>
+
+        </div>
+
+        <!-- PREMIUM -->
+
+        <div class="pricing-card premium-card">
+
+            <div class="popular-tag">
+                MOST POPULAR
+            </div>
+
+            <div class="plan-tag">
+                PREMIUM
+            </div>
+
+            <h3>Premium Exterior Wash</h3>
+
+            <p class="plan-desc">
+                Extra care and premium finishing for a deeper shine and enhanced protection.
+            </p>
+
+            <div class="vehicle-pricing">
+
+                <div class="vehicle-box">
+
+                    <span>Small Vehicle</span>
+
+                    <h4>₹480</h4>
+
+                </div>
+
+                <div class="vehicle-box">
+
+                    <span>Large Vehicle</span>
+
+                    <h4>₹680</h4>
+
+                </div>
+
+            </div>
+
+            <ul>
+
+                <li>Premium Foam Wash</li>
+
+                <li>Scratch-Free Hand Wash</li>
+
+                <li>Deep Wheel Cleaning</li>
+
+                <li>Tyre Dressing</li>
+
+                <li>Exterior Glass & Mirror Cleaning</li>
+
+                <li>Premium Gloss Finish</li>
+
+                <li>Final Quality Inspection</li>
+
+            </ul>
+
+            <a href="#" class="price-btn">
+                Book Premium Wash
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 </body>
 
