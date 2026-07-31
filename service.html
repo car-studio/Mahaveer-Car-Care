@@ -882,97 +882,20 @@ OVERVIEW CONTENT
     flex-direction:column;
 
 }
-  /*==================================
-EXTERIOR WASH PROCESS
+/*==================================
+PROCESS TIMELINE
 ==================================*/
 
-.process-section{
-
-     padding:40px 8% 120px;
-
-    background:
-    linear-gradient(
-    180deg,
-    #000,
-    #050505,
-    #000);
-
-}
-
-.process-heading{
-
-    max-width:820px;
-
-    margin:auto;
-
-    text-align:center;
-
-    margin-bottom:90px;
-
-}
-
-.process-tag{
-
-    display:inline-block;
-
-    padding:10px 28px;
-
-    border-radius:50px;
-
-    border:1px solid rgba(255,122,0,.30);
-
-    color:#ff7a00;
-
-    font-size:13px;
-
-    letter-spacing:2px;
-
-    background:rgba(255,255,255,.04);
-
-}
-
-.process-heading h2{
-
-    font-size:54px;
-
-    margin:28px 0;
-
-    line-height:1.2;
-
-}
-
-.process-heading h2 span{
-
-    color:#ff7a00;
-
-}
-
-.process-heading p{
-
-    max-width:720px;
-
-    margin:auto;
-
-    color:#bdbdbd;
-
-    line-height:1.9;
-
-    font-size:18px;
-
-}
-  .process-timeline{
+.process-timeline{
 
     position:relative;
 
-    max-width:1100px;
+    max-width:1200px;
 
-    margin:auto;
-
-    padding:40px 0;
+    margin:80px auto 0;
 
 }
-
-.process-timeline::before{
+  .process-timeline::before{
 
     content:"";
 
@@ -982,27 +905,26 @@ EXTERIOR WASH PROCESS
 
     top:0;
 
+    transform:translateX(-50%);
+
     width:3px;
 
     height:100%;
 
-    transform:translateX(-50%);
-
-    background:
-    linear-gradient(
-    to bottom,
-    transparent,
-    #ff7a00,
-    #ffb347,
-    #ff7a00,
-    transparent);
+    background:linear-gradient(
+        to bottom,
+        transparent,
+        #ff7a00,
+        #ffb347,
+        #ff7a00,
+        transparent
+    );
 
     background-size:100% 300%;
 
     animation:timelineFlow 5s linear infinite;
 
-    box-shadow:
-    0 0 18px rgba(255,122,0,.4);
+    box-shadow:0 0 20px rgba(255,122,0,.45);
 
 }
 
@@ -1010,13 +932,13 @@ EXTERIOR WASH PROCESS
 
     from{
 
-        background-position:0% 0%;
+        background-position:0 0;
 
     }
 
     to{
 
-        background-position:0% 300%;
+        background-position:0 300%;
 
     }
 
@@ -1027,23 +949,22 @@ EXTERIOR WASH PROCESS
 
     width:100%;
 
-    min-height:260px;
+    height:300px;
 
 }
-
-.step-node{
+  .step-node{
 
     position:absolute;
 
     left:50%;
 
-    top:35px;
+    top:50%;
 
-    transform:translateX(-50%);
+    transform:translate(-50%,-50%);
 
-    width:78px;
+    width:82px;
 
-    height:78px;
+    height:82px;
 
     border-radius:50%;
 
@@ -1053,22 +974,23 @@ EXTERIOR WASH PROCESS
 
     display:flex;
 
-    align-items:center;
-
     justify-content:center;
 
+    align-items:center;
+
+    z-index:10;
+
     box-shadow:
-    0 0 25px rgba(255,122,0,.45);
+        0 0 18px rgba(255,122,0,.5),
+        0 0 40px rgba(255,122,0,.25);
 
-    animation:nodePulse 3s ease infinite;
-
-    z-index:5;
+    animation:nodePulse 3s ease-in-out infinite;
 
 }
 
 .step-node span{
 
-    font-size:28px;
+    font-size:30px;
 
     font-weight:700;
 
@@ -1076,23 +998,44 @@ EXTERIOR WASH PROCESS
 
 }
 
-.process-card{
+@keyframes nodePulse{
 
-    width:390px;
+    0%,100%{
 
-    margin-left:auto;
+        transform:translate(-50%,-50%) scale(1);
 
-    padding:28px;
+    }
 
-    border-radius:24px;
+    50%{
+
+        transform:translate(-50%,-50%) scale(1.08);
+
+    }
+
+}
+  .process-card{
+
+    width:380px;
+
+    height:220px;
 
     background:rgba(255,255,255,.05);
 
     border:1px solid rgba(255,122,0,.18);
 
-    backdrop-filter:blur(10px);
+    border-radius:24px;
 
-    transition:.4s;
+    backdrop-filter:blur(12px);
+
+    padding:28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    transition:.35s;
 
 }
 
@@ -1103,62 +1046,60 @@ EXTERIOR WASH PROCESS
     border-color:#ff7a00;
 
     box-shadow:
-    0 0 30px rgba(255,122,0,.25);
+        0 0 30px rgba(255,122,0,.25);
 
 }
+  .process-step.right .process-card{
 
-.step-icon{
+    position:absolute;
 
-    font-size:38px;
+    right:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+  .process-step.left .process-card{
+
+    position:absolute;
+
+    left:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+  .process-step.right .process-card:hover,
+.process-step.left .process-card:hover{
+
+    transform:translateY(calc(-50% - 8px));
+
+}
+  .step-icon{
+
+    font-size:34px;
 
     margin-bottom:18px;
 
 }
+  .process-card h3{
 
-.process-card h3{
+    font-size:22px;
 
-    font-size:28px;
+    margin-bottom:14px;
 
-    margin-bottom:12px;
+    line-height:1.3;
 
 }
+  .process-card p{
 
-.process-card p{
-
-    color:#cfcfcf;
+    color:#c7c7c7;
 
     line-height:1.7;
 
-}
-
-@keyframes nodePulse{
-
-    0%,100%{
-
-        transform:translateX(-50%) scale(1);
-
-    }
-
-    50%{
-
-        transform:translateX(-50%) scale(1.08);
-
-    }
-
-}
-  /* RIGHT SIDE */
-
-.process-step.right .process-card{
-
-    margin-left:auto;
-
-}
-
-/* LEFT SIDE */
-
-.process-step.left .process-card{
-
-    margin-right:auto;
+    font-size:16px;
 
 }
 
