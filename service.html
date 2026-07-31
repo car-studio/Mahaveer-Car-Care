@@ -687,14 +687,9 @@ SERVICE OVERVIEW
 /*=============================
 BOOK APPOINTMENT BUTTON
 =============================*/
-
 .overview-button{
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
+    width:100%;
 
     margin-top:55px;
 
@@ -704,13 +699,15 @@ BOOK APPOINTMENT BUTTON
 
     display:flex;
 
-    justify-content:center;
-
     align-items:center;
+
+    justify-content:center;
 
     width:380px;
 
     height:72px;
+
+    margin:0 auto;   /* <-- This is the important line */
 
     background:#ff7a00;
 
@@ -739,6 +736,7 @@ BOOK APPOINTMENT BUTTON
     box-shadow:0 15px 40px rgba(255,122,0,.45);
 
 }
+
   /*=============================
 OVERVIEW CONTENT
 =============================*/
