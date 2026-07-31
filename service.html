@@ -1161,6 +1161,175 @@ PROCESS TIMELINE
     font-size:16px;
 
 }
+  /*=============================
+      BEFORE AFTER SECTION
+==============================*/
+
+.before-after-section{
+
+    padding:120px 8%;
+    background:#0b0b0b;
+
+}
+
+.before-after-heading{
+
+    max-width:850px;
+    margin:0 auto 80px;
+    text-align:center;
+
+}
+
+.before-after-heading .section-badge{
+
+    display:inline-block;
+    padding:10px 22px;
+    border:1px solid rgba(255,122,0,.4);
+    border-radius:40px;
+    color:#ff7a00;
+    font-size:14px;
+    letter-spacing:2px;
+    margin-bottom:22px;
+
+}
+
+.before-after-heading h2{
+
+    font-size:56px;
+    color:#fff;
+    margin-bottom:22px;
+
+}
+
+.before-after-heading p{
+
+    max-width:720px;
+    margin:auto;
+    color:#bfbfbf;
+    line-height:1.8;
+    font-size:18px;
+
+}
+
+.comparison-wrapper{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:45px;
+    flex-wrap:wrap;
+
+}
+
+.comparison-card{
+
+    position:relative;
+    width:550px;
+    overflow:hidden;
+    border-radius:26px;
+    border:1px solid rgba(255,255,255,.08);
+    background:#111;
+
+}
+
+.comparison-card img{
+
+    width:100%;
+    display:block;
+
+}
+
+.comparison-label{
+
+    position:absolute;
+    top:20px;
+    left:20px;
+    padding:10px 22px;
+    border-radius:30px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#fff;
+    z-index:5;
+
+}
+
+.before{
+
+    background:#4b4b4b;
+
+}
+
+.after{
+
+    background:#ff7a00;
+
+}
+
+.comparison-divider{
+
+    width:3px;
+    height:420px;
+    background:linear-gradient(to bottom,
+    transparent,
+    #ff7a00,
+    transparent);
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(255,122,0,.6);
+
+}
+
+.comparison-divider span{
+
+    display:block;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#ff7a00;
+    margin:auto;
+    margin-top:200px;
+    box-shadow:0 0 18px #ff7a00;
+
+}
+
+@media(max-width:1200px){
+
+    .comparison-wrapper{
+
+        flex-direction:column;
+
+    }
+
+    .comparison-divider{
+
+        width:320px;
+        height:3px;
+
+    }
+
+    .comparison-divider span{
+
+        margin-top:-8px;
+        margin-left:150px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .before-after-heading h2{
+
+        font-size:38px;
+
+    }
+
+    .comparison-card{
+
+        width:100%;
+
+    }
+
+}
   
 
 </style>
@@ -1620,6 +1789,59 @@ appearance and preserve its value.
     </div>
 
 </div>
+
+</section>
+  <!-- ================= BEFORE & AFTER ================= -->
+
+<section class="before-after-section">
+
+    <div class="before-after-heading">
+
+        <span class="section-badge">
+            BEFORE & AFTER
+        </span>
+
+        <h2>
+            See the Transformation Yourself
+        </h2>
+
+        <p>
+            A professional exterior wash doesn't just remove dirt—it restores
+            your vehicle's shine, enhances its appearance, and gives it a
+            fresh, premium look that stands out on every drive.
+        </p>
+
+    </div>
+
+    <div class="comparison-wrapper">
+
+        <div class="comparison-card">
+
+            <div class="comparison-label before">
+                BEFORE
+            </div>
+
+            <img src="before.png" alt="Before Exterior Wash">
+
+        </div>
+
+        <div class="comparison-divider">
+
+            <span></span>
+
+        </div>
+
+        <div class="comparison-card">
+
+            <div class="comparison-label after">
+                AFTER
+            </div>
+
+            <img src="after.png" alt="After Exterior Wash">
+
+        </div>
+
+    </div>
 
 </section>
 
