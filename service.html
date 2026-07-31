@@ -1889,7 +1889,29 @@ PROCESS TIMELINE
 
 .faq-answer{
 
+    max-height:0;
+    overflow:hidden;
+
+    padding:0 30px;
+
+    transition:
+        max-height .45s ease,
+        padding .35s ease;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:220px;
     padding:0 30px 28px;
+
+}
+
+.faq-answer p{
+
+    color:#bdbdbd;
+    line-height:1.8;
+    font-size:17px;
 
 }
 
