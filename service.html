@@ -1765,6 +1765,149 @@ PROCESS TIMELINE
     }
 
 }
+  /*====================================
+              FAQ SECTION
+=====================================*/
+
+.faq-section{
+
+    padding:120px 8%;
+    background:#0b0b0b;
+
+}
+
+.faq-heading{
+
+    max-width:850px;
+    margin:0 auto 70px;
+    text-align:center;
+
+}
+
+.faq-heading h2{
+
+    font-size:58px;
+    color:#fff;
+    margin:20px 0;
+
+}
+
+.faq-heading p{
+
+    max-width:720px;
+    margin:auto;
+    color:#bdbdbd;
+    line-height:1.8;
+    font-size:18px;
+
+}
+
+.faq-divider{
+
+    width:200px;
+    height:4px;
+    margin:0 auto 30px;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,122,0,0),
+        rgba(255,122,0,.6) 20%,
+        #ff7a00 50%,
+        rgba(255,122,0,.6) 80%,
+        rgba(255,122,0,0)
+    );
+
+    border-radius:50px;
+    box-shadow:0 0 20px rgba(255,122,0,.6);
+
+}
+
+.faq-container{
+
+    max-width:950px;
+    margin:auto;
+
+}
+
+.faq-item{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:20px;
+
+    margin-bottom:22px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.faq-item:hover{
+
+    border-color:#ff7a00;
+
+    box-shadow:0 15px 35px rgba(255,122,0,.15);
+
+}
+
+.faq-question{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:28px 30px;
+
+    cursor:pointer;
+
+}
+
+.faq-question h3{
+
+    color:#fff;
+
+    font-size:22px;
+
+    margin:0;
+
+}
+
+.faq-question span{
+
+    color:#ff7a00;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.faq-answer{
+
+    padding:0 30px 28px;
+
+}
+
+.faq-answer p{
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+.faq-item:not(.active) .faq-answer{
+
+    display:none;
+
+}
 
 </style>
 
@@ -2551,6 +2694,144 @@ appearance and preserve its value.
     </div>
 
 </section>
+  <!--==============================
+            FAQ SECTION
+===============================-->
+
+<section class="faq-section">
+
+    <div class="faq-heading">
+
+        <span class="section-badge">
+            FAQ
+        </span>
+
+        <h2>
+            Frequently Asked Questions
+        </h2>
+
+        <div class="faq-divider"></div>
+
+        <p>
+            Find answers to the most common questions about our Exterior Wash service before you book your appointment.
+        </p>
+
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-item active">
+
+            <div class="faq-question">
+                <h3>How long does an Exterior Wash take?</h3>
+                <span>−</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                    A standard exterior wash usually takes 30–45 minutes, while the Premium Wash may require up to 60 minutes depending on the vehicle's condition.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>Do I need to book an appointment?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                    Appointments are recommended to reduce waiting time, but walk-in customers are also welcome based on availability.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>Is the wash safe for ceramic-coated vehicles?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                    Yes. We use pH-balanced products and safe washing techniques suitable for ceramic-coated and premium paint finishes.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>Which package should I choose?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                    The Standard Wash is ideal for regular maintenance, while the Premium Wash provides additional care, deeper cleaning and enhanced shine.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>What payment methods do you accept?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                    We accept Cash, UPI, Credit Cards, Debit Cards and all major digital payment methods.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>Do you wash SUVs and luxury vehicles?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                    Yes. Our Exterior Wash service is available for hatchbacks, sedans, SUVs, MUVs and luxury vehicles.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  <script>
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+
+    item.querySelector(".faq-question").addEventListener("click", () => {
+
+        faqItems.forEach(faq => {
+
+            if(faq !== item){
+
+                faq.classList.remove("active");
+
+                faq.querySelector("span").textContent = "+";
+
+            }
+
+        });
 
 </body>
 
