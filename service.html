@@ -691,23 +691,27 @@ BOOK APPOINTMENT BUTTON
 
     width:100%;
 
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
     margin-top:55px;
 
 }
 
 .overview-btn{
 
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
     width:380px;
 
     height:72px;
 
-    margin:0 auto;   /* <-- This is the important line */
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
     background:#ff7a00;
 
@@ -721,14 +725,9 @@ BOOK APPOINTMENT BUTTON
 
     font-weight:700;
 
-    letter-spacing:.5px;
-
     transition:.35s;
 
-    box-shadow:0 10px 30px rgba(255,122,0,.25);
-
 }
-
 .overview-btn:hover{
 
     transform:translateY(-4px);
@@ -830,6 +829,13 @@ OVERVIEW CONTENT
     line-height:2;
 
     font-size:18px;
+
+}
+  .overview-left{
+
+    display:flex;
+
+    flex-direction:column;
 
 }
 
