@@ -697,7 +697,7 @@ BOOK APPOINTMENT BUTTON
 
     align-items:center;
 
-    margin-top:25px;
+    margin-top:15px;
 
 }
 
@@ -793,10 +793,8 @@ OVERVIEW CONTENT
 
     gap:60px;
 
-    align-items:start;
-
+    align-items:stretch;   /* change from start */
 }
-
 .overview-left h3,
 .overview-right h3{
 
@@ -807,18 +805,19 @@ OVERVIEW CONTENT
 }
 
 .overview-left p{
-
     color:#c8c8c8;
-
     line-height:2;
-
     font-size:18px;
-
-    margin-bottom:40px;
-
+    margin-bottom:22px;
 }
 
 .overview-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
 
     background:rgba(255,255,255,.04);
 
@@ -827,8 +826,6 @@ OVERVIEW CONTENT
     border-radius:25px;
 
     padding:40px;
-
-    min-height:500px;   /* adjust between 480–520px */
 }
 
 .overview-right ul{
@@ -868,7 +865,8 @@ OVERVIEW CONTENT
 }
   .overview-second{
 
-    margin-top:25px;
+    margin-top:12px;
+    margin-bottom:28px;
 
     color:#bdbdbd;
 
