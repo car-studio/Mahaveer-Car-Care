@@ -885,7 +885,69 @@ OVERVIEW CONTENT
 /*==================================
 PROCESS TIMELINE
 ==================================*/
+.process-heading{
 
+    max-width:850px;
+
+    margin:0 auto 80px;
+
+    text-align:center;
+
+}
+
+.process-tag{
+
+    display:inline-block;
+
+    padding:12px 30px;
+
+    border:1px solid rgba(255,122,0,.25);
+
+    border-radius:50px;
+
+    color:#ff7a00;
+
+    background:rgba(255,255,255,.04);
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+}
+
+.process-heading h2{
+
+    font-size:56px;
+
+    line-height:1.2;
+
+    margin:28px 0 20px;
+
+    font-weight:700;
+
+}
+
+.process-heading h2 span{
+
+    color:#ff7a00;
+
+}
+
+.process-heading p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#bfbfbf;
+
+}
 .process-timeline{
 
     position:relative;
@@ -1014,10 +1076,12 @@ PROCESS TIMELINE
 
 }
   .process-card{
+ margin:0 70px;
+    width:400px;
 
-    width:380px;
+    min-height:230px;
 
-    height:220px;
+    padding:30px;
 
     background:rgba(255,255,255,.05);
 
@@ -1025,17 +1089,11 @@ PROCESS TIMELINE
 
     border-radius:24px;
 
-    backdrop-filter:blur(12px);
-
-    padding:28px;
-
     display:flex;
 
     flex-direction:column;
 
     justify-content:flex-start;
-
-    transition:.35s;
 
 }
 
@@ -1049,22 +1107,23 @@ PROCESS TIMELINE
         0 0 30px rgba(255,122,0,.25);
 
 }
-  .process-step.right .process-card{
+  .process-step.left .process-card{
 
     position:absolute;
 
-    right:0;
+    left:0;
 
     top:50%;
 
     transform:translateY(-50%);
 
 }
-  .process-step.left .process-card{
+
+.process-step.right .process-card{
 
     position:absolute;
 
-    left:0;
+    right:0;
 
     top:50%;
 
@@ -1102,6 +1161,7 @@ PROCESS TIMELINE
     font-size:16px;
 
 }
+  
 
 </style>
 
