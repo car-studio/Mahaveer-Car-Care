@@ -2814,7 +2814,6 @@ appearance and preserve its value.
 
 </section>
   <script>
-
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item => {
@@ -2823,16 +2822,25 @@ faqItems.forEach(item => {
 
         faqItems.forEach(faq => {
 
-            if(faq !== item){
+            if (faq !== item) {
 
                 faq.classList.remove("active");
-
-                faq.querySelector("span").textContent = "+";
+                faq.querySelector(".faq-question span").textContent = "+";
 
             }
 
         });
- <script>
+
+        item.classList.toggle("active");
+
+        item.querySelector(".faq-question span").textContent =
+            item.classList.contains("active") ? "−" : "+";
+
+    });
+
+});
+
+</script>
 </body>
 
 </html>
