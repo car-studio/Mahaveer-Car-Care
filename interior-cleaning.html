@@ -607,270 +607,165 @@ SERVICE OVERVIEW
     line-height:1.9;
 
 }
+/*======================================
+SERVICE OVERVIEW - UNIVERSAL LAYOUT
+======================================*/
+
 .overview-image{
     width:100%;
-    margin:80px 0 40px;
+    margin:80px 0 45px;
 }
 
 .overview-image img{
     width:100%;
     display:block;
     border-radius:28px;
+    object-fit:cover;
 }
-
-.overview-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:25px;
-
-    margin-top:60px;
-
-}
-
-.overview-card{
-
-    padding:35px;
-
-    background:rgba(255,255,255,.04);
-
-    border:1px solid rgba(255,122,0,.18);
-
-    border-radius:22px;
-
-    transition:.35s;
-
-}
-
-.overview-card:hover{
-
-    transform:translateY(-8px);
-
-    border-color:#ff7a00;
-
-    box-shadow:
-    0 0 30px rgba(255,122,0,.20);
-
-}
-
-.overview-card h3{
-
-    margin-bottom:15px;
-
-    font-size:24px;
-
-}
-
-.overview-card p{
-
-    color:#c7c7c7;
-
-    line-height:1.8;
-
-}
-
-/*=============================
-BOOK APPOINTMENT BUTTON
-=============================*/
-.overview-button{
-
-    width:100%;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    margin-top:15px;
-
-}
-
-.overview-btn{
-
-    width:380px;
-
-    height:72px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    background:#ff7a00;
-
-    color:#fff;
-
-    text-decoration:none;
-
-    border-radius:60px;
-
-    font-size:20px;
-
-    font-weight:700;
-
-    transition:.35s;
-
-}
-.overview-btn:hover{
-
-    transform:translateY(-4px);
-
-    box-shadow:0 15px 40px rgba(255,122,0,.45);
-
-}
-  .contact-button{
-
-    margin-top:45px;
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-.contact-btn{
-
-    width:380px;
-
-    height:72px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    border:2px solid #ff7a00;
-
-    color:#fff;
-
-    text-decoration:none;
-
-    border-radius:60px;
-
-    font-size:20px;
-
-    font-weight:700;
-
-    transition:.35s;
-
-}
-
-.contact-btn:hover{
-
-    background:#ff7a00;
-
-    box-shadow:0 15px 35px rgba(255,122,0,.35);
-
-}
-
-  /*=============================
-OVERVIEW CONTENT
-=============================*/
 
 .overview-content{
-
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
-    gap:60px;
-
-    align-items:start;
-
+    gap:70px;
+    align-items:stretch;
     margin-bottom:120px;
-
 }
-.overview-left h3,
-.overview-right h3{
 
-    font-size:32px;
+.overview-content:last-child{
+    margin-bottom:0;
+}
 
-    margin-bottom:25px;
+.overview-left{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
 
+.overview-left h3{
+    font-size:48px;
+    line-height:1.2;
+    font-weight:700;
+    margin-bottom:30px;
 }
 
 .overview-left p{
-    color:#c8c8c8;
-    line-height:2;
+    color:#c9c9c9;
     font-size:18px;
-    margin-bottom:22px;
+    line-height:2;
+    margin-bottom:25px;
+}
+
+.overview-second{
+    margin-bottom:40px !important;
+}
+
+.overview-button{
+    margin-top:auto;
+}
+
+.overview-btn{
+    width:380px;
+    height:72px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:60px;
+    background:#ff7a00;
+    color:#fff;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:700;
+    transition:.35s;
+}
+
+.overview-btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 40px rgba(255,122,0,.45);
 }
 
 .overview-right{
-
     display:flex;
-
     flex-direction:column;
-
-    justify-content:space-between;
-
     background:rgba(255,255,255,.04);
-
     border:1px solid rgba(255,122,0,.18);
+    border-radius:28px;
+    padding:45px;
+    min-height:640px;
+}
 
-    border-radius:25px;
-
-    padding:40px;
+.overview-right h3{
+    font-size:44px;
+    margin-bottom:35px;
 }
 
 .overview-right ul{
-
     list-style:none;
-
+    flex:1;
 }
 
 .overview-right li{
-
     position:relative;
-
-    padding-left:35px;
-
+    padding-left:38px;
     margin-bottom:28px;
-
-    color:#dedede;
-
-    font-size:17px;
-
+    color:#dcdcdc;
+    font-size:18px;
 }
 
 .overview-right li::before{
-
     content:"✓";
-
     position:absolute;
-
     left:0;
-
     color:#ff7a00;
-
-    font-weight:bold;
-
-    font-size:20px;
-
+    font-size:22px;
+    font-weight:700;
 }
-  .overview-second{
 
-    margin-top:12px;
-    margin-bottom:28px;
-
-    color:#bdbdbd;
-
-    line-height:2;
-
-    font-size:18px;
-
+.contact-button{
+    margin-top:40px;
 }
-  .overview-left{
 
+.contact-btn{
+    width:100%;
+    height:72px;
     display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid #ff7a00;
+    border-radius:60px;
+    color:#fff;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:700;
+    transition:.35s;
+}
 
-    flex-direction:column;
+.contact-btn:hover{
+    background:#ff7a00;
+    box-shadow:0 15px 35px rgba(255,122,0,.35);
+}
 
+/* Mobile */
+
+@media(max-width:991px){
+
+    .overview-content{
+        grid-template-columns:1fr;
+        gap:40px;
+        margin-bottom:90px;
+    }
+
+    .overview-left h3{
+        font-size:36px;
+    }
+
+    .overview-right{
+        min-height:auto;
+    }
+
+    .overview-btn,
+    .contact-btn{
+        width:100%;
+    }
 }
 /*==================================
 PROCESS TIMELINE
