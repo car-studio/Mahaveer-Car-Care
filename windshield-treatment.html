@@ -1,0 +1,3165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Exterior Wash | Mahaveer Car Care</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#000;
+color:#fff;
+overflow-x:hidden;
+
+}
+
+/*------------------------------
+BACK BUTTON
+------------------------------*/
+
+.back-home{
+
+position:fixed;
+
+top:30px;
+right:30px;
+
+z-index:9999;
+
+padding:14px 24px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,122,0,.5);
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:#fff;
+
+font-size:15px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+/*------------------------------
+HERO
+------------------------------*/
+
+.hero{
+
+position:relative;
+
+height:100vh;
+
+min-height:700px;
+
+background:url("seath.png") center center/cover no-repeat;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:linear-gradient(
+90deg,
+rgba(0,0,0,.88)0%,
+rgba(0,0,0,.75)35%,
+rgba(0,0,0,.45)65%,
+rgba(0,0,0,.20)100%
+);
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:5;
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+border-radius:50px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.18);
+
+backdrop-filter:blur(10px);
+
+color:#ff7a00;
+
+font-size:13px;
+
+letter-spacing:2px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+line-height:1.08;
+
+margin-bottom:25px;
+
+font-weight:800;
+
+}
+
+.hero p{
+
+max-width:650px;
+
+font-size:20px;
+
+line-height:1.9;
+
+color:#d8d8d8;
+
+margin-bottom:35px;
+
+}
+
+.features{
+
+display:flex;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+margin-bottom:45px;
+
+}
+
+.features span{
+
+padding:10px 18px;
+
+border-radius:40px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.12);
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:18px 34px;
+
+border-radius:50px;
+
+font-size:16px;
+
+font-weight:600;
+
+text-decoration:none;
+
+transition:.35s;
+
+}
+
+.primary{
+
+background:#ff7a00;
+
+color:#fff;
+
+}
+
+.primary:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 0 35px rgba(255,122,0,.45);
+
+}
+
+.secondary{
+
+border:2px solid #ff7a00;
+
+color:#fff;
+
+}
+
+.secondary:hover{
+
+background:#ff7a00;
+
+}
+  /*======================================
+LUXURY INTRO
+======================================*/
+
+.intro-section{
+
+padding:110px 8%;
+background:#000;
+position:relative;
+
+}
+  .intro-section::before{
+
+content:"";
+
+position:absolute;
+
+width:550px;
+height:550px;
+
+left:50%;
+top:50%;
+
+transform:translate(-50%,-50%);
+
+background:radial-gradient(
+rgba(255,122,0,.10),
+transparent 70%
+);
+
+filter:blur(80px);
+
+pointer-events:none;
+
+}
+
+.intro-container{
+
+max-width:620px;
+margin:auto;
+text-align:center;
+
+}
+
+.intro-tag{
+
+display:inline-block;
+
+padding:10px 26px;
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,122,0,.35);
+
+border-radius:50px;
+
+color:#ff7a00;
+
+font-size:13px;
+
+letter-spacing:2px;
+
+margin-bottom:30px;
+
+}
+
+.intro-container h2{
+
+font-size:52px;
+
+font-weight:700;
+
+line-height:1.3;
+
+margin-bottom:40px;
+
+}
+
+.intro-container h2 span{
+
+color:#ff7a00;
+
+}
+
+.intro-container p{
+
+font-size:19px;
+
+line-height:1.9;
+
+color:#bdbdbd;
+
+max-width:760px;
+
+margin:auto;
+
+}
+  /*======================================
+MAHAVEER SIGNATURE DIVIDER
+======================================*/
+
+.signature-divider{
+
+    display:flex;
+
+    align-items:center;
+
+    width:100%;
+
+    margin:70px auto 0;
+
+    gap:20px;
+
+}
+
+.divider-line{
+
+    flex:1;
+
+    height:2px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        transparent 0%,
+        #ff7a00 20%,
+        #ffb347 50%,
+        #ff7a00 80%,
+        transparent 100%
+    );
+
+    background-size:300% 100%;
+
+    animation:lineFlow 4s linear infinite;
+
+    box-shadow:
+        0 0 10px rgba(255,122,0,.35),
+        0 0 20px rgba(255,122,0,.2);
+
+}
+
+.divider-circle{
+
+    position:relative;
+
+    width:18px;
+    height:18px;
+
+    border:2px solid #ff7a00;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    box-shadow:
+    0 0 10px rgba(255,122,0,.8),
+    0 0 25px rgba(255,122,0,.45);
+
+    animation:ringPulse 2.8s ease-in-out infinite;
+
+}
+
+/* Small glowing center */
+
+.divider-circle::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:5px;
+    height:5px;
+
+    border-radius:50%;
+
+    background:#ffb347;
+
+    box-shadow:
+    0 0 8px #ffb347,
+    0 0 15px rgba(255,179,71,.8);
+
+}
+
+/* Expanding energy ring */
+
+.divider-circle::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-8px;
+
+    border:1px solid rgba(255,122,0,.25);
+
+    border-radius:50%;
+
+    animation:energyRing 2.8s ease-out infinite;
+
+}
+
+@keyframes ringPulse{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+        box-shadow:
+        0 0 18px rgba(255,122,0,.9),
+        0 0 40px rgba(255,122,0,.5);
+
+    }
+
+}
+
+@keyframes energyRing{
+
+    0%{
+
+        transform:scale(.7);
+
+        opacity:0;
+
+    }
+
+    40%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(1.7);
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes lineFlow{
+
+    from{
+
+        background-position:0%;
+
+    }
+
+    to{
+
+        background-position:300%;
+
+    }
+
+}
+
+@keyframes pulseGlow{
+
+    0%{
+
+        transform:scale(1);
+
+        box-shadow:
+        0 0 8px #ff7a00,
+        0 0 20px rgba(255,122,0,.6);
+
+    }
+
+    50%{
+
+        transform:scale(1.35);
+
+        box-shadow:
+        0 0 15px #ff7a00,
+        0 0 40px rgba(255,122,0,.9),
+        0 0 60px rgba(255,122,0,.5);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        box-shadow:
+        0 0 8px #ff7a00,
+        0 0 20px rgba(255,122,0,.6);
+
+    }
+
+}
+  /*======================================
+SERVICE OVERVIEW
+======================================*/
+
+.overview-section{
+
+    padding:40px 8% 70px;
+
+    background:#000;
+
+}
+
+.overview-heading{
+
+    text-align:center;
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.overview-heading span{
+
+    color:#ff7a00;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+}
+
+.overview-heading h2{
+
+    font-size:54px;
+
+    line-height:1.2;
+
+    margin:20px 0;
+
+}
+
+.overview-heading p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#bfbfbf;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+.overview-image{
+
+    margin:70px auto;
+
+    max-width:1100px;
+
+}
+
+.overview-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:24px;
+
+    border:1px solid rgba(255,122,0,.15);
+
+    box-shadow:
+    0 0 40px rgba(255,122,0,.15);
+
+}
+
+.overview-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-top:60px;
+
+}
+
+.overview-card{
+
+    padding:35px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:22px;
+
+    transition:.35s;
+
+}
+
+.overview-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ff7a00;
+
+    box-shadow:
+    0 0 30px rgba(255,122,0,.20);
+
+}
+
+.overview-card h3{
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.overview-card p{
+
+    color:#c7c7c7;
+
+    line-height:1.8;
+
+}
+
+/*=============================
+BOOK APPOINTMENT BUTTON
+=============================*/
+.overview-button{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:15px;
+
+}
+
+.overview-btn{
+
+    width:380px;
+
+    height:72px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:60px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+.overview-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 40px rgba(255,122,0,.45);
+
+}
+  .contact-button{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.contact-btn{
+
+    width:380px;
+
+    height:72px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:2px solid #ff7a00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:60px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.contact-btn:hover{
+
+    background:#ff7a00;
+
+    box-shadow:0 15px 35px rgba(255,122,0,.35);
+
+}
+
+  /*=============================
+OVERVIEW CONTENT
+=============================*/
+
+.overview-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:stretch;   /* change from start */
+}
+.overview-left h3,
+.overview-right h3{
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+.overview-left p{
+    color:#c8c8c8;
+    line-height:2;
+    font-size:18px;
+    margin-bottom:22px;
+}
+
+.overview-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:25px;
+
+    padding:40px;
+}
+
+.overview-right ul{
+
+    list-style:none;
+
+}
+
+.overview-right li{
+
+    position:relative;
+
+    padding-left:35px;
+
+    margin-bottom:28px;
+
+    color:#dedede;
+
+    font-size:17px;
+
+}
+
+.overview-right li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:#ff7a00;
+
+    font-weight:bold;
+
+    font-size:20px;
+
+}
+  .overview-second{
+
+    margin-top:12px;
+    margin-bottom:28px;
+
+    color:#bdbdbd;
+
+    line-height:2;
+
+    font-size:18px;
+
+}
+  .overview-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+/*==================================
+PROCESS TIMELINE
+==================================*/
+.process-heading{
+
+    max-width:850px;
+
+    margin:0 auto 80px;
+
+    text-align:center;
+
+}
+
+.process-tag{
+
+    display:inline-block;
+
+    padding:12px 30px;
+
+    border:1px solid rgba(255,122,0,.25);
+
+    border-radius:50px;
+
+    color:#ff7a00;
+
+    background:rgba(255,255,255,.04);
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+}
+
+.process-heading h2{
+
+    font-size:56px;
+
+    line-height:1.2;
+
+    margin:28px 0 20px;
+
+    font-weight:700;
+
+}
+
+.process-heading h2 span{
+
+    color:#ff7a00;
+
+}
+
+.process-heading p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#bfbfbf;
+
+}
+.process-timeline{
+
+    position:relative;
+
+    max-width:1200px;
+
+    margin:80px auto 0;
+
+}
+  .process-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    transform:translateX(-50%);
+
+    width:3px;
+
+    height:100%;
+
+    background:linear-gradient(
+        to bottom,
+        transparent,
+        #ff7a00,
+        #ffb347,
+        #ff7a00,
+        transparent
+    );
+
+    background-size:100% 300%;
+
+    animation:timelineFlow 5s linear infinite;
+
+    box-shadow:0 0 20px rgba(255,122,0,.45);
+
+}
+
+@keyframes timelineFlow{
+
+    from{
+
+        background-position:0 0;
+
+    }
+
+    to{
+
+        background-position:0 300%;
+
+    }
+
+}
+  .process-step{
+
+    position:relative;
+
+    width:100%;
+
+    height:300px;
+
+}
+  .step-node{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:82px;
+
+    height:82px;
+
+    border-radius:50%;
+
+    border:3px solid #ff7a00;
+
+    background:#000;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:10;
+
+    box-shadow:
+        0 0 18px rgba(255,122,0,.5),
+        0 0 40px rgba(255,122,0,.25);
+
+    animation:nodePulse 3s ease-in-out infinite;
+
+}
+
+.step-node span{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#ff7a00;
+
+}
+
+@keyframes nodePulse{
+
+    0%,100%{
+
+        transform:translate(-50%,-50%) scale(1);
+
+    }
+
+    50%{
+
+        transform:translate(-50%,-50%) scale(1.08);
+
+    }
+
+}
+  .process-card{
+ margin:0 70px;
+    width:400px;
+
+    min-height:230px;
+
+    padding:30px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ff7a00;
+
+    box-shadow:
+        0 0 30px rgba(255,122,0,.25);
+
+}
+  .process-step.left .process-card{
+
+    position:absolute;
+
+    left:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+.process-step.right .process-card{
+
+    position:absolute;
+
+    right:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+  .process-step.right .process-card:hover,
+.process-step.left .process-card:hover{
+
+    transform:translateY(calc(-50% - 8px));
+
+}
+  .step-icon{
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+}
+  .process-card h3{
+
+    font-size:22px;
+
+    margin-bottom:14px;
+
+    line-height:1.3;
+
+}
+  .process-card p{
+
+    color:#c7c7c7;
+
+    line-height:1.7;
+
+    font-size:16px;
+
+}
+  /*=============================
+      BEFORE AFTER SECTION
+==============================*/
+
+.before-after-section{
+
+    padding:40px 8% 120px;
+    background:#0b0b0b;
+
+}
+
+.before-after-heading{
+
+    max-width:850px;
+    margin:0 auto 80px;
+    text-align:center;
+
+}
+
+.before-after-heading .section-badge{
+
+    display:inline-block;
+    padding:10px 22px;
+    border:1px solid rgba(255,122,0,.4);
+    border-radius:40px;
+    color:#ff7a00;
+    font-size:14px;
+    letter-spacing:2px;
+    margin-bottom:22px;
+
+}
+
+.before-after-heading h2{
+
+    font-size:56px;
+    color:#fff;
+    margin-bottom:22px;
+
+}
+
+.before-after-heading p{
+
+    max-width:720px;
+    margin:auto;
+    color:#bfbfbf;
+    line-height:1.8;
+    font-size:18px;
+
+}
+
+.comparison-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:nowrap;
+}
+
+.comparison-card{
+    flex:1;
+    max-width:520px;
+    border-radius:24px;
+    overflow:hidden;
+    position:relative;
+}
+
+.comparison-card img{
+
+    width:100%;
+    display:block;
+
+}
+
+.comparison-label{
+
+    position:absolute;
+    top:20px;
+    left:20px;
+    padding:10px 22px;
+    border-radius:30px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#fff;
+    z-index:5;
+
+}
+
+.before{
+
+    background:#4b4b4b;
+
+}
+
+.after{
+
+    background:#ff7a00;
+
+}
+
+.comparison-divider{
+    flex:0 0 4px;
+    width:4px;
+    height:700px;
+    background:linear-gradient(
+        to bottom,
+        transparent,
+        #ff7a00,
+        transparent
+    );
+    box-shadow:0 0 18px rgba(255,122,0,.6);
+    border-radius:50px;
+}
+
+.comparison-divider span{
+
+    display:block;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#ff7a00;
+    margin:auto;
+    margin-top:200px;
+    box-shadow:0 0 18px #ff7a00;
+
+}
+
+@media(max-width:768px){
+
+    .comparison-wrapper{
+
+        flex-direction:column;
+
+    }
+
+    .comparison-divider{
+
+        width:320px;
+        height:3px;
+
+    }
+
+    .comparison-divider span{
+
+        margin-top:-8px;
+        margin-left:150px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .before-after-heading h2{
+
+        font-size:38px;
+
+    }
+
+    .comparison-card{
+
+        width:100%;
+
+    }
+
+}
+  /*====================================
+          BENEFITS SECTION
+=====================================*/
+.section-badge{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:12px 30px;
+
+    border:1px solid rgba(255,122,0,.45);
+    border-radius:50px;
+
+    color:#ff7a00;
+    background:rgba(255,122,0,.06);
+
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+    margin-bottom:24px;
+
+}
+.benefits-section{
+
+     padding:30px 8% 120px;
+    background:#0b0b0b;
+
+}
+
+.benefits-heading{
+
+    max-width:850px;
+    margin:0 auto 80px;
+    text-align:center;
+
+}
+  .benefits-heading h2{
+    font-size:64px;
+    font-weight:800;
+    line-height:1.15;
+    color:#fff;
+    margin:18px 0 25px;
+}
+  .benefits-heading p{
+
+    max-width:760px;
+    margin:0 auto;
+    font-size:20px;
+    line-height:1.9;
+    color:#bcbcbc;
+
+}
+
+.benefits-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+
+}
+
+.benefit-card{
+
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,122,0,.18);
+    border-radius:24px;
+    padding:35px;
+    transition:.35s ease;
+    min-height:250px;
+
+}
+
+.benefit-card:hover{
+
+    transform:translateY(-8px);
+    border-color:#ff7a00;
+    box-shadow:0 20px 45px rgba(255,122,0,.18);
+
+}
+
+.benefit-icon{
+
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:rgba(255,122,0,.12);
+    border:1px solid rgba(255,122,0,.3);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:30px;
+    margin-bottom:28px;
+
+}
+
+.benefit-card h3{
+
+    color:#fff;
+    font-size:28px;
+    margin-bottom:18px;
+
+}
+
+.benefit-card p{
+
+    color:#bdbdbd;
+    font-size:17px;
+    line-height:1.8;
+
+}
+
+@media(max-width:992px){
+
+    .benefits-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .benefits-heading h2{
+
+        font-size:38px;
+
+    }
+
+    .benefit-card{
+
+        padding:28px;
+
+    }
+
+}
+ .benefits-divider{
+
+    width:780px;
+    height:4px;
+    margin:25px auto 35px;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,122,0,0),
+        rgba(255,122,0,.6) 20%,
+        #ff7a00 50%,
+        rgba(255,122,0,.6) 80%,
+        rgba(255,122,0,0)
+    );
+
+    border-radius:50px;
+    box-shadow:0 0 20px rgba(255,122,0,.6);
+
+}
+/*====================================
+          PRICING SECTION
+=====================================*/
+
+.pricing-section{
+
+    padding:25px 8%;
+    background:#0b0b0b;
+
+}
+
+.pricing-heading{
+
+    max-width:850px;
+    margin:0 auto 80px;
+    text-align:center;
+
+}
+
+.pricing-heading h2{
+
+    font-size:58px;
+    color:#fff;
+    margin:20px 0;
+
+}
+
+.pricing-heading p{
+
+    max-width:700px;
+    margin:auto;
+    color:#bdbdbd;
+    line-height:1.8;
+    font-size:18px;
+
+}
+
+.pricing-divider{
+
+    width:200px;
+    height:4px;
+    margin:0 auto 30px;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,122,0,0),
+        rgba(255,122,0,.6) 20%,
+        #ff7a00 50%,
+        rgba(255,122,0,.6) 80%,
+        rgba(255,122,0,0)
+    );
+
+    border-radius:50px;
+    box-shadow:0 0 20px rgba(255,122,0,.6);
+
+}
+
+.pricing-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+
+}
+  .pricing-card{
+
+    position:relative;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:26px;
+
+    padding:45px;
+
+    transition:.35s;
+
+}
+
+.pricing-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ff7a00;
+
+    box-shadow:0 25px 45px rgba(255,122,0,.18);
+
+}
+
+.premium-card{
+
+    border:1px solid rgba(255,122,0,.45);
+
+}
+
+.plan-tag{
+
+    display:inline-block;
+
+    padding:8px 22px;
+
+    border-radius:40px;
+
+    background:rgba(255,122,0,.12);
+
+    color:#ff7a00;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.popular-tag{
+
+    position:absolute;
+
+    top:-14px;
+
+    right:25px;
+
+    padding:8px 18px;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+.pricing-card h3{
+
+    margin-top:28px;
+
+    color:#fff;
+
+    font-size:34px;
+
+}
+
+.plan-desc{
+
+    margin:18px 0 30px;
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+}
+  .vehicle-pricing{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-bottom:35px;
+
+}
+
+.vehicle-box{
+
+    flex:1;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    background:#111;
+
+    border:1px solid rgba(255,122,0,.2);
+
+    text-align:center;
+
+}
+
+.vehicle-box span{
+
+    color:#bdbdbd;
+
+    display:block;
+
+    margin-bottom:12px;
+
+}
+
+.vehicle-box h4{
+
+    color:#ff7a00;
+
+    font-size:34px;
+
+}
+
+.pricing-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 35px;
+
+}
+
+.pricing-card ul li{
+
+    color:#ddd;
+
+    margin-bottom:16px;
+
+    padding-left:28px;
+
+    position:relative;
+
+}
+
+.pricing-card ul li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:#ff7a00;
+
+    font-weight:700;
+
+}
+
+.price-btn{
+
+    display:block;
+
+    text-align:center;
+
+    padding:16px;
+
+    border-radius:50px;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.price-btn:hover{
+
+    background:#ff922e;
+
+}
+  @media(max-width:992px){
+
+    .pricing-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .vehicle-pricing{
+
+        flex-direction:column;
+
+    }
+
+}
+  /*====================================
+              FAQ SECTION
+=====================================*/
+
+.faq-section{
+
+    padding:25px 8%;
+    background:#0b0b0b;
+
+}
+
+.faq-heading{
+
+    max-width:850px;
+    margin:0 auto 70px;
+    text-align:center;
+
+}
+
+.faq-heading h2{
+
+    font-size:58px;
+    color:#fff;
+    margin:20px 0;
+
+}
+
+.faq-heading p{
+
+    max-width:720px;
+    margin:auto;
+    color:#bdbdbd;
+    line-height:1.8;
+    font-size:18px;
+
+}
+
+.faq-divider{
+
+    width:200px;
+    height:4px;
+    margin:0 auto 30px;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,122,0,0),
+        rgba(255,122,0,.6) 20%,
+        #ff7a00 50%,
+        rgba(255,122,0,.6) 80%,
+        rgba(255,122,0,0)
+    );
+
+    border-radius:50px;
+    box-shadow:0 0 20px rgba(255,122,0,.6);
+
+}
+
+.faq-container{
+
+    max-width:950px;
+    margin:auto;
+
+}
+
+.faq-item{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:20px;
+
+    margin-bottom:22px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.faq-item:hover{
+
+    border-color:#ff7a00;
+
+    box-shadow:0 15px 35px rgba(255,122,0,.15);
+
+}
+
+.faq-question{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:28px 30px;
+
+    cursor:pointer;
+
+}
+
+.faq-question h3{
+
+    color:#fff;
+
+    font-size:22px;
+
+    margin:0;
+
+}
+
+.faq-question span{
+
+    color:#ff7a00;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.faq-answer{
+
+    max-height:0;
+    overflow:hidden;
+
+    padding:0 30px;
+
+    transition:
+        max-height .45s ease,
+        padding .35s ease;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:220px;
+    padding:0 30px 28px;
+
+}
+
+.faq-answer p{
+
+    color:#bdbdbd;
+    line-height:1.8;
+    font-size:17px;
+
+}
+
+.faq-answer p{
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+.faq-item:not(.active) .faq-answer{
+
+    display:none;
+
+}
+  /*====================================
+        FINAL CTA
+=====================================*/
+
+.final-cta{
+
+    position:relative;
+    padding:25px 8%;
+    background:#050505;
+    overflow:hidden;
+
+}
+
+.cta-glow{
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:radial-gradient(
+        rgba(255,122,0,.16),
+        transparent 70%
+    );
+
+    filter:blur(80px);
+
+    pointer-events:none;
+
+}
+
+.cta-content{
+
+    position:relative;
+    z-index:2;
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.cta-content h2{
+
+    font-size:64px;
+    line-height:1.2;
+    margin:22px 0;
+
+    font-weight:800;
+
+}
+
+.cta-content h2 span{
+
+    color:#ff7a00;
+
+}
+
+.cta-divider{
+
+    width:220px;
+    height:4px;
+
+    margin:0 auto 35px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #ff7a00,
+        #ffb347,
+        #ff7a00,
+        transparent
+    );
+
+    box-shadow:0 0 20px rgba(255,122,0,.6);
+
+}
+
+.cta-content p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:#bdbdbd;
+
+    font-size:20px;
+
+    line-height:1.9;
+
+}
+
+.cta-buttons{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.cta-primary,
+.cta-secondary{
+
+    width:280px;
+    height:72px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    border-radius:60px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.cta-primary{
+
+    background:#ff7a00;
+
+    color:#fff;
+
+}
+
+.cta-primary:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(255,122,0,.45);
+
+}
+
+.cta-secondary{
+
+    border:2px solid #ff7a00;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.cta-secondary:hover{
+
+    background:#ff7a00;
+
+    transform:translateY(-6px);
+
+}
+
+.cta-features{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.cta-features div{
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.cta-features div:hover{
+
+    border-color:#ff7a00;
+
+    transform:translateY(-6px);
+
+}
+
+@media(max-width:992px){
+
+    .cta-content h2{
+
+        font-size:42px;
+
+    }
+
+    .cta-features{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .cta-features{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .cta-primary,
+    .cta-secondary{
+
+        width:100%;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="index.html" class="back-home">
+
+← Back to Home
+
+</a>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+
+CAR SEAT COVER
+
+</div>
+
+<h1>
+
+Luxury Seating.<br>
+Premium Comfort.
+
+</h1>
+
+<p>
+
+Transform your vehicle's interior with our premium Car Seat
+Cover service. Custom-designed seat covers enhance comfort,
+protect your original upholstery and give your cabin a stylish,
+luxurious finish that lasts for years.
+</p>
+
+<div class="features">
+
+<span>✓ Custom-Fit Seat Covers</span>
+
+<span>✓ Premium Leather & Fabric Options</span>
+
+<span>✓ Elegant Interior Upgrade</span>
+
+</div>
+
+<div class="buttons">
+
+<a href="#" class="btn primary">
+
+Book Service
+
+</a>
+
+<a href="tel:+919999999999" class="btn secondary">
+
+Call Now
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+  <!-- =========================
+     LUXURY INTRO
+========================== -->
+
+<section class="intro-section">
+
+    <div class="intro-container">
+
+        <span class="intro-tag">
+           CAR SEAT COVER
+        </span>
+
+        <h2>
+           Luxury Seating.
+            <span>Designed  </span>
+             to Impress.
+        </h2>
+
+        <p>
+Your car seats deserve more than just protection—they deserve
+a premium upgrade. Our Car Seat Cover service combines
+high-quality materials, expert craftsmanship and custom-fit
+installation to enhance comfort while preserving your original
+upholstery.
+
+Choose from a wide range of premium leather and fabric
+options, tailored to match your style and vehicle. The result
+is a refined, elegant interior that delivers lasting durability
+and a luxurious driving experience.
+        </p>
+
+    </div>
+<!-- =========================
+     MAHAVEER SIGNATURE DIVIDER
+========================== -->
+
+<div class="signature-divider">
+
+    <div class="divider-line left"></div>
+
+    <div class="divider-circle"></div>
+
+    <div class="divider-line right"></div>
+
+</div>
+</section>
+
+<!-- ===========================
+SERVICE OVERVIEW
+=========================== -->
+
+<section class="overview-section">
+
+    <div class="overview-heading">
+
+        <span>SERVICE OVERVIEW</span>
+
+        <h2>
+          Premium Seat Covers
+for Style & Comfort
+        </h2>
+
+        <p>
+
+         Our premium Car Seat Cover service transforms your vehicle's
+interior with custom-fit seat covers that provide superior
+comfort, protect your original upholstery and add a refined,
+luxurious appearance to every journey.
+
+        </p>
+
+    </div>
+
+    <div class="overview-image">
+
+        <img src="seato.png" alt="Exterior Wash">
+
+    </div>
+<div class="overview-content">
+
+    <div class="overview-left">
+
+        <h3>
+          Professional Seat Cover Installation
+        </h3>
+
+        <p>
+
+        Our custom-designed seat covers are tailored specifically for your vehicle, ensuring a perfect factory-style fit without compromising comfort or functionality. They protect your original seats from spills, stains, daily wear and fading while enhancing the overall look of your cabin.
+
+        </p>
+      <p class="overview-second">
+
+Available in premium leather and high-quality fabric options, our seat covers are crafted for durability, easy maintenance and lasting comfort. Every installation is completed with precision to deliver a seamless finish that complements your vehicle's interior.
+
+</p>
+
+   <div class="overview-button">
+
+    <a href="#" class="overview-btn">
+        Book Service
+    </a>
+
+</div>
+
+</div>
+
+    <div class="overview-right">
+
+        <h3>
+            What's Included
+        </h3>
+
+        <ul>
+
+            <li> Vehicle Seat Inspection</li>
+
+            <li>Custom-Fit Seat Covers</li>
+
+            <li> Premium Leather & Fabric Options</li>
+
+            <li> Precision Installation</li>
+
+            <li>Factory-Style Finish</li>
+
+            <li>Enhanced Seat Protection</li>
+
+          <li>Easy-to-Clean Materials</li>
+
+          <li>Final Quality Inspection</li>
+
+        </ul>
+      <div class="contact-button">
+
+    <a href="tel:+919999999999" class="contact-btn">
+
+        Contact Us
+
+    </a>
+
+</div>
+
+    </div>
+
+</section>
+  <!-- ======================================
+     EXTERIOR WASH PROCESS
+======================================= -->
+
+<section class="process-section">
+
+    <div class="process-heading">
+
+        <span class="process-tag">
+
+      SEAT COVER INSTALLATION PROCESS
+
+        </span>
+
+        <h2>
+
+           Custom Fit.
+            <span>Flawless Finish.</span>
+
+        </h2>
+
+        <p>
+
+          Our professional Car Seat Cover installation process ensures
+every cover is precisely fitted to your vehicle, delivering
+superior comfort, long-lasting protection and a premium
+factory-style appearance.
+
+        </p>
+
+    </div>
+
+    <!-- Timeline Starts -->
+
+    <div class="process-timeline">
+
+        <!-- Step 1 -->
+
+        <div class="process-step right">
+
+            <div class="step-node">
+
+                <span>01</span>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="step-icon">
+
+                    🔍
+
+                </div>
+
+                <h3>
+
+                    Seat Inspection
+
+                </h3>
+
+                <p>
+
+                   Our technicians inspect your vehicle's seats, measure their dimensions and recommend the most suitable seat cover material and design for a perfect fit.
+
+                </p>
+
+            </div>
+
+        </div>
+      <!-- STEP 02 -->
+
+<div class="process-step left">
+
+    <div class="step-node">
+
+        <span>02</span>
+
+    </div>
+
+    <div class="process-card">
+
+        <div class="step-icon">
+
+      🧼
+
+        </div>
+
+        <h3>
+
+            Seat Preparation
+        </h3>
+
+        <p>
+
+            The original seats are thoroughly cleaned and prepared to ensure the new seat covers fit perfectly without wrinkles or imperfections.
+
+        </p>
+
+    </div>
+
+</div>
+      <!-- STEP 03 -->
+
+<div class="process-step right">
+
+    <div class="step-node">
+
+        <span>03</span>
+
+    </div>
+
+    <div class="process-card">
+
+        <div class="step-icon">
+
+           ✂️
+
+        </div>
+
+        <h3>
+
+            Custom Fitment
+        </h3>
+
+        <p>
+
+         Each seat cover is carefully aligned and fitted according to your vehicle's seat contours, ensuring a precise factory-style finish.
+
+        </p>
+
+    </div>
+
+</div>
+      <!-- STEP 04 -->
+
+<div class="process-step left">
+
+    <div class="step-node">
+
+        <span>04</span>
+
+    </div>
+
+    <div class="process-card">
+
+        <div class="step-icon">
+
+         🔒
+
+        </div>
+
+        <h3>
+
+            Secure Installation
+        </h3>
+
+        <p>
+
+           Our experts securely fasten every seat cover, ensuring a wrinkle-free fit that remains stable during daily use while maintaining access to all seat functions.
+
+        </p>
+
+    </div>
+
+</div>
+      <!-- STEP 05 -->
+
+<div class="process-step right">
+
+    <div class="step-node">
+
+        <span>05</span>
+
+    </div>
+
+    <div class="process-card">
+
+        <div class="step-icon">
+
+            ✨
+
+        </div>
+
+        <h3>
+
+           Finishing & Detailing
+        </h3>
+
+        <p>
+
+          Final adjustments are made to smooth every surface, align stitching and ensure a premium, elegant appearance throughout the cabin.
+
+        </p>
+
+    </div>
+
+</div>
+      <!-- STEP 06 -->
+
+<div class="process-step left">
+
+    <div class="step-node">
+
+        <span>06</span>
+
+    </div>
+
+    <div class="process-card">
+
+        <div class="step-icon">
+
+           ✅
+
+        </div>
+
+        <h3>
+
+          Quality Inspection
+
+        </h3>
+
+        <p>
+
+           Every installed seat cover is carefully inspected for perfect fitment, comfort, stitching quality and overall finish before your vehicle is delivered.
+
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+  <!-- ================= BEFORE & AFTER ================= -->
+
+<section class="before-after-section">
+
+    <div class="before-after-heading">
+
+        <span class="section-badge">
+            BEFORE & AFTER
+        </span>
+
+        <h2>
+        From Worn Seats
+to Premium Comfort
+        </h2>
+
+        <p>
+        Experience the transformation our professional Car Seat Cover
+service delivers. Old, worn and faded seats are upgraded with
+custom-fit premium seat covers that enhance comfort, protect
+your original upholstery and give your vehicle's interior a
+luxurious, factory-finished appearance.
+        </p>
+
+    </div>
+
+    <div class="comparison-wrapper">
+
+        <div class="comparison-card">
+
+            <div class="comparison-label before">
+                BEFORE
+            </div>
+
+            <img src="seatb.png" alt="Before Exterior Wash">
+
+        </div>
+
+        <div class="comparison-divider">
+
+            <span></span>
+
+        </div>
+
+        <div class="comparison-card">
+
+            <div class="comparison-label after">
+                AFTER
+            </div>
+
+            <img src="seata.png" alt="After Exterior Wash">
+
+        </div>
+
+    </div>
+
+</section>
+  <!--==============================
+        BENEFITS SECTION
+===============================-->
+
+<section class="benefits-section">
+
+    <div class="benefits-heading">
+
+        <span class="section-badge">
+            BENEFITS
+        </span>
+
+        <h2>
+          Luxury Comfort.
+Lasting Protection.
+        </h2>
+
+        <p>
+         Our premium Car Seat Cover service enhances your driving
+experience by protecting your original seats while adding
+superior comfort, durability and a refined interior finish.
+        </p>
+
+    </div>
+
+    <div class="benefits-grid">
+
+        <!-- Card 1 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+              🛡️
+            </div>
+
+            <h3>Protects Original Upholstery</h3>
+
+            <p>
+              Custom-fit seat covers shield your original seats from spills, stains, scratches, fading and everyday wear, helping preserve their condition.
+            </p>
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+                💺
+            </div>
+
+            <h3>Superior Comfort</h3>
+
+            <p>
+              Premium leather and fabric materials provide enhanced seating comfort, making every journey more enjoyable for both drivers and passengers.
+            </p>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+              ✨
+            </div>
+
+            <h3>Luxury Interior Upgrade</h3>
+
+            <p>
+                Transform your cabin with elegant custom-fit seat covers that give your vehicle a stylish, premium and factory-finished appearance.
+            </p>
+
+        </div>
+
+        <!-- Card 4 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+              🎯
+            </div>
+
+            <h3>Perfect Custom Fit</h3>
+
+            <p>
+              Each seat cover is tailored to your vehicle for a wrinkle-free fit that maintains seat functionality and enhances overall aesthetics.
+            </p>
+
+        </div>
+
+        <!-- Card 5 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+                🧽
+            </div>
+
+            <h3>Easy to Clean</h3>
+
+            <p>
+                High-quality materials are designed for simple maintenance, allowing you to keep your vehicle's interior looking fresh and clean with minimal effort.
+            </p>
+
+        </div>
+
+        <!-- Card 6 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+                ⏳
+            </div>
+
+            <h3>Long-Lasting Durability</h3>
+
+            <p>
+                Crafted from premium materials and professionally installed, our seat covers are built to withstand daily use while maintaining their appearance for years.
+            </p>
+
+        </div>
+
+    </div>
+  
+</section>
+  <div class="benefits-divider"></div>
+<!--==============================
+        PRICING SECTION
+===============================-->
+
+<section class="pricing-section">
+
+    <div class="pricing-heading">
+
+        <span class="section-badge">
+            PRICING
+        </span>
+
+        <h2>
+         Choose the Seat Cover
+Package That Fits Your Style
+        </h2>
+
+        <div class="pricing-divider"></div>
+
+        <p>
+Whether you're looking for durable everyday protection or a
+luxurious interior upgrade, our Car Seat Cover packages offer
+custom-fit solutions designed for comfort, style and
+long-lasting performance.
+        </p>
+
+    </div>
+
+    <div class="pricing-grid">
+
+        <!-- STANDARD -->
+
+        <div class="pricing-card">
+
+            <div class="plan-tag">
+                STANDARD
+            </div>
+
+            <h3>Standard Seat Cover</h3>
+
+            <p class="plan-desc">
+               High-quality custom-fit seat covers that provide everyday
+comfort, protection and a clean, stylish appearance for your
+vehicle's interior.
+            </p>
+
+            <div class="vehicle-pricing">
+
+                <div class="vehicle-box">
+
+                    <span>Small Vehicle</span>
+
+                    <h4>₹8000</h4>
+
+                </div>
+
+                <div class="vehicle-box">
+
+                    <span>Large Vehicle</span>
+
+                    <h4>₹9200</h4>
+
+                </div>
+
+            </div>
+
+            <ul>
+
+                <li>Vehicle Seat Inspection</li>
+
+                <li> Standard Custom-Fit Seat Covers</li>
+
+                <li>Precision Installation</li>
+
+                <li>Durable Fabric / Leatherette Material</li>
+
+                <li>Seat Protection</li>
+
+                <li> Factory-Style Fit</li>
+
+            </ul>
+
+            <a href="#" class="price-btn">
+                Book Service
+            </a>
+
+        </div>
+
+        <!-- PREMIUM -->
+
+        <div class="pricing-card premium-card">
+
+            <div class="popular-tag">
+                MOST POPULAR
+            </div>
+
+            <div class="plan-tag">
+                PREMIUM
+            </div>
+
+            <h3>Premium Seat Cover</h3>
+
+            <p class="plan-desc">
+              Premium custom-fit leather seat covers with enhanced comfort,
+luxury styling and superior durability for an elegant cabin
+experience.
+            </p>
+
+            <div class="vehicle-pricing">
+
+                <div class="vehicle-box">
+
+                    <span>Small Vehicle</span>
+
+                    <h4>₹9500</h4>
+
+                </div>
+
+                <div class="vehicle-box">
+
+                    <span>Large Vehicle</span>
+
+                    <h4>₹10,600</h4>
+
+                </div>
+
+            </div>
+
+            <ul>
+
+                <li>Premium Custom-Fit Leather Seat Covers</li>
+
+                <li>Luxury Stitching & Finish</li>
+
+                <li>Precision Installation</li>
+
+                <li>Enhanced Comfort & Cushioning</li>
+
+                <li>Superior Wear Protection</li>
+
+                <li>Easy Maintenance & Cleaning</li>
+
+                <li>Final Quality Inspection</li>
+
+            </ul>
+
+            <a href="#" class="price-btn">
+                Book Service
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+  <!--==============================
+            FAQ SECTION
+===============================-->
+
+<section class="faq-section">
+
+    <div class="faq-heading">
+
+        <span class="section-badge">
+            FAQ
+        </span>
+
+        <h2>
+         Frequently Asked Questions
+About Car Seat Covers
+        </h2>
+
+        <div class="faq-divider"></div>
+
+        <p>
+         Find answers to the most common questions about our
+professional Car Seat Cover service, including materials,
+fitment, durability, maintenance and customization options.
+        </p>
+
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-item active">
+
+            <div class="faq-question">
+                <h3>Why should I install custom-fit seat covers?</h3>
+                <span>−</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                   Custom-fit seat covers provide superior protection for your original upholstery while enhancing comfort and giving your vehicle a premium, factory-style appearance. They are designed to fit perfectly without affecting seat functionality.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>What materials are available for seat covers?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                    We offer a range of premium materials, including high-quality leather, leatherette and durable fabric options. You can choose the material, color and finish that best suits your vehicle and personal style.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>What is the difference between Standard and Premium Seat Covers?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+Standard Seat Covers offer durable protection and everyday comfort with quality materials. Premium Seat Covers feature luxury-grade materials, enhanced stitching, superior comfort and a more refined appearance for a premium interior upgrade.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>Will seat covers affect airbags or seat adjustments?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                   No. Professionally installed custom-fit seat covers are designed to maintain access to seat controls and are fitted to ensure compatibility with your vehicle's seating features where applicable.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>Are the seat covers easy to clean?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                   No. Professionally installed custom-fit seat covers are designed to maintain access to seat controls and are fitted to ensure compatibility with your vehicle's seating features where applicable.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>How long do premium seat covers last?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                   With proper care and regular maintenance, premium-quality seat covers provide long-lasting durability, helping protect your original seats while maintaining their appearance and comfort for many years.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  <script>
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+
+    item.querySelector(".faq-question").addEventListener("click", () => {
+
+        faqItems.forEach(faq => {
+
+            if (faq !== item) {
+
+                faq.classList.remove("active");
+                faq.querySelector(".faq-question span").textContent = "+";
+
+            }
+
+        });
+
+        item.classList.toggle("active");
+
+        item.querySelector(".faq-question span").textContent =
+            item.classList.contains("active") ? "−" : "+";
+
+    });
+
+});
+
+</script>
+  <!--====================================
+        FINAL CALL TO ACTION
+=====================================-->
+
+<section class="final-cta">
+
+    <div class="cta-glow"></div>
+
+    <div class="cta-content">
+
+        <span class="section-badge">
+           READY TO TRANSFORM YOUR INTERIOR?
+        </span>
+
+        <h2>
+          Upgrade Every Drive
+            <span>with Premium</span> Seat Covers.
+        </h2>
+
+        <div class="cta-divider"></div>
+
+        <p>
+        Give your vehicle a fresh, luxurious look with our premium
+Car Seat Cover service. Our custom-fit seat covers provide
+lasting comfort, protect your original upholstery and enhance
+your cabin with a stylish factory-quality finish.
+
+Book your Car Seat Cover installation today and enjoy a more
+comfortable, elegant and well-protected driving experience.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="#" class="cta-primary">
+                Book Your Service Now
+            </a>
+
+            <a href="tel:+919999999999" class="cta-secondary">
+                Call Now
+            </a>
+
+        </div>
+
+        <div class="cta-features">
+
+            <div>✓ Custom-Fit Installation</div>
+
+            <div>✓ Premium Leather & Fabric Options</div>
+
+            <div>✓Professional Craftsmanship</div>
+
+            <div>✓ Satisfaction Guaranteed</div>
+
+        </div>
+
+    </div>
+
+</section>
+</body>
+
+</html>
