@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mahaveer Car Care - Booking Modal</title>
+
+</head>
+
+  <style>
+
+/* ==========================================
+   MAHAVEER CAR CARE BOOKING MODAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Overlay */
+
+.booking-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.75);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    z-index:99999;
+
+}
+
+/* Modal */
+
+.booking-modal{
+
+    width:100%;
+
+    max-width:560px;
+
+    background:#111111;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    position:relative;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.55);
+
+}
+
+/* Close */
+
+.close-modal{
+
+    position:absolute;
+
+    right:20px;
+
+    top:15px;
+
+    background:none;
+
+    border:none;
+
+    color:#ffffff;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.close-modal:hover{
+
+    color:#ff9800;
+
+}
+
+/* Heading */
+
+.booking-header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.booking-header h2{
+
+    color:#ffffff;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.booking-header p{
+
+    color:#cfcfcf;
+
+    line-height:1.7;
+
+}
+
+/* Form */
+
+.form-group{
+
+    margin-bottom:18px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    color:#ffffff;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+/* Inputs */
+
+.form-group input,
+
+.form-group textarea{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    background:#1b1b1b;
+
+    border:1px solid #333;
+
+    border-radius:10px;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.form-group input:focus,
+
+.form-group textarea:focus{
+
+    outline:none;
+
+    border-color:#ff9800;
+
+    box-shadow:0 0 12px rgba(255,152,0,.25);
+
+}
+
+/* Placeholder */
+
+::placeholder{
+
+    color:#9b9b9b;
+
+}
+
+/* WhatsApp Button */
+
+.book-whatsapp-btn{
+
+    width:100%;
+
+    margin-top:10px;
+
+    background:#ff9800;
+
+    color:#111;
+
+    border:none;
+
+    padding:16px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.book-whatsapp-btn:hover{
+
+    background:#ffb733;
+
+    transform:translateY(-2px);
+
+}
+
+/* Responsive */
+
+@media(max-width:600px){
+
+.booking-modal{
+
+padding:25px;
+
+}
+
+.booking-header h2{
+
+font-size:26px;
+
+}
+
+}
+
+</style>
+
+<body>
+</html>
+<body>
+
+    <!-- ==========================
+         BOOKING MODAL
+    =========================== -->
+
+    <div id="bookingOverlay" class="booking-overlay">
+
+        <div class="booking-modal">
+
+            <!-- Close Button -->
+            <button class="close-modal" id="closeBooking">
+                &times;
+            </button>
+
+            <!-- Heading -->
+            <div class="booking-header">
+
+                <h2 id="serviceTitle">
+                    Book Service
+                </h2>
+
+                <p>
+                    Fill in your details and we'll connect with you on WhatsApp.
+                </p>
+
+            </div>
+
+            <!-- Booking Form -->
+            <form id="bookingForm">
+
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>Mobile Number *</label>
+                    <input
+                        type="tel"
+                        id="customerMobile"
+                        placeholder="Enter your mobile number"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>Vehicle Brand & Model *</label>
+                    <input
+                        type="text"
+                        id="vehicleModel"
+                        placeholder="Example: Hyundai Creta"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Date *</label>
+                    <input
+                        type="date"
+                        id="preferredDate"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Time</label>
+                    <input
+                        type="time"
+                        id="preferredTime">
+                </div>
+
+                <div class="form-group">
+                    <label>Additional Notes</label>
+
+                    <textarea
+                        id="additionalNotes"
+                        rows="4"
+                        placeholder="Anything you'd like us to know..."></textarea>
+                </div>
+
+                <button
+                    type="submit"
+                    class="book-whatsapp-btn">
+
+                    Book on WhatsApp
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
