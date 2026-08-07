@@ -1,0 +1,3166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Exterior Wash | Mahaveer Car Care</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#000;
+color:#fff;
+overflow-x:hidden;
+
+}
+
+/*------------------------------
+BACK BUTTON
+------------------------------*/
+
+.back-home{
+
+position:fixed;
+
+top:30px;
+right:30px;
+
+z-index:9999;
+
+padding:14px 24px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,122,0,.5);
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:#fff;
+
+font-size:15px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+/*------------------------------
+HERO
+------------------------------*/
+
+.hero{
+
+position:relative;
+
+height:100vh;
+
+min-height:700px;
+
+background:url("floorh.png") center center/cover no-repeat;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:linear-gradient(
+90deg,
+rgba(0,0,0,.88)0%,
+rgba(0,0,0,.75)35%,
+rgba(0,0,0,.45)65%,
+rgba(0,0,0,.20)100%
+);
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:5;
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+border-radius:50px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.18);
+
+backdrop-filter:blur(10px);
+
+color:#ff7a00;
+
+font-size:13px;
+
+letter-spacing:2px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+line-height:1.08;
+
+margin-bottom:25px;
+
+font-weight:800;
+
+}
+
+.hero p{
+
+max-width:650px;
+
+font-size:20px;
+
+line-height:1.9;
+
+color:#d8d8d8;
+
+margin-bottom:35px;
+
+}
+
+.features{
+
+display:flex;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+margin-bottom:45px;
+
+}
+
+.features span{
+
+padding:10px 18px;
+
+border-radius:40px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.12);
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:18px 34px;
+
+border-radius:50px;
+
+font-size:16px;
+
+font-weight:600;
+
+text-decoration:none;
+
+transition:.35s;
+
+}
+
+.primary{
+
+background:#ff7a00;
+
+color:#fff;
+
+}
+
+.primary:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 0 35px rgba(255,122,0,.45);
+
+}
+
+.secondary{
+
+border:2px solid #ff7a00;
+
+color:#fff;
+
+}
+
+.secondary:hover{
+
+background:#ff7a00;
+
+}
+  /*======================================
+LUXURY INTRO
+======================================*/
+
+.intro-section{
+
+padding:110px 8%;
+background:#000;
+position:relative;
+
+}
+  .intro-section::before{
+
+content:"";
+
+position:absolute;
+
+width:550px;
+height:550px;
+
+left:50%;
+top:50%;
+
+transform:translate(-50%,-50%);
+
+background:radial-gradient(
+rgba(255,122,0,.10),
+transparent 70%
+);
+
+filter:blur(80px);
+
+pointer-events:none;
+
+}
+
+.intro-container{
+
+max-width:620px;
+margin:auto;
+text-align:center;
+
+}
+
+.intro-tag{
+
+display:inline-block;
+
+padding:10px 26px;
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,122,0,.35);
+
+border-radius:50px;
+
+color:#ff7a00;
+
+font-size:13px;
+
+letter-spacing:2px;
+
+margin-bottom:30px;
+
+}
+
+.intro-container h2{
+
+font-size:52px;
+
+font-weight:700;
+
+line-height:1.3;
+
+margin-bottom:40px;
+
+}
+
+.intro-container h2 span{
+
+color:#ff7a00;
+
+}
+
+.intro-container p{
+
+font-size:19px;
+
+line-height:1.9;
+
+color:#bdbdbd;
+
+max-width:760px;
+
+margin:auto;
+
+}
+  /*======================================
+MAHAVEER SIGNATURE DIVIDER
+======================================*/
+
+.signature-divider{
+
+    display:flex;
+
+    align-items:center;
+
+    width:100%;
+
+    margin:70px auto 0;
+
+    gap:20px;
+
+}
+
+.divider-line{
+
+    flex:1;
+
+    height:2px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        transparent 0%,
+        #ff7a00 20%,
+        #ffb347 50%,
+        #ff7a00 80%,
+        transparent 100%
+    );
+
+    background-size:300% 100%;
+
+    animation:lineFlow 4s linear infinite;
+
+    box-shadow:
+        0 0 10px rgba(255,122,0,.35),
+        0 0 20px rgba(255,122,0,.2);
+
+}
+
+.divider-circle{
+
+    position:relative;
+
+    width:18px;
+    height:18px;
+
+    border:2px solid #ff7a00;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    box-shadow:
+    0 0 10px rgba(255,122,0,.8),
+    0 0 25px rgba(255,122,0,.45);
+
+    animation:ringPulse 2.8s ease-in-out infinite;
+
+}
+
+/* Small glowing center */
+
+.divider-circle::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:5px;
+    height:5px;
+
+    border-radius:50%;
+
+    background:#ffb347;
+
+    box-shadow:
+    0 0 8px #ffb347,
+    0 0 15px rgba(255,179,71,.8);
+
+}
+
+/* Expanding energy ring */
+
+.divider-circle::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-8px;
+
+    border:1px solid rgba(255,122,0,.25);
+
+    border-radius:50%;
+
+    animation:energyRing 2.8s ease-out infinite;
+
+}
+
+@keyframes ringPulse{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+        box-shadow:
+        0 0 18px rgba(255,122,0,.9),
+        0 0 40px rgba(255,122,0,.5);
+
+    }
+
+}
+
+@keyframes energyRing{
+
+    0%{
+
+        transform:scale(.7);
+
+        opacity:0;
+
+    }
+
+    40%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(1.7);
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes lineFlow{
+
+    from{
+
+        background-position:0%;
+
+    }
+
+    to{
+
+        background-position:300%;
+
+    }
+
+}
+
+@keyframes pulseGlow{
+
+    0%{
+
+        transform:scale(1);
+
+        box-shadow:
+        0 0 8px #ff7a00,
+        0 0 20px rgba(255,122,0,.6);
+
+    }
+
+    50%{
+
+        transform:scale(1.35);
+
+        box-shadow:
+        0 0 15px #ff7a00,
+        0 0 40px rgba(255,122,0,.9),
+        0 0 60px rgba(255,122,0,.5);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        box-shadow:
+        0 0 8px #ff7a00,
+        0 0 20px rgba(255,122,0,.6);
+
+    }
+
+}
+  /*======================================
+SERVICE OVERVIEW
+======================================*/
+
+.overview-section{
+
+    padding:40px 8% 70px;
+
+    background:#000;
+
+}
+
+.overview-heading{
+
+    text-align:center;
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.overview-heading span{
+
+    color:#ff7a00;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+}
+
+.overview-heading h2{
+
+    font-size:54px;
+
+    line-height:1.2;
+
+    margin:20px 0;
+
+}
+
+.overview-heading p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#bfbfbf;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+.overview-image{
+
+    margin:70px auto;
+
+    max-width:1100px;
+
+}
+
+.overview-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:24px;
+
+    border:1px solid rgba(255,122,0,.15);
+
+    box-shadow:
+    0 0 40px rgba(255,122,0,.15);
+
+}
+
+.overview-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-top:60px;
+
+}
+
+.overview-card{
+
+    padding:35px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:22px;
+
+    transition:.35s;
+
+}
+
+.overview-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ff7a00;
+
+    box-shadow:
+    0 0 30px rgba(255,122,0,.20);
+
+}
+
+.overview-card h3{
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.overview-card p{
+
+    color:#c7c7c7;
+
+    line-height:1.8;
+
+}
+
+/*=============================
+BOOK APPOINTMENT BUTTON
+=============================*/
+.overview-button{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:15px;
+
+}
+
+.overview-btn{
+
+    width:380px;
+
+    height:72px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:60px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+.overview-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 40px rgba(255,122,0,.45);
+
+}
+  .contact-button{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.contact-btn{
+
+    width:380px;
+
+    height:72px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:2px solid #ff7a00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:60px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.contact-btn:hover{
+
+    background:#ff7a00;
+
+    box-shadow:0 15px 35px rgba(255,122,0,.35);
+
+}
+
+  /*=============================
+OVERVIEW CONTENT
+=============================*/
+
+.overview-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:stretch;   /* change from start */
+}
+.overview-left h3,
+.overview-right h3{
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+.overview-left p{
+    color:#c8c8c8;
+    line-height:2;
+    font-size:18px;
+    margin-bottom:22px;
+}
+
+.overview-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:25px;
+
+    padding:40px;
+}
+
+.overview-right ul{
+
+    list-style:none;
+
+}
+
+.overview-right li{
+
+    position:relative;
+
+    padding-left:35px;
+
+    margin-bottom:28px;
+
+    color:#dedede;
+
+    font-size:17px;
+
+}
+
+.overview-right li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:#ff7a00;
+
+    font-weight:bold;
+
+    font-size:20px;
+
+}
+  .overview-second{
+
+    margin-top:12px;
+    margin-bottom:28px;
+
+    color:#bdbdbd;
+
+    line-height:2;
+
+    font-size:18px;
+
+}
+  .overview-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+/*==================================
+PROCESS TIMELINE
+==================================*/
+.process-heading{
+
+    max-width:850px;
+
+    margin:0 auto 80px;
+
+    text-align:center;
+
+}
+
+.process-tag{
+
+    display:inline-block;
+
+    padding:12px 30px;
+
+    border:1px solid rgba(255,122,0,.25);
+
+    border-radius:50px;
+
+    color:#ff7a00;
+
+    background:rgba(255,255,255,.04);
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+}
+
+.process-heading h2{
+
+    font-size:56px;
+
+    line-height:1.2;
+
+    margin:28px 0 20px;
+
+    font-weight:700;
+
+}
+
+.process-heading h2 span{
+
+    color:#ff7a00;
+
+}
+
+.process-heading p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#bfbfbf;
+
+}
+.process-timeline{
+
+    position:relative;
+
+    max-width:1200px;
+
+    margin:80px auto 0;
+
+}
+  .process-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    transform:translateX(-50%);
+
+    width:3px;
+
+    height:100%;
+
+    background:linear-gradient(
+        to bottom,
+        transparent,
+        #ff7a00,
+        #ffb347,
+        #ff7a00,
+        transparent
+    );
+
+    background-size:100% 300%;
+
+    animation:timelineFlow 5s linear infinite;
+
+    box-shadow:0 0 20px rgba(255,122,0,.45);
+
+}
+
+@keyframes timelineFlow{
+
+    from{
+
+        background-position:0 0;
+
+    }
+
+    to{
+
+        background-position:0 300%;
+
+    }
+
+}
+  .process-step{
+
+    position:relative;
+
+    width:100%;
+
+    height:300px;
+
+}
+  .step-node{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:82px;
+
+    height:82px;
+
+    border-radius:50%;
+
+    border:3px solid #ff7a00;
+
+    background:#000;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:10;
+
+    box-shadow:
+        0 0 18px rgba(255,122,0,.5),
+        0 0 40px rgba(255,122,0,.25);
+
+    animation:nodePulse 3s ease-in-out infinite;
+
+}
+
+.step-node span{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#ff7a00;
+
+}
+
+@keyframes nodePulse{
+
+    0%,100%{
+
+        transform:translate(-50%,-50%) scale(1);
+
+    }
+
+    50%{
+
+        transform:translate(-50%,-50%) scale(1.08);
+
+    }
+
+}
+  .process-card{
+ margin:0 70px;
+    width:400px;
+
+    min-height:230px;
+
+    padding:30px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ff7a00;
+
+    box-shadow:
+        0 0 30px rgba(255,122,0,.25);
+
+}
+  .process-step.left .process-card{
+
+    position:absolute;
+
+    left:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+.process-step.right .process-card{
+
+    position:absolute;
+
+    right:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+  .process-step.right .process-card:hover,
+.process-step.left .process-card:hover{
+
+    transform:translateY(calc(-50% - 8px));
+
+}
+  .step-icon{
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+}
+  .process-card h3{
+
+    font-size:22px;
+
+    margin-bottom:14px;
+
+    line-height:1.3;
+
+}
+  .process-card p{
+
+    color:#c7c7c7;
+
+    line-height:1.7;
+
+    font-size:16px;
+
+}
+  /*=============================
+      BEFORE AFTER SECTION
+==============================*/
+
+.before-after-section{
+
+    padding:40px 8% 120px;
+    background:#0b0b0b;
+
+}
+
+.before-after-heading{
+
+    max-width:850px;
+    margin:0 auto 80px;
+    text-align:center;
+
+}
+
+.before-after-heading .section-badge{
+
+    display:inline-block;
+    padding:10px 22px;
+    border:1px solid rgba(255,122,0,.4);
+    border-radius:40px;
+    color:#ff7a00;
+    font-size:14px;
+    letter-spacing:2px;
+    margin-bottom:22px;
+
+}
+
+.before-after-heading h2{
+
+    font-size:56px;
+    color:#fff;
+    margin-bottom:22px;
+
+}
+
+.before-after-heading p{
+
+    max-width:720px;
+    margin:auto;
+    color:#bfbfbf;
+    line-height:1.8;
+    font-size:18px;
+
+}
+
+.comparison-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:nowrap;
+}
+
+.comparison-card{
+    flex:1;
+    max-width:520px;
+    border-radius:24px;
+    overflow:hidden;
+    position:relative;
+}
+
+.comparison-card img{
+
+    width:100%;
+    display:block;
+
+}
+
+.comparison-label{
+
+    position:absolute;
+    top:20px;
+    left:20px;
+    padding:10px 22px;
+    border-radius:30px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#fff;
+    z-index:5;
+
+}
+
+.before{
+
+    background:#4b4b4b;
+
+}
+
+.after{
+
+    background:#ff7a00;
+
+}
+
+.comparison-divider{
+    flex:0 0 4px;
+    width:4px;
+    height:700px;
+    background:linear-gradient(
+        to bottom,
+        transparent,
+        #ff7a00,
+        transparent
+    );
+    box-shadow:0 0 18px rgba(255,122,0,.6);
+    border-radius:50px;
+}
+
+.comparison-divider span{
+
+    display:block;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#ff7a00;
+    margin:auto;
+    margin-top:200px;
+    box-shadow:0 0 18px #ff7a00;
+
+}
+
+@media(max-width:768px){
+
+    .comparison-wrapper{
+
+        flex-direction:column;
+
+    }
+
+    .comparison-divider{
+
+        width:320px;
+        height:3px;
+
+    }
+
+    .comparison-divider span{
+
+        margin-top:-8px;
+        margin-left:150px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .before-after-heading h2{
+
+        font-size:38px;
+
+    }
+
+    .comparison-card{
+
+        width:100%;
+
+    }
+
+}
+  /*====================================
+          BENEFITS SECTION
+=====================================*/
+.section-badge{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:12px 30px;
+
+    border:1px solid rgba(255,122,0,.45);
+    border-radius:50px;
+
+    color:#ff7a00;
+    background:rgba(255,122,0,.06);
+
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+    margin-bottom:24px;
+
+}
+.benefits-section{
+
+     padding:30px 8% 120px;
+    background:#0b0b0b;
+
+}
+
+.benefits-heading{
+
+    max-width:850px;
+    margin:0 auto 80px;
+    text-align:center;
+
+}
+  .benefits-heading h2{
+    font-size:64px;
+    font-weight:800;
+    line-height:1.15;
+    color:#fff;
+    margin:18px 0 25px;
+}
+  .benefits-heading p{
+
+    max-width:760px;
+    margin:0 auto;
+    font-size:20px;
+    line-height:1.9;
+    color:#bcbcbc;
+
+}
+
+.benefits-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+
+}
+
+.benefit-card{
+
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,122,0,.18);
+    border-radius:24px;
+    padding:35px;
+    transition:.35s ease;
+    min-height:250px;
+
+}
+
+.benefit-card:hover{
+
+    transform:translateY(-8px);
+    border-color:#ff7a00;
+    box-shadow:0 20px 45px rgba(255,122,0,.18);
+
+}
+
+.benefit-icon{
+
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:rgba(255,122,0,.12);
+    border:1px solid rgba(255,122,0,.3);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:30px;
+    margin-bottom:28px;
+
+}
+
+.benefit-card h3{
+
+    color:#fff;
+    font-size:28px;
+    margin-bottom:18px;
+
+}
+
+.benefit-card p{
+
+    color:#bdbdbd;
+    font-size:17px;
+    line-height:1.8;
+
+}
+
+@media(max-width:992px){
+
+    .benefits-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .benefits-heading h2{
+
+        font-size:38px;
+
+    }
+
+    .benefit-card{
+
+        padding:28px;
+
+    }
+
+}
+ .benefits-divider{
+
+    width:780px;
+    height:4px;
+    margin:25px auto 35px;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,122,0,0),
+        rgba(255,122,0,.6) 20%,
+        #ff7a00 50%,
+        rgba(255,122,0,.6) 80%,
+        rgba(255,122,0,0)
+    );
+
+    border-radius:50px;
+    box-shadow:0 0 20px rgba(255,122,0,.6);
+
+}
+/*====================================
+          PRICING SECTION
+=====================================*/
+
+.pricing-section{
+
+    padding:25px 8%;
+    background:#0b0b0b;
+
+}
+
+.pricing-heading{
+
+    max-width:850px;
+    margin:0 auto 80px;
+    text-align:center;
+
+}
+
+.pricing-heading h2{
+
+    font-size:58px;
+    color:#fff;
+    margin:20px 0;
+
+}
+
+.pricing-heading p{
+
+    max-width:700px;
+    margin:auto;
+    color:#bdbdbd;
+    line-height:1.8;
+    font-size:18px;
+
+}
+
+.pricing-divider{
+
+    width:200px;
+    height:4px;
+    margin:0 auto 30px;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,122,0,0),
+        rgba(255,122,0,.6) 20%,
+        #ff7a00 50%,
+        rgba(255,122,0,.6) 80%,
+        rgba(255,122,0,0)
+    );
+
+    border-radius:50px;
+    box-shadow:0 0 20px rgba(255,122,0,.6);
+
+}
+
+.pricing-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+
+}
+  .pricing-card{
+
+    position:relative;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:26px;
+
+    padding:45px;
+
+    transition:.35s;
+
+}
+
+.pricing-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ff7a00;
+
+    box-shadow:0 25px 45px rgba(255,122,0,.18);
+
+}
+
+.premium-card{
+
+    border:1px solid rgba(255,122,0,.45);
+
+}
+
+.plan-tag{
+
+    display:inline-block;
+
+    padding:8px 22px;
+
+    border-radius:40px;
+
+    background:rgba(255,122,0,.12);
+
+    color:#ff7a00;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.popular-tag{
+
+    position:absolute;
+
+    top:-14px;
+
+    right:25px;
+
+    padding:8px 18px;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+.pricing-card h3{
+
+    margin-top:28px;
+
+    color:#fff;
+
+    font-size:34px;
+
+}
+
+.plan-desc{
+
+    margin:18px 0 30px;
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+}
+  .vehicle-pricing{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-bottom:35px;
+
+}
+
+.vehicle-box{
+
+    flex:1;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    background:#111;
+
+    border:1px solid rgba(255,122,0,.2);
+
+    text-align:center;
+
+}
+
+.vehicle-box span{
+
+    color:#bdbdbd;
+
+    display:block;
+
+    margin-bottom:12px;
+
+}
+
+.vehicle-box h4{
+
+    color:#ff7a00;
+
+    font-size:34px;
+
+}
+
+.pricing-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 35px;
+
+}
+
+.pricing-card ul li{
+
+    color:#ddd;
+
+    margin-bottom:16px;
+
+    padding-left:28px;
+
+    position:relative;
+
+}
+
+.pricing-card ul li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:#ff7a00;
+
+    font-weight:700;
+
+}
+
+.price-btn{
+
+    display:block;
+
+    text-align:center;
+
+    padding:16px;
+
+    border-radius:50px;
+
+    background:#ff7a00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.price-btn:hover{
+
+    background:#ff922e;
+
+}
+  @media(max-width:992px){
+
+    .pricing-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .vehicle-pricing{
+
+        flex-direction:column;
+
+    }
+
+}
+  /*====================================
+              FAQ SECTION
+=====================================*/
+
+.faq-section{
+
+    padding:25px 8%;
+    background:#0b0b0b;
+
+}
+
+.faq-heading{
+
+    max-width:850px;
+    margin:0 auto 70px;
+    text-align:center;
+
+}
+
+.faq-heading h2{
+
+    font-size:58px;
+    color:#fff;
+    margin:20px 0;
+
+}
+
+.faq-heading p{
+
+    max-width:720px;
+    margin:auto;
+    color:#bdbdbd;
+    line-height:1.8;
+    font-size:18px;
+
+}
+
+.faq-divider{
+
+    width:200px;
+    height:4px;
+    margin:0 auto 30px;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,122,0,0),
+        rgba(255,122,0,.6) 20%,
+        #ff7a00 50%,
+        rgba(255,122,0,.6) 80%,
+        rgba(255,122,0,0)
+    );
+
+    border-radius:50px;
+    box-shadow:0 0 20px rgba(255,122,0,.6);
+
+}
+
+.faq-container{
+
+    max-width:950px;
+    margin:auto;
+
+}
+
+.faq-item{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    border-radius:20px;
+
+    margin-bottom:22px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.faq-item:hover{
+
+    border-color:#ff7a00;
+
+    box-shadow:0 15px 35px rgba(255,122,0,.15);
+
+}
+
+.faq-question{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:28px 30px;
+
+    cursor:pointer;
+
+}
+
+.faq-question h3{
+
+    color:#fff;
+
+    font-size:22px;
+
+    margin:0;
+
+}
+
+.faq-question span{
+
+    color:#ff7a00;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.faq-answer{
+
+    max-height:0;
+    overflow:hidden;
+
+    padding:0 30px;
+
+    transition:
+        max-height .45s ease,
+        padding .35s ease;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:220px;
+    padding:0 30px 28px;
+
+}
+
+.faq-answer p{
+
+    color:#bdbdbd;
+    line-height:1.8;
+    font-size:17px;
+
+}
+
+.faq-answer p{
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+.faq-item:not(.active) .faq-answer{
+
+    display:none;
+
+}
+  /*====================================
+        FINAL CTA
+=====================================*/
+
+.final-cta{
+
+    position:relative;
+    padding:25px 8%;
+    background:#050505;
+    overflow:hidden;
+
+}
+
+.cta-glow{
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:radial-gradient(
+        rgba(255,122,0,.16),
+        transparent 70%
+    );
+
+    filter:blur(80px);
+
+    pointer-events:none;
+
+}
+
+.cta-content{
+
+    position:relative;
+    z-index:2;
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.cta-content h2{
+
+    font-size:64px;
+    line-height:1.2;
+    margin:22px 0;
+
+    font-weight:800;
+
+}
+
+.cta-content h2 span{
+
+    color:#ff7a00;
+
+}
+
+.cta-divider{
+
+    width:220px;
+    height:4px;
+
+    margin:0 auto 35px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #ff7a00,
+        #ffb347,
+        #ff7a00,
+        transparent
+    );
+
+    box-shadow:0 0 20px rgba(255,122,0,.6);
+
+}
+
+.cta-content p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:#bdbdbd;
+
+    font-size:20px;
+
+    line-height:1.9;
+
+}
+
+.cta-buttons{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.cta-primary,
+.cta-secondary{
+
+    width:280px;
+    height:72px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    border-radius:60px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.cta-primary{
+
+    background:#ff7a00;
+
+    color:#fff;
+
+}
+
+.cta-primary:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(255,122,0,.45);
+
+}
+
+.cta-secondary{
+
+    border:2px solid #ff7a00;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.cta-secondary:hover{
+
+    background:#ff7a00;
+
+    transform:translateY(-6px);
+
+}
+
+.cta-features{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.cta-features div{
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,122,0,.18);
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.cta-features div:hover{
+
+    border-color:#ff7a00;
+
+    transform:translateY(-6px);
+
+}
+
+@media(max-width:992px){
+
+    .cta-content h2{
+
+        font-size:42px;
+
+    }
+
+    .cta-features{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .cta-features{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .cta-primary,
+    .cta-secondary{
+
+        width:100%;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="index.html" class="back-home">
+
+← Back to Home
+
+</a>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+
+CAR FLOOR MATTING
+
+</div>
+
+<h1>
+
+Premium Protection.<br>
+Every Step You Take.
+
+</h1>
+
+<p>
+
+Upgrade your vehicle's interior with our premium Car Floor
+Matting service. Custom-fit floor mats protect against dirt,
+dust, water and daily wear while enhancing comfort, durability
+and the overall elegance of your car's cabin.
+</p>
+
+<div class="features">
+
+<span>✓ ✓ Custom-Fit Floor Mats</span>
+
+<span>✓ Dirt & Water Protection</span>
+
+<span>✓Premium Interior Finish</span>
+
+</div>
+
+<div class="buttons">
+
+<a href="#" class="btn primary">
+
+Book Service
+
+</a>
+
+<a href="tel:+919999999999" class="btn secondary">
+
+Call Now
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+  <!-- =========================
+     LUXURY INTRO
+========================== -->
+
+<section class="intro-section">
+
+    <div class="intro-container">
+
+        <span class="intro-tag">
+           CAR FLOOR MATTING
+        </span>
+
+        <h2>
+           Luxury Underfoot.
+            <span>Protection </span>
+             That Lasts.
+        </h2>
+
+        <p>
+
+           Your vehicle's floor experiences constant wear from dirt,
+dust, mud, water and daily foot traffic. Our premium Car
+Floor Matting service provides custom-fit mats that protect
+your interior while enhancing comfort, cleanliness and style.
+
+Crafted from high-quality materials and precisely fitted to
+your vehicle, our floor mats offer long-lasting durability,
+easy maintenance and a refined finish that complements your
+car's premium interior.
+        </p>
+
+    </div>
+<!-- =========================
+     MAHAVEER SIGNATURE DIVIDER
+========================== -->
+
+<div class="signature-divider">
+
+    <div class="divider-line left"></div>
+
+    <div class="divider-circle"></div>
+
+    <div class="divider-line right"></div>
+
+</div>
+</section>
+
+<!-- ===========================
+SERVICE OVERVIEW
+=========================== -->
+
+<section class="overview-section">
+
+    <div class="overview-heading">
+
+        <span>SERVICE OVERVIEW</span>
+
+        <h2>
+           Custom-Fit Floor Mats
+for Superior Interior Protection
+        </h2>
+
+        <p>
+
+           Our premium Car Floor Matting service provides custom-fit
+floor mats that protect your vehicle's interior from dirt,
+dust, water and daily wear while enhancing comfort, durability
+and the overall appearance of your cabin.
+
+        </p>
+
+    </div>
+
+    <div class="overview-image">
+
+        <img src="flooro.png" alt="Exterior Wash">
+
+    </div>
+<div class="overview-content">
+
+    <div class="overview-left">
+
+        <h3>
+          Professional Car Floor Matting
+        </h3>
+
+        <p>
+
+         Our custom-designed floor mats are precisely tailored to fit your vehicle, providing complete coverage and superior protection for your car's flooring. They help prevent damage caused by mud, water, dust, spills and everyday foot traffic while maintaining a clean and well-maintained interior.
+
+        </p>
+      <p class="overview-second">
+
+Made from premium-quality materials, our floor mats are durable, easy to clean and built for long-lasting performance. Their anti-slip design ensures stability during driving, while the premium finish enhances the overall look and comfort of your vehicle's interior.
+
+</p>
+
+   <div class="overview-button">
+
+    <a href="#" class="overview-btn">
+        Book Service
+    </a>
+
+</div>
+
+</div>
+
+    <div class="overview-right">
+
+        <h3>
+            What's Included
+        </h3>
+
+        <ul>
+
+            <li> Vehicle Floor Inspection</li>
+
+            <li>Custom-Fit Floor Mats</li>
+
+            <li> Premium Material Selection</li>
+
+            <li>Precision Installation</li>
+
+            <li>Anti-Slip Fitment</li>
+
+            <li>Dirt & Water Protection</li>
+
+          <li>Easy-to-Clean Surface</li>
+
+          <li>Final Quality Inspection</li>
+
+        </ul>
+      <div class="contact-button">
+
+    <a href="tel:+919999999999" class="contact-btn">
+
+        Contact Us
+
+    </a>
+
+</div>
+
+    </div>
+
+</section>
+  <!-- ======================================
+     EXTERIOR WASH PROCESS
+======================================= -->
+
+<section class="process-section">
+
+    <div class="process-heading">
+
+        <span class="process-tag">
+
+           FLOOR MAT INSTALLATION PROCESS
+
+        </span>
+
+        <h2>
+
+           Precision Fitment.
+            <span>Premium Protection.</span>
+
+        </h2>
+
+        <p>
+
+           Our professional Car Floor Matting installation process ensures
+every mat is perfectly fitted to your vehicle, providing
+maximum protection, comfort and a premium interior finish.
+
+        </p>
+
+    </div>
+
+    <!-- Timeline Starts -->
+
+    <div class="process-timeline">
+
+        <!-- Step 1 -->
+
+        <div class="process-step right">
+
+            <div class="step-node">
+
+                <span>01</span>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="step-icon">
+
+                    🔍
+
+                </div>
+
+                <h3>
+
+                    Vehicle Inspection
+
+                </h3>
+
+                <p>
+
+                    Our technicians inspect your vehicle's interior floor area, measure the cabin layout and identify the most suitable floor mat solution for a perfect fit.
+
+                </p>
+
+            </div>
+
+        </div>
+      <!-- STEP 02 -->
+
+<div class="process-step left">
+
+    <div class="step-node">
+
+        <span>02</span>
+
+    </div>
+
+    <div class="process-card">
+
+        <div class="step-icon">
+
+      🧹
+
+        </div>
+
+        <h3>
+
+            Floor Cleaning
+        </h3>
+
+        <p>
+
+            The existing floor area is thoroughly cleaned to remove dust, dirt and debris, ensuring a clean surface before the new floor mats are installed.
+
+        </p>
+
+    </div>
+
+</div>
+      <!-- STEP 03 -->
+
+<div class="process-step right">
+
+    <div class="step-node">
+
+        <span>03</span>
+
+    </div>
+
+    <div class="process-card">
+
+        <div class="step-icon">
+
+           📏
+
+        </div>
+
+        <h3>
+
+            Custom Fitment
+
+        </h3>
+
+        <p>
+
+          Premium floor mats are carefully positioned and adjusted to match your vehicle's exact floor contours, ensuring complete coverage and a factory-like fit.
+
+        </p>
+
+    </div>
+
+</div>
+      <!-- STEP 04 -->
+
+<div class="process-step left">
+
+    <div class="step-node">
+
+        <span>04</span>
+
+    </div>
+
+    <div class="process-card">
+
+        <div class="step-icon">
+
+         🔒
+
+        </div>
+
+        <h3>
+
+            Secure Installation
+        </h3>
+
+        <p>
+
+           The floor mats are securely fixed using the appropriate locking points or anti-slip system to prevent movement during driving and enhance safety.
+
+        </p>
+
+    </div>
+
+</div>
+      <!-- STEP 05 -->
+
+<div class="process-step right">
+
+    <div class="step-node">
+
+        <span>05</span>
+
+    </div>
+
+    <div class="process-card">
+
+        <div class="step-icon">
+
+            ✨
+
+        </div>
+
+        <h3>
+
+           Finishing & Detailing
+        </h3>
+
+        <p>
+
+          Each mat is aligned and finished to ensure clean edges, a premium appearance and maximum comfort while maintaining easy access to pedals and controls.
+
+        </p>
+
+    </div>
+
+</div>
+      <!-- STEP 06 -->
+
+<div class="process-step left">
+
+    <div class="step-node">
+
+        <span>06</span>
+
+    </div>
+
+    <div class="process-card">
+
+        <div class="step-icon">
+
+           ✅
+
+        </div>
+
+        <h3>
+
+            Final Quality Inspection
+
+        </h3>
+
+        <p>
+
+           A comprehensive inspection is performed to verify proper fitment, stability, coverage and overall finish before your vehicle is ready for delivery.
+
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+  <!-- ================= BEFORE & AFTER ================= -->
+
+<section class="before-after-section">
+
+    <div class="before-after-heading">
+
+        <span class="section-badge">
+            BEFORE & AFTER
+        </span>
+
+        <h2>
+          From Worn Floors
+to Premium Interior Protection
+        </h2>
+
+        <p>
+          See the transformation our professional Car Floor Matting
+service delivers. Worn, dirty and unprotected vehicle floors
+are upgraded with custom-fit premium floor mats that provide
+superior protection against dirt, water and daily wear while
+enhancing the comfort, cleanliness and elegance of your
+vehicle's interior.
+        </p>
+
+    </div>
+
+    <div class="comparison-wrapper">
+
+        <div class="comparison-card">
+
+            <div class="comparison-label before">
+                BEFORE
+            </div>
+
+            <img src="floorb.png" alt="Before Exterior Wash">
+
+        </div>
+
+        <div class="comparison-divider">
+
+            <span></span>
+
+        </div>
+
+        <div class="comparison-card">
+
+            <div class="comparison-label after">
+                AFTER
+            </div>
+
+            <img src="floora.png" alt="After Exterior Wash">
+
+        </div>
+
+    </div>
+
+</section>
+  <!--==============================
+        BENEFITS SECTION
+===============================-->
+
+<section class="benefits-section">
+
+    <div class="benefits-heading">
+
+        <span class="section-badge">
+            BENEFITS
+        </span>
+
+        <h2>
+           Protect Your Interior.
+Drive in Comfort.
+        </h2>
+
+        <p>
+           Our premium Car Floor Matting service protects your vehicle's
+interior from everyday wear while enhancing comfort,
+cleanliness and the overall appearance of your cabin.
+        </p>
+
+    </div>
+
+    <div class="benefits-grid">
+
+        <!-- Card 1 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+              🛡️
+            </div>
+
+            <h3>Complete Floor Protection</h3>
+
+            <p>
+               Custom-fit floor mats protect your vehicle's flooring from dirt, mud, dust, water, spills and everyday wear.
+            </p>
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+                💧
+            </div>
+
+            <h3>Water & Stain Resistant</h3>
+
+            <p>
+               Premium materials resist water, mud and stains, making the mats easy to clean and ideal for all weather conditions.
+            </p>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+              🔒
+            </div>
+
+            <h3>Secure Anti-Slip Fit</h3>
+
+            <p>
+                Precision-designed mats stay firmly in place, reducing movement and providing a safer, more comfortable driving experience.
+            </p>
+
+        </div>
+
+        <!-- Card 4 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+                ✨
+            </div>
+
+            <h3>Premium Interior Appearance</h3>
+
+            <p>
+              Enhances your cabin with a clean, elegant look that complements your vehicle's interior design.
+            </p>
+
+        </div>
+
+        <!-- Card 5 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+                🧹
+            </div>
+
+            <h3>Easy to Clean</h3>
+
+            <p>
+                The durable surface allows quick cleaning and maintenance, helping keep your vehicle's interior fresh and hygienic.
+            </p>
+
+        </div>
+
+        <!-- Card 6 -->
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+                ⏳
+            </div>
+
+            <h3>Long-Lasting Durability</h3>
+
+            <p>
+                Built from high-quality materials, our floor mats are designed to withstand daily use while maintaining their shape and premium finish.
+            </p>
+
+        </div>
+
+    </div>
+  
+</section>
+  <div class="benefits-divider"></div>
+<!--==============================
+        PRICING SECTION
+===============================-->
+
+<section class="pricing-section">
+
+    <div class="pricing-heading">
+
+        <span class="section-badge">
+            PRICING
+        </span>
+
+        <h2>
+          Choose the Floor Matting
+Package That Fits Your Vehicle
+        </h2>
+
+        <div class="pricing-divider"></div>
+
+        <p>
+           Whether you're looking for reliable everyday protection or a
+premium interior upgrade, our Car Floor Matting packages
+offer custom-fit solutions that combine durability, comfort
+and elegant design.
+        </p>
+
+    </div>
+
+    <div class="pricing-grid">
+
+        <!-- STANDARD -->
+
+        <div class="pricing-card">
+
+            <div class="plan-tag">
+                STANDARD
+            </div>
+
+            <h3>Standard Floor Matting</h3>
+
+            <p class="plan-desc">
+                A practical solution with durable custom-fit floor mats that
+protect your vehicle from dirt, dust, water and daily wear.
+            </p>
+
+            <div class="vehicle-pricing">
+
+                <div class="vehicle-box">
+
+                    <span>Small Vehicle</span>
+
+                    <h4>₹3500</h4>
+
+                </div>
+
+                <div class="vehicle-box">
+
+                    <span>Large Vehicle</span>
+
+                    <h4>₹4200</h4>
+
+                </div>
+
+            </div>
+
+            <ul>
+
+                <li>Vehicle Floor Inspection</li>
+
+                <li>Standard Custom-Fit Floor Mats</li>
+
+                <li>Precision Installation</li>
+
+                <li>Anti-Slip Fitment</li>
+
+                <li>Dirt & Water Protection</li>
+
+                <li> Easy-to-Clean Surface</li>
+
+            </ul>
+
+            <a href="#" class="price-btn">
+                Book Service
+            </a>
+
+        </div>
+
+        <!-- PREMIUM -->
+
+        <div class="pricing-card premium-card">
+
+            <div class="popular-tag">
+                MOST POPULAR
+            </div>
+
+            <div class="plan-tag">
+                PREMIUM
+            </div>
+
+            <h3>Premium Floor Matting</h3>
+
+            <p class="plan-desc">
+               Premium custom-fit floor mats with enhanced durability,
+luxury finish and superior protection for a refined driving
+experience.
+            </p>
+
+            <div class="vehicle-pricing">
+
+                <div class="vehicle-box">
+
+                    <span>Small Vehicle</span>
+
+                    <h4>₹4500</h4>
+
+                </div>
+
+                <div class="vehicle-box">
+
+                    <span>Large Vehicle</span>
+
+                    <h4>₹6100</h4>
+
+                </div>
+
+            </div>
+
+            <ul>
+
+                <li>Premium Custom-Fit Floor Mats</li>
+
+                <li>Luxury Material Finish</li>
+
+                <li>Precision Installation</li>
+
+                <li>Advanced Anti-Slip System</li>
+
+                <li>Maximum Dirt & Water Protection</li>
+
+                <li>Easy Maintenance & Cleaning</li>
+
+                <li>Final Quality Inspection</li>
+
+            </ul>
+
+            <a href="#" class="price-btn">
+                Book Service
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+  <!--==============================
+            FAQ SECTION
+===============================-->
+
+<section class="faq-section">
+
+    <div class="faq-heading">
+
+        <span class="section-badge">
+            FAQ
+        </span>
+
+        <h2>
+         Frequently Asked Questions
+About Car Floor Matting
+        </h2>
+
+        <div class="faq-divider"></div>
+
+        <p>
+          Find answers to the most common questions about our
+professional Car Floor Matting service, including materials,
+fitment, maintenance, durability and protection.
+        </p>
+
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-item active">
+
+            <div class="faq-question">
+                <h3>Why should I install custom-fit floor mats?</h3>
+                <span>−</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                    Custom-fit floor mats provide complete coverage for your vehicle's flooring, protecting it from dirt, mud, water, spills and daily wear while enhancing the overall appearance of your interior.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>What materials are used for your floor mats?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                    We offer high-quality floor mats made from durable, easy-to-clean materials designed to provide long-lasting protection, comfort and a premium finish.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>What is the difference between Standard and Premium Floor Matting?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+Standard Floor Matting provides reliable everyday protection with durable custom-fit mats. Premium Floor Matting features upgraded materials, enhanced durability, a luxury finish and superior protection for a more refined interior.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>Are the floor mats easy to clean?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                    Yes. Our floor mats are designed for easy maintenance. Simply remove them from the vehicle, clean off dirt or spills and reinstall them once dry.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>Will the floor mats move while driving?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                   No. Our custom-fit floor mats are designed with anti-slip features and are professionally installed to ensure they stay securely in place during normal driving conditions.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                <h3>How long do premium floor mats last?</h3>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                <p>
+                    With proper care and regular cleaning, premium-quality floor mats are built to withstand daily use and provide reliable protection while maintaining their appearance for many years.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  <script>
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+
+    item.querySelector(".faq-question").addEventListener("click", () => {
+
+        faqItems.forEach(faq => {
+
+            if (faq !== item) {
+
+                faq.classList.remove("active");
+                faq.querySelector(".faq-question span").textContent = "+";
+
+            }
+
+        });
+
+        item.classList.toggle("active");
+
+        item.querySelector(".faq-question span").textContent =
+            item.classList.contains("active") ? "−" : "+";
+
+    });
+
+});
+
+</script>
+  <!--====================================
+        FINAL CALL TO ACTION
+=====================================-->
+
+<section class="final-cta">
+
+    <div class="cta-glow"></div>
+
+    <div class="cta-content">
+
+        <span class="section-badge">
+           READY TO UPGRADE YOUR INTERIOR?
+        </span>
+
+        <h2>
+           Step Into Comfort.
+            <span>Protect</span> Every Journey.
+        </h2>
+
+        <div class="cta-divider"></div>
+
+        <p>
+          Give your vehicle's interior the protection and style it
+deserves with our premium Car Floor Matting service. Our
+custom-fit floor mats safeguard your cabin from dirt, water
+and daily wear while adding comfort, durability and a refined
+premium finish.
+
+Book your Car Floor Matting service today and enjoy a cleaner,
+more comfortable and better-protected driving experience.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="#" class="cta-primary">
+                Book Your Service Now
+            </a>
+
+            <a href="tel:+919999999999" class="cta-secondary">
+                Call Now
+            </a>
+
+        </div>
+
+        <div class="cta-features">
+
+            <div>✓ Premium Products</div>
+
+            <div>✓ Professional Team</div>
+
+            <div>✓ Affordable Pricing</div>
+
+            <div>✓ Satisfaction Guaranteed</div>
+
+        </div>
+
+    </div>
+
+</section>
+</body>
+
+</html>
