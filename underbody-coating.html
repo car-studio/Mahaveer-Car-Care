@@ -2228,7 +2228,7 @@ Book Service
 
 </a>
 
-<a href="tel:+919999999999" class="btn secondary">
+<a href="tel:+917008100859" class="btn secondary">
 
 Call Now
 
@@ -2340,7 +2340,7 @@ Using high-quality coating materials and professional application techniques, we
 
    <div class="overview-button">
 
-    <a href="#" class="overview-btn">
+    <a href="#" class="btn primary">
         Book Service
     </a>
 
@@ -2375,7 +2375,7 @@ Using high-quality coating materials and professional application techniques, we
         </ul>
       <div class="contact-button">
 
-    <a href="tel:+919999999999" class="contact-btn">
+    <a href="tel:+917008100859" class="contact-btn">
 
         Contact Us
 
@@ -2889,7 +2889,7 @@ dependable protection against moisture, rust and road debris.
 
             </ul>
 
-            <a href="#" class="price-btn">
+            <a href="#" class="btn primary">
                 Book Service
             </a>
 
@@ -2955,7 +2955,7 @@ resistance.
 
             </ul>
 
-            <a href="#" class="price-btn">
+            <a href="#" class="btn primary">
                 Book Premium Service
             </a>
 
@@ -3149,11 +3149,11 @@ lasting protection with complete peace of mind.
 
         <div class="cta-buttons">
 
-            <a href="#" class="cta-primary">
+            <a href="#" class="btn primary">
                 Book Your Service Now
             </a>
 
-            <a href="tel:+919999999999" class="cta-secondary">
+            <a href="tel:+917008100859" class="cta-secondary">
                 Call Now
             </a>
 
@@ -3174,6 +3174,88 @@ lasting protection with complete peace of mind.
     </div>
 
 </section>
+  <!-- ==============================
+     BOOKING SYSTEM - CAR UNDERBODY COATING
+================================ -->
+
+<script>
+
+window.SERVICE_NAME = "Car Underbody Coating";
+
+fetch("booking-modal.html")
+    .then(response => response.text())
+    .then(html => {
+
+        /*
+         * Extract the CSS from booking-modal.html
+         */
+        const styleMatch = html.match(
+            /<style[^>]*>([\s\S]*?)<\/style>/i
+        );
+
+        if (styleMatch) {
+
+            const style = document.createElement("style");
+
+            style.textContent = styleMatch[1];
+
+            document.head.appendChild(style);
+
+        }
+
+
+        /*
+         * Extract the BODY content
+         */
+        const bodyMatch = html.match(
+            /<body[^>]*>([\s\S]*?)<\/body>/i
+        );
+
+        if (bodyMatch) {
+
+            const container =
+                document.createElement("div");
+
+            container.id = "bookingComponent";
+
+            container.innerHTML =
+                bodyMatch[1];
+
+            document.body.appendChild(container);
+
+        }
+
+
+        /*
+         * Extract and execute the JavaScript
+         */
+        const scriptMatch = html.match(
+            /<script[^>]*>([\s\S]*?)<\/script>/i
+        );
+
+        if (scriptMatch) {
+
+            const script =
+                document.createElement("script");
+
+            script.textContent =
+                scriptMatch[1];
+
+            document.body.appendChild(script);
+
+        }
+
+    })
+    .catch(error => {
+
+        console.error(
+            "Booking system failed to load:",
+            error
+        );
+
+    });
+
+</script>
 </body>
 
 </html>
