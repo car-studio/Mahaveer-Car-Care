@@ -338,13 +338,23 @@ font-size:26px;
                 </div>
 
                 <div class="form-group">
-                    <label>Additional Notes</label>
+    <label> Address *</label>
 
-                    <textarea
-                        id="additionalNotes"
-                        rows="4"
-                        placeholder="Anything you'd like us to know..."></textarea>
-                </div>
+    <textarea
+        id="serviceAddress"
+        rows="3"
+        placeholder="Enter the address where the service is required"
+        required></textarea>
+</div>
+
+<div class="form-group">
+    <label>Your Requirements / Special Requests</label>
+
+    <textarea
+        id="additionalNotes"
+        rows="3"
+        placeholder="Tell us about any specific requirements or special requests..."></textarea>
+</div>
 
                 <button
                     type="submit"
@@ -537,6 +547,12 @@ bookingForm.addEventListener(
             document
             .getElementById("preferredTime")
             .value;
+
+        const Address =
+    document
+    .getElementById("serviceAddress")
+    .value
+    .trim();
 
         const additionalNotes =
             document
