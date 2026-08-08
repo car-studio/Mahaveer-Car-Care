@@ -10,9 +10,7 @@
 
     <title>Mahaveer Car Care - Booking Modal</title>
 
-</head>
-
-  <style>
+ <style>
 
 /* ==========================================
    MAHAVEER CAR CARE BOOKING MODAL
@@ -248,7 +246,9 @@ font-size:26px;
 }
 
 </style>
-</head>    
+    
+</head>  
+    
 <body>
 
     <!-- ==========================
@@ -344,6 +344,293 @@ font-size:26px;
         </div>
 
     </div>
+    <script>
+
+/* ==========================================
+   MAHAVEER CAR CARE BOOKING SYSTEM
+   STEP 4 - JAVASCRIPT
+========================================== */
+
+/* WhatsApp Number */
+const WHATSAPP_NUMBER = "917008100859";
+
+/* Default Service Name */
+const SERVICE_NAME =
+    typeof window.SERVICE_NAME !== "undefined"
+        ? window.SERVICE_NAME
+        : "Exterior Wash";
+
+
+/* Get Elements */
+
+const bookingOverlay =
+    document.getElementById("bookingOverlay");
+
+const closeBooking =
+    document.getElementById("closeBooking");
+
+const bookingForm =
+    document.getElementById("bookingForm");
+
+const serviceTitle =
+    document.getElementById("serviceTitle");
+
+
+/* Hide Booking Popup Initially */
+
+bookingOverlay.style.display = "none";
+
+
+/* Set Service Name */
+
+serviceTitle.textContent =
+    "Book " + SERVICE_NAME;
+
+
+/* ==========================================
+   OPEN BOOKING POPUP
+========================================== */
+
+function openBookingPopup(serviceName) {
+
+    const selectedService =
+        serviceName || SERVICE_NAME;
+
+    serviceTitle.textContent =
+        "Book " + selectedService;
+
+    bookingOverlay.style.display = "flex";
+
+    document.body.style.overflow = "hidden";
+}
+
+
+/* ==========================================
+   CLOSE BOOKING POPUP
+========================================== */
+
+function closeBookingPopup() {
+
+    bookingOverlay.style.display = "none";
+
+    document.body.style.overflow = "";
+}
+
+
+/* Close Button */
+
+closeBooking.addEventListener(
+    "click",
+    closeBookingPopup
+);
+
+
+/* ==========================================
+   CLOSE WHEN CLICKING OUTSIDE MODAL
+========================================== */
+
+bookingOverlay.addEventListener(
+    "click",
+    function(event) {
+
+        if (event.target === bookingOverlay) {
+
+            closeBookingPopup();
+
+        }
+
+    }
+);
+
+
+/* ==========================================
+   CLOSE WITH ESC KEY
+========================================== */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            closeBookingPopup();
+
+        }
+
+    }
+);
+
+
+/* ==========================================
+   BOOK SERVICE BUTTONS
+========================================== */
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        const button =
+            event.target.closest(".btn.primary");
+
+        if (!button) return;
+
+        event.preventDefault();
+
+        openBookingPopup();
+
+    }
+);
+
+
+/* ==========================================
+   WHATSAPP BOOKING
+========================================== */
+
+bookingForm.addEventListener(
+    "submit",
+    function(event) {
+
+        event.preventDefault();
+
+
+        /* Get Form Values */
+
+        const customerName =
+            document
+            .getElementById("customerName")
+            .value
+            .trim();
+
+        const customerMobile =
+            document
+            .getElementById("customerMobile")
+            .value
+            .trim();
+
+        const vehicleModel =
+            document
+            .getElementById("vehicleModel")
+            .value
+            .trim();
+
+        const preferredDate =
+            document
+            .getElementById("preferredDate")
+            .value;
+
+        const preferredTime =
+            document
+            .getElementById("preferredTime")
+            .value;
+
+        const additionalNotes =
+            document
+            .getElementById("additionalNotes")
+            .value
+            .trim();
+
+
+        /* ==================================
+           BASIC MOBILE VALIDATION
+        ================================== */
+
+        const mobilePattern =
+            /^[0-9]{10}$/;
+
+        if (!mobilePattern.test(customerMobile)) {
+
+            alert(
+                "Please enter a valid 10-digit mobile number."
+            );
+
+            return;
+
+        }
+
+
+        /* ==================================
+           FORMAT DATE
+        ================================== */
+
+        let formattedDate =
+            preferredDate;
+
+        if (preferredDate) {
+
+            const date =
+                new Date(preferredDate);
+
+            formattedDate =
+                date.toLocaleDateString(
+                    "en-IN",
+                    {
+                        day: "2-digit",
+                        month: "long",
+                        year: "numeric"
+                    }
+                );
+
+        }
+
+
+        /* ==================================
+           CREATE WHATSAPP MESSAGE
+        ================================== */
+
+        let message =
+`Hello Mahaveer Car Care,
+
+I would like to book the following service.
+
+Service:
+${SERVICE_NAME}
+
+Name:
+${customerName}
+
+Mobile:
+${customerMobile}
+
+Vehicle:
+${vehicleModel}
+
+Preferred Date:
+${formattedDate}
+
+Preferred Time:
+${preferredTime || "Not specified"}
+
+Additional Notes:
+${additionalNotes || "None"}
+
+Thank you.`;
+
+
+        /* ==================================
+           WHATSAPP URL
+        ================================== */
+
+        const whatsappURL =
+            "https://wa.me/" +
+            WHATSAPP_NUMBER +
+            "?text=" +
+            encodeURIComponent(message);
+
+
+        /* ==================================
+           OPEN WHATSAPP
+        ================================== */
+
+        window.open(
+            whatsappURL,
+            "_blank"
+        );
+
+    }
+);
+
+</script>
 
 </body>
+    
 </html>
