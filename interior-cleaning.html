@@ -2112,7 +2112,7 @@ Book Service
 
 </a>
 
-<a href="tel:+919999999999" class="btn secondary">
+<a href="tel:+917008100859" class="btn secondary">
 
 Call Now
 
@@ -2215,7 +2215,7 @@ Every corner of your vehicle receives careful attention using safe cleaning prod
 
    <div class="overview-button">
 
-    <a href="#" class="overview-btn">
+    <a href="#" class="btn primary">
         Book Service
     </a>
 
@@ -2246,7 +2246,7 @@ Every corner of your vehicle receives careful attention using safe cleaning prod
         </ul>
       <div class="contact-button">
 
-    <a href="tel:+919999999999" class="contact-btn">
+    <a href="tel:+917008100859" class="contact-btn">
 
         Contact Us
 
@@ -2281,7 +2281,7 @@ This deep cleaning process sanitizes your vehicle's cabin, eliminates harmful mi
 
    <div class="overview-button">
 
-    <a href="#" class="overview-btn">
+    <a href="#" class="btn primary">
         Book Service
     </a>
 
@@ -2312,7 +2312,7 @@ This deep cleaning process sanitizes your vehicle's cabin, eliminates harmful mi
         </ul>
       <div class="contact-button">
 
-    <a href="tel:+919999999999" class="contact-btn">
+    <a href="tel:+917008100859" class="contact-btn">
 
         Contact Us
 
@@ -2346,7 +2346,7 @@ Using advanced odor-neutralizing treatments, we target the source of unwanted sm
 
    <div class="overview-button">
 
-    <a href="#" class="overview-btn">
+    <a href="#" class="btn primary">
         Book Service
     </a>
 
@@ -2377,7 +2377,7 @@ Using advanced odor-neutralizing treatments, we target the source of unwanted sm
         </ul>
       <div class="contact-button">
 
-    <a href="tel:+919999999999" class="contact-btn">
+    <a href="tel:+917008100859" class="contact-btn">
 
         Contact Us
 
@@ -2880,7 +2880,7 @@ package that best suits your vehicle and budget.
 
             </ul>
 
-            <a href="#" class="price-btn">
+            <a href="#" class="btn primary">
                 Book Normal Cleaning
             </a>
 
@@ -2942,7 +2942,7 @@ package that best suits your vehicle and budget.
 
             </ul>
 
-            <a href="#" class="price-btn">
+            <a href="#" class="btn primary">
                 Book Premium Cleaning
             </a>
 
@@ -3131,11 +3131,11 @@ the difference every time you drive.
 
         <div class="cta-buttons">
 
-            <a href="#" class="cta-primary">
+            <a href="#" class="btn primary">
                 Book Your Service Now
             </a>
 
-            <a href="tel:+919999999999" class="cta-secondary">
+            <a href="tel:+917008100859" class="cta-secondary">
                 Call Now
             </a>
 
@@ -3156,6 +3156,88 @@ the difference every time you drive.
     </div>
 
 </section>
+  <!-- ==============================
+     BOOKING SYSTEM - INTERIOR CLEANING
+================================ -->
+
+<script>
+
+window.SERVICE_NAME = "Interior Cleaning";
+
+fetch("booking-modal.html")
+    .then(response => response.text())
+    .then(html => {
+
+        /*
+         * Extract the CSS from booking-modal.html
+         */
+        const styleMatch = html.match(
+            /<style[^>]*>([\s\S]*?)<\/style>/i
+        );
+
+        if (styleMatch) {
+
+            const style = document.createElement("style");
+
+            style.textContent = styleMatch[1];
+
+            document.head.appendChild(style);
+
+        }
+
+
+        /*
+         * Extract the BODY content
+         */
+        const bodyMatch = html.match(
+            /<body[^>]*>([\s\S]*?)<\/body>/i
+        );
+
+        if (bodyMatch) {
+
+            const container =
+                document.createElement("div");
+
+            container.id = "bookingComponent";
+
+            container.innerHTML =
+                bodyMatch[1];
+
+            document.body.appendChild(container);
+
+        }
+
+
+        /*
+         * Extract and execute the JavaScript
+         */
+        const scriptMatch = html.match(
+            /<script[^>]*>([\s\S]*?)<\/script>/i
+        );
+
+        if (scriptMatch) {
+
+            const script =
+                document.createElement("script");
+
+            script.textContent =
+                scriptMatch[1];
+
+            document.body.appendChild(script);
+
+        }
+
+    })
+    .catch(error => {
+
+        console.error(
+            "Booking system failed to load:",
+            error
+        );
+
+    });
+
+</script>
 </body>
 
 </html>
