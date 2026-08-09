@@ -3196,20 +3196,39 @@ height:70px;
     width: 100%;
     height: 620px;
 
-    background-image: url("usedcar.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
     overflow: hidden;
 
     display: flex;
     align-items: center;
+
+    background: #050505;
 }
 
 
 /*==========================================
-        DARK OVERLAY
+        FEATURED USED CAR IMAGE
+===========================================*/
+
+.featured-used-image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+    z-index: 1;
+}
+
+
+/*==========================================
+        IMAGE OVERLAY
 ===========================================*/
 
 .featured-used-overlay {
@@ -3217,14 +3236,20 @@ height:70px;
 
     inset: 0;
 
+    width: 100%;
+    height: 100%;
+
     background:
         linear-gradient(
             90deg,
-            rgba(3, 5, 8, 0.45) 0%,
-            rgba(3, 5, 8, 0.28) 30%,
-            rgba(3, 5, 8, 0.10) 55%,
-            rgba(3, 5, 8, 0.02) 100%
+            rgba(3, 5, 8, 0.58) 0%,
+            rgba(3, 5, 8, 0.42) 25%,
+            rgba(3, 5, 8, 0.18) 50%,
+            rgba(3, 5, 8, 0.04) 75%,
+            rgba(3, 5, 8, 0.00) 100%
         );
+
+    z-index: 2;
 
     pointer-events: none;
 }
@@ -3237,9 +3262,10 @@ height:70px;
 .featured-used-content {
     position: relative;
 
-    z-index: 2;
+    z-index: 3;
 
     width: 100%;
+
     max-width: 1250px;
 
     margin: 0 auto;
@@ -3249,7 +3275,7 @@ height:70px;
 
 
 /*==========================================
-        BADGE
+        SECTION BADGE
 ===========================================*/
 
 .featured-used-badge {
@@ -3261,14 +3287,17 @@ height:70px;
 
     border-radius: 30px;
 
-    background: rgba(5, 5, 5, 0.35);
+    background: rgba(5, 5, 5, 0.30);
 
     color: #ff8a00;
 
     font-size: 12px;
+
     font-weight: 700;
 
     letter-spacing: 2px;
+
+    line-height: 1;
 
     text-transform: uppercase;
 
@@ -3330,6 +3359,7 @@ height:70px;
     display: inline-flex;
 
     align-items: center;
+
     justify-content: center;
 
     gap: 18px;
@@ -3354,6 +3384,8 @@ height:70px;
 
     letter-spacing: 1px;
 
+    line-height: 1;
+
     text-transform: uppercase;
 
     box-shadow:
@@ -3368,7 +3400,9 @@ height:70px;
 }
 
 
-/* BUTTON SHINE */
+/*==========================================
+        BUTTON SHINE
+===========================================*/
 
 .featured-used-btn::before {
     content: "";
@@ -3376,9 +3410,11 @@ height:70px;
     position: absolute;
 
     top: 0;
+
     left: -100%;
 
     width: 60%;
+
     height: 100%;
 
     background:
@@ -3398,13 +3434,18 @@ height:70px;
     left: 140%;
 }
 
+
+/*==========================================
+        BUTTON HOVER
+===========================================*/
+
 .featured-used-btn:hover {
     transform: translateY(-4px);
 
     background: #ff7414;
 
     box-shadow:
-        0 16px 40px rgba(255, 101, 0, 0.4);
+        0 16px 40px rgba(255, 101, 0, 0.40);
 }
 
 
@@ -3415,8 +3456,7 @@ height:70px;
 .featured-used-btn i {
     font-size: 14px;
 
-    transition:
-        transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .featured-used-btn:hover i {
@@ -3432,8 +3472,6 @@ height:70px;
 
     .featured-used-cars {
         height: 560px;
-
-        background-position: center center;
     }
 
     .featured-used-content {
@@ -3449,6 +3487,7 @@ height:70px;
 
         font-size: 14px;
     }
+
 }
 
 
@@ -3460,26 +3499,32 @@ height:70px;
 
     .featured-used-cars {
         min-height: 650px;
+
         height: auto;
 
         align-items: flex-end;
 
         padding: 70px 0;
-
-        background-position: 62% center;
     }
 
 
-    /* STRONGER MOBILE OVERLAY */
+    /* MOBILE IMAGE POSITION */
+
+    .featured-used-image {
+        object-position: 62% center;
+    }
+
+
+    /* MOBILE OVERLAY */
 
     .featured-used-overlay {
         background:
             linear-gradient(
                 180deg,
-                rgba(3, 5, 8, 0.18) 0%,
-                rgba(3, 5, 8, 0.35) 30%,
-                rgba(3, 5, 8, 0.92) 68%,
-                rgba(3, 5, 8, 0.98) 100%
+                rgba(3, 5, 8, 0.12) 0%,
+                rgba(3, 5, 8, 0.28) 30%,
+                rgba(3, 5, 8, 0.78) 65%,
+                rgba(3, 5, 8, 0.97) 100%
             );
     }
 
@@ -3489,7 +3534,7 @@ height:70px;
     }
 
 
-    /* BADGE */
+    /* MOBILE BADGE */
 
     .featured-used-badge {
         padding: 9px 18px;
@@ -3500,7 +3545,7 @@ height:70px;
     }
 
 
-    /* HEADING */
+    /* MOBILE HEADING */
 
     .featured-used-content h2 {
         max-width: 100%;
@@ -3513,7 +3558,7 @@ height:70px;
     }
 
 
-    /* DESCRIPTION */
+    /* MOBILE DESCRIPTION */
 
     .featured-used-content p {
         max-width: 100%;
@@ -3526,7 +3571,7 @@ height:70px;
     }
 
 
-    /* BUTTON */
+    /* MOBILE BUTTON */
 
     .featured-used-btn {
         width: 100%;
