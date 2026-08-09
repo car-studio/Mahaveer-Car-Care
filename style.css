@@ -2241,3 +2241,404 @@ height:70px;
     font-size:24px;
 
 }
+/*==========================================
+        WHY CHOOSE MAHAVEER CAR CARE
+===========================================*/
+
+.why-choose {
+    position: relative;
+    width: 100%;
+    padding: 110px 6%;
+    background: #05080d;
+    overflow: hidden;
+}
+
+.why-container {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+
+    gap: 70px;
+    align-items: center;
+}
+
+
+/*==========================================
+        LEFT IMAGE
+===========================================*/
+
+.why-image {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+
+    overflow: hidden;
+
+    border-radius: 4px;
+    border: 1px solid rgba(255, 101, 0, 0.35);
+
+    background: #090d13;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.55);
+}
+
+.why-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.8s ease;
+}
+
+.why-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/*==========================================
+        IMAGE DARK OVERLAY
+===========================================*/
+
+.why-image-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.05) 35%,
+            rgba(0, 0, 0, 0.78) 100%
+        );
+
+    pointer-events: none;
+}
+
+
+/*==========================================
+        IMAGE BADGE
+===========================================*/
+
+.why-image-badge {
+    position: absolute;
+
+    left: 25px;
+    bottom: 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 15px 20px;
+
+    background: rgba(5, 8, 13, 0.90);
+
+    border-left: 3px solid #ff6500;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.why-image-badge i {
+    color: #ff6500;
+    font-size: 22px;
+}
+
+.why-image-badge strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+}
+
+.why-image-badge span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #a7adb5;
+
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+/*==========================================
+        RIGHT CONTENT
+===========================================*/
+
+.why-content {
+    width: 100%;
+}
+
+.why-tag {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #ff6500;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+}
+
+.why-content h2 {
+    margin: 0 0 18px;
+
+    color: #ffffff;
+
+    font-size: 42px;
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+.why-content h2 span {
+    color: #ff6500;
+}
+
+.why-intro {
+    max-width: 620px;
+
+    margin: 0 0 35px;
+
+    color: #a9afb7;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/*==========================================
+        WHY FEATURES
+===========================================*/
+
+.why-features {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+}
+
+.why-feature {
+    position: relative;
+
+    display: flex;
+
+    gap: 15px;
+
+    padding: 20px 18px;
+
+    background: #0a0f16;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease;
+}
+
+
+/* Orange top animation */
+
+.why-feature::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 0;
+    height: 2px;
+
+    background: #ff6500;
+
+    transition: width 0.35s ease;
+}
+
+.why-feature:hover {
+    transform: translateY(-4px);
+
+    background: #0d131b;
+
+    border-color: rgba(255, 101, 0, 0.35);
+}
+
+.why-feature:hover::before {
+    width: 100%;
+}
+
+
+/*==========================================
+        FEATURE NUMBER
+===========================================*/
+
+.why-number {
+    flex-shrink: 0;
+
+    padding-top: 2px;
+
+    color: #ff6500;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/*==========================================
+        FEATURE CONTENT
+===========================================*/
+
+.why-feature-content h3 {
+    margin: 0 0 7px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.why-feature-content p {
+    margin: 0;
+
+    color: #8f969f;
+
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+
+/*==========================================
+        TABLET
+===========================================*/
+
+@media (max-width: 1000px) {
+
+    .why-choose {
+        padding: 90px 5%;
+    }
+
+    .why-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .why-image {
+        min-height: 520px;
+    }
+
+    .why-image img {
+        min-height: 520px;
+    }
+
+    .why-content {
+        max-width: 850px;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+/*==========================================
+        MOBILE
+===========================================*/
+
+@media (max-width: 600px) {
+
+    .why-choose {
+        padding: 75px 20px;
+    }
+
+    .why-container {
+        gap: 38px;
+    }
+
+    .why-image {
+        min-height: 420px;
+    }
+
+    .why-image img {
+        min-height: 420px;
+    }
+
+    .why-image-badge {
+        left: 15px;
+        bottom: 15px;
+
+        padding: 12px 15px;
+    }
+
+    .why-image-badge i {
+        font-size: 19px;
+    }
+
+    .why-image-badge strong {
+        font-size: 12px;
+    }
+
+    .why-image-badge span {
+        font-size: 10px;
+    }
+
+    .why-tag {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .why-content h2 {
+        font-size: 30px;
+
+        line-height: 1.25;
+    }
+
+    .why-intro {
+        font-size: 13px;
+
+        line-height: 1.75;
+
+        margin-bottom: 28px;
+    }
+
+    .why-features {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .why-feature {
+        padding: 17px 15px;
+    }
+
+    .why-feature-content h3 {
+        font-size: 14px;
+    }
+
+    .why-feature-content p {
+        font-size: 11.5px;
+    }
+
+}
