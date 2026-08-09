@@ -2248,7 +2248,7 @@ height:70px;
 .why-choose {
     position: relative;
     width: 100%;
-    padding: 105px 6% 115px !important;
+     padding: 80px 6% 75px !important;
     background: #050505 !important;
     color: #ffffff !important;
     overflow: hidden;
@@ -2773,9 +2773,10 @@ height:70px;
 
     width: 100%;
 
-    padding: 105px 6% 115px;
-
-    background: #050505;
+    .gallery-section {
+    padding: 75px 6% 100px;
+            
+   background: #050505;
 
     overflow: hidden;
 }
