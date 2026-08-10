@@ -3322,42 +3322,48 @@ height:70px;
 ===========================================*/
 
 .featured-used-cars .featured-used-content h2 {
-    max-width: 550px !important;
+    max-width: 580px !important;
 
-    margin: 25px 0 20px !important;
+    margin: 24px 0 24px !important;
 
     color: #ffffff !important;
 
-    font-size: 58px !important;
+    font-size: 64px !important;
 
-    line-height: 1.05 !important;
+    line-height: 1.02 !important;
 
     font-weight: 800 !important;
 
-    letter-spacing: -1px !important;
+    letter-spacing: -1.5px !important;
 }
 
 .featured-used-cars .featured-used-content h2 span {
     display: block !important;
 
     color: #ff6500 !important;
+
+    font-size: 1.08em !important;
+
+    letter-spacing: -2px !important;
 }
-
-
 /*==========================================
         DESCRIPTION
 ===========================================*/
 
 .featured-used-cars .featured-used-content p {
-    max-width: 510px !important;
+    max-width: 560px !important;
 
-    margin: 0 0 32px !important;
+    margin: 0 0 36px !important;
 
-    color: #e0e2e5 !important;
+    color: #e7e9ec !important;
 
-    font-size: 15px !important;
+    font-size: 16px !important;
 
-    line-height: 1.75 !important;
+    font-weight: 400 !important;
+
+    line-height: 1.8 !important;
+
+    letter-spacing: 0.1px !important;
 }
 
 
@@ -3376,17 +3382,17 @@ height:70px;
 
     justify-content: center !important;
 
-    gap: 18px !important;
+    gap: 22px !important;
 
-    min-width: 275px !important;
+    min-width: 320px !important;
 
-    padding: 18px 28px !important;
+    padding: 21px 32px !important;
 
     background: #ff6500 !important;
 
     border: 1px solid #ff7a1a !important;
 
-    border-radius: 4px !important;
+    border-radius: 12px !important;
 
     color: #ffffff !important;
 
@@ -3396,11 +3402,38 @@ height:70px;
 
     font-weight: 800 !important;
 
-    letter-spacing: 1px !important;
+    letter-spacing: 1.2px !important;
 
     text-transform: uppercase !important;
 
     box-sizing: border-box !important;
+
+    box-shadow:
+        0 12px 35px rgba(255, 101, 0, 0.30) !important;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease !important;
+}
+
+.featured-used-cars .featured-used-btn:hover {
+    transform: translateY(-4px) !important;
+
+    background: #ff7414 !important;
+
+    box-shadow:
+        0 18px 45px rgba(255, 101, 0, 0.42) !important;
+}
+
+.featured-used-cars .featured-used-btn i {
+    font-size: 15px !important;
+
+    transition: transform 0.3s ease !important;
+}
+
+.featured-used-cars .featured-used-btn:hover i {
+    transform: translateX(6px) !important;
 }
 
 
