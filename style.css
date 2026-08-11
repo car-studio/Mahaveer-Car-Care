@@ -158,295 +158,7 @@ font-size:28px;
 cursor:pointer;
 
 }
-/* =========================================
-   MOBILE CALL BUTTON
-   HIDDEN ON DESKTOP
-========================================= */
 
-.mobile-call-btn {
-    display: none !important;
-}
-
-@media(max-width:991px){
-
-.nav-links{
-
-display:none;
-
-}
-
-.book-btn{
-
-display:none;
-
-}
-
-.menu-btn{
-
-display:block;
-
-}
-
-.logo img{
-
-width:58px;
-
-height:58px;
-
-}
-
-.logo-text h2{
-
-font-size:22px;
-
-}
-
-/* =========================================
-   MOBILE HEADER - CALL BUTTON
-   ========================================= */
-/* =========================================
-   MOBILE HEADER
-========================================= */
-
-.header {
-    padding: 5px 0;
-}
-
-.container {
-    width: 94%;
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-
-    gap: 8px;
-
-    flex: 1;
-    min-width: 0;
-}
-
-.logo img {
-    width: 55px;
-    height: 55px;
-
-    flex-shrink: 0;
-}
-
-.logo-text {
-    min-width: 0;
-}
-
-.logo-text h2 {
-    font-size: 20px;
-
-    line-height: 1.15;
-
-    white-space: nowrap;
-}
-
-.logo-text p {
-    font-size: 10px;
-
-    line-height: 1.3;
-
-    letter-spacing: .7px;
-
-    white-space: nowrap;
-}
-
-
-/* =========================================
-   CALL BUTTON
-========================================= */
-
-.mobile-call-btn {
-    display: flex !important;
-
-    align-items: center;
-    justify-content: center;
-
-    width: 48px !important;
-    height: 48px !important;
-
-    min-width: 48px !important;
-    max-width: 48px !important;
-
-    padding: 0 !important;
-
-    margin: 0 10px 0 8px !important;
-
-    box-sizing: border-box;
-
-    border: 2px solid #ff6500 !important;
-
-    border-radius: 10px !important;
-
-    background: transparent !important;
-
-    color: #ff6500 !important;
-
-    text-decoration: none;
-
-    position: static !important;
-
-    transform: none !important;
-
-    flex: 0 0 48px !important;
-}
-
-.mobile-call-btn i {
-    color: #ff6500 !important;
-
-    font-size: 21px !important;
-
-    line-height: 1;
-}
-
-
-/* =========================================
-   MENU
-========================================= */
-
-.menu-btn {
-    display: block;
-
-    flex: 0 0 auto;
-
-    font-size: 28px;
-
-    margin-left: 0;
-}
-.mobile-call-btn {
-    display: flex !important;
-
-    align-items: center;
-    justify-content: center;
-
-    width: 50px !important;
-    height: 50px !important;
-
-    min-width: 50px !important;
-    max-width: 50px !important;
-
-    padding: 0 !important;
-
-    margin-left: 12px;
-    margin-right: 12px;
-
-    border: 2px solid #ff6500 !important;
-    border-radius: 10px !important;
-
-    background: transparent !important;
-
-    color: #ff6500 !important;
-
-    text-decoration: none;
-
-    position: static !important;
-
-    transform: none !important;
-
-    flex: 0 0 50px !important;
-
-    box-sizing: border-box;
-
-    z-index: 1005;
-}
-
-
-.mobile-call-btn i {
-    color: #ff6500 !important;
-
-    font-size: 22px !important;
-
-    line-height: 1;
-
-    transform: none !important;
-}
-
-
-/* Keep logo area flexible */
-.logo {
-    flex: 1 1 auto;
-    min-width: 0;
-}
-
-
-/* Keep menu after call button */
-.menu-btn {
-    flex: 0 0 auto;
-    margin-left: 0;
-}
-/* ---------- Mobile Menu ---------- */
-
-@media (max-width:991px){
-
-.navbar{
-
-position:absolute;
-
-top:100%;
-
-left:0;
-
-width:100%;
-
-background:#0b0b0b;
-
-max-height:0;
-
-overflow:hidden;
-
-transition:0.4s;
-
-}
-
-.navbar.active{
-
-max-height:500px;
-
-}
-
-.nav-links{
-
-display:flex;
-
-flex-direction:column;
-
-padding:20px 0;
-
-gap:0;
-
-}
-
-.nav-links li{
-
-text-align:center;
-
-padding:16px 0;
-
-border-bottom:1px solid rgba(255,255,255,.08);
-
-}
-
-.nav-links li:last-child{
-
-border:none;
-
-}
-
-.nav-links a{
-
-font-size:18px;
-
-display:block;
-
-}
-
-}
 /* ===== Orange Light Sweep Effect ===== */
 
 .header::before{
@@ -7059,6 +6771,367 @@ height:70px;
         height: 2px;
 
         margin: 25px auto 0;
+    }
+
+}
+/* =========================================================
+   MAHAVEER CAR CARE
+   FRESH MOBILE HEADER FIX
+   Desktop layout remains untouched
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    /* -------------------------------
+       HEADER
+    ------------------------------- */
+
+    .header {
+        padding: 5px 0;
+        height: auto;
+    }
+
+    .header .container {
+        width: 94%;
+        max-width: none;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 8px;
+    }
+
+
+    /* -------------------------------
+       LOGO AREA
+    ------------------------------- */
+
+    .header .logo {
+        display: flex;
+        align-items: center;
+
+        gap: 8px;
+
+        flex: 1 1 auto;
+        min-width: 0;
+
+        overflow: hidden;
+    }
+
+    .header .logo img {
+        width: 55px;
+        height: 55px;
+
+        min-width: 55px;
+        max-width: 55px;
+
+        flex: 0 0 55px;
+
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .header .logo-text {
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .header .logo-text h2 {
+        margin: 0;
+
+        color: #ffffff;
+
+        font-size: 20px;
+        line-height: 1.15;
+        font-weight: 700;
+
+        white-space: nowrap;
+    }
+
+    .header .logo-text p {
+        margin: 3px 0 0;
+
+        color: #cfcfcf;
+
+        font-size: 10px;
+        line-height: 1.3;
+
+        letter-spacing: .7px;
+
+        white-space: nowrap;
+    }
+
+
+    /* -------------------------------
+       HIDE DESKTOP NAVIGATION
+    ------------------------------- */
+
+    .header .nav-links {
+        display: none;
+    }
+
+    .header .book-btn {
+        display: none;
+    }
+
+
+    /* -------------------------------
+       MOBILE CALL BUTTON
+       7008100859
+    ------------------------------- */
+
+    .header .mobile-call-btn {
+        display: flex !important;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 48px;
+        height: 48px;
+
+        min-width: 48px;
+        max-width: 48px;
+
+        flex: 0 0 48px;
+
+        padding: 0;
+        margin: 0 6px 0 4px;
+
+        box-sizing: border-box;
+
+        border: 2px solid #ff6500;
+        border-radius: 10px;
+
+        background: transparent;
+
+        color: #ff6500;
+
+        text-decoration: none;
+
+        position: static;
+        transform: none;
+    }
+
+    .header .mobile-call-btn i {
+        color: #ff6500;
+
+        font-size: 21px;
+        line-height: 1;
+
+        margin: 0;
+    }
+
+
+    /* -------------------------------
+       HAMBURGER MENU
+    ------------------------------- */
+
+    .header .menu-btn {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 34px;
+        height: 48px;
+
+        min-width: 34px;
+
+        flex: 0 0 34px;
+
+        margin: 0;
+        padding: 0;
+
+        color: #ffffff;
+
+        font-size: 30px;
+
+        line-height: 1;
+
+        cursor: pointer;
+    }
+
+
+    /* -------------------------------
+       MOBILE NAVIGATION DROPDOWN
+    ------------------------------- */
+
+    .header .navbar {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background: #0b0b0b;
+
+        max-height: 0;
+        overflow: hidden;
+
+        transition: max-height .4s ease;
+
+        border-top: 1px solid rgba(255,255,255,.06);
+    }
+
+    .header .navbar.active {
+        max-height: 500px;
+    }
+
+    .header .navbar .nav-links {
+        display: flex;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        padding: 10px 0;
+
+        gap: 0;
+
+        list-style: none;
+    }
+
+    .header .navbar .nav-links li {
+        width: 100%;
+
+        text-align: center;
+
+        padding: 14px 0;
+
+        border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .header .navbar .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .header .navbar .nav-links a {
+        display: block;
+
+        color: #ffffff;
+
+        font-size: 17px;
+
+        text-decoration: none;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE DEVICES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .header .container {
+        width: 94%;
+        gap: 5px;
+    }
+
+    .header .logo {
+        gap: 7px;
+    }
+
+    .header .logo img {
+        width: 52px;
+        height: 52px;
+
+        min-width: 52px;
+        max-width: 52px;
+
+        flex-basis: 52px;
+    }
+
+    .header .logo-text h2 {
+        font-size: 18px;
+    }
+
+    .header .logo-text p {
+        font-size: 9px;
+        letter-spacing: .5px;
+    }
+
+    .header .mobile-call-btn {
+        width: 46px;
+        height: 46px;
+
+        min-width: 46px;
+        max-width: 46px;
+
+        flex-basis: 46px;
+
+        margin-left: 4px;
+        margin-right: 5px;
+
+        border-radius: 10px;
+    }
+
+    .header .mobile-call-btn i {
+        font-size: 20px;
+    }
+
+    .header .menu-btn {
+        width: 32px;
+        height: 46px;
+
+        min-width: 32px;
+
+        flex-basis: 32px;
+
+        font-size: 28px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .header .logo img {
+        width: 48px;
+        height: 48px;
+
+        min-width: 48px;
+        max-width: 48px;
+
+        flex-basis: 48px;
+    }
+
+    .header .logo-text h2 {
+        font-size: 17px;
+    }
+
+    .header .logo-text p {
+        font-size: 8px;
+    }
+
+    .header .mobile-call-btn {
+        width: 44px;
+        height: 44px;
+
+        min-width: 44px;
+        max-width: 44px;
+
+        flex-basis: 44px;
+
+        margin-left: 3px;
+        margin-right: 4px;
+    }
+
+    .header .menu-btn {
+        width: 30px;
+        min-width: 30px;
+
+        flex-basis: 30px;
+
+        font-size: 27px;
     }
 
 }
