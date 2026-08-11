@@ -7135,3 +7135,7 @@ height:70px;
     }
 
 }
+/* Hide mobile call button on desktop */
+.mobile-call-btn {
+    display: none !important;
+}
