@@ -158,6 +158,14 @@ font-size:28px;
 cursor:pointer;
 
 }
+/* =========================================
+   MOBILE CALL BUTTON
+   HIDDEN ON DESKTOP
+========================================= */
+
+.mobile-call-btn {
+    display: none !important;
+}
 
 @media(max-width:991px){
 
@@ -196,7 +204,121 @@ font-size:22px;
 /* =========================================
    MOBILE HEADER - CALL BUTTON
    ========================================= */
+/* =========================================
+   MOBILE HEADER
+========================================= */
 
+.header {
+    padding: 5px 0;
+}
+
+.container {
+    width: 94%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    flex: 1;
+    min-width: 0;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+}
+
+.logo-text {
+    min-width: 0;
+}
+
+.logo-text h2 {
+    font-size: 20px;
+
+    line-height: 1.15;
+
+    white-space: nowrap;
+}
+
+.logo-text p {
+    font-size: 10px;
+
+    line-height: 1.3;
+
+    letter-spacing: .7px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   CALL BUTTON
+========================================= */
+
+.mobile-call-btn {
+    display: flex !important;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    min-width: 48px !important;
+    max-width: 48px !important;
+
+    padding: 0 !important;
+
+    margin: 0 10px 0 8px !important;
+
+    box-sizing: border-box;
+
+    border: 2px solid #ff6500 !important;
+
+    border-radius: 10px !important;
+
+    background: transparent !important;
+
+    color: #ff6500 !important;
+
+    text-decoration: none;
+
+    position: static !important;
+
+    transform: none !important;
+
+    flex: 0 0 48px !important;
+}
+
+.mobile-call-btn i {
+    color: #ff6500 !important;
+
+    font-size: 21px !important;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.menu-btn {
+    display: block;
+
+    flex: 0 0 auto;
+
+    font-size: 28px;
+
+    margin-left: 0;
+}
 .mobile-call-btn {
     display: flex !important;
 
