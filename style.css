@@ -192,7 +192,66 @@ height:58px;
 font-size:22px;
 
 }
+.mobile-call-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    width: 50px;
+    height: 50px;
+
+    background: #ff6500;
+    color: #ffffff;
+
+    border-radius: 10px;
+    text-decoration: none;
+
+    flex-shrink: 0;
+}
+
+.mobile-call-btn i {
+    color: #ffffff;
+    font-size: 23px;
+}
+}
+/* MOBILE CALL BUTTON */
+
+.mobile-call-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+
+    background: #ff6500;
+    color: #ffffff;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    position: absolute;
+    right: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 1005;
+
+    box-sizing: border-box;
+
+    transition: all 0.3s ease;
+}
+
+.mobile-call-btn i {
+    color: #ffffff;
+    font-size: 27px;
+    line-height: 1;
+    transform: rotate(-15deg);
+}
+
+.mobile-call-btn:active {
+    transform: translateY(-50%) scale(0.95);
 }
 /* ---------- Mobile Menu ---------- */
 
