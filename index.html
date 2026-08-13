@@ -530,10 +530,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <div class="services-action">
 
-    <a href="booking-modal.html" class="services-book-btn">
-        <i class="fa-solid fa-calendar-check"></i>
-        Book Now
-    </a>
+   <a href="#" class="services-book-btn" id="servicesBookNow">
+    <i class="fa-solid fa-calendar-check"></i>
+    Book Now
+</a>
 
     <a href="tel:7008100859" class="services-contact-btn">
         <i class="fa-solid fa-phone"></i>
@@ -2343,6 +2343,22 @@ document.addEventListener("click", function(event) {
     const heroBookButton = event.target.closest("#heroBookNow");
 
     if (!heroBookButton) return;
+
+    event.preventDefault();
+
+    if (typeof window.openHomepageBooking === "function") {
+        window.openHomepageBooking();
+    }
+
+});
+</script>
+        <script>
+document.addEventListener("click", function(event) {
+
+    const servicesBookButton =
+        event.target.closest("#servicesBookNow");
+
+    if (!servicesBookButton) return;
 
     event.preventDefault();
 
