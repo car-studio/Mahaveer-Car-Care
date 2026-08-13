@@ -113,13 +113,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
     <div class="hero-buttons">
 
-        <a href="#" class="hero-btn primary-btn">
-            Book Appointment
-        </a>
+        <a href="#" class="hero-btn primary-btn" id="heroBookNow">
+    Book Appointment
+</a>
 
-        <a href="#" class="hero-btn secondary-btn">
-            Explore Services
-        </a>
+        <a href="#services" class="hero-btn secondary-btn">
+    Explore Services
+</a>
 
     </div>
 
@@ -231,9 +231,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
             </div>
 
-            <a href="#" class="about-btn">
-                Explore Our Services
-            </a>
+            <a href="#services" class="hero-btn secondary-btn">
+    Explore Our Services
+</a>
 
         </div>
 
@@ -2332,6 +2332,21 @@ Thank you.`;
         /* Finally open */
         openHomepageBooking();
 
+    }
+
+});
+</script>
+            <script>
+document.addEventListener("click", function(event) {
+
+    const heroBookButton = event.target.closest("#heroBookNow");
+
+    if (!heroBookButton) return;
+
+    event.preventDefault();
+
+    if (typeof window.openHomepageBooking === "function") {
+        window.openHomepageBooking();
     }
 
 });
