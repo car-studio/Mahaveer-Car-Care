@@ -53,7 +53,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 </nav>
 
-<a href="#" class="book-btn btn primary">
+<a href="#" class="book-btn" id="homeBookNow">
     Book Now
 </a>
 
@@ -2074,6 +2074,267 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 </footer>
 <script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    const bookNowButton = document.getElementById("homeBookNow");
+
+    if (!bookNowButton) return;
+
+    bookNowButton.addEventListener("click", async function (event) {
+
+        event.preventDefault();
+
+        /* Load booking modal */
+        let bookingModal = document.getElementById("bookingOverlay");
+
+        if (!bookingModal) {
+
+            try {
+
+                const response = await fetch("booking-modal.html");
+
+                if (!response.ok) {
+                    throw new Error("Booking modal could not be loaded.");
+                }
+
+                const html = await response.text();
+
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, "text/html");
+
+                /* Copy modal styles */
+                doc.querySelectorAll("style").forEach(style => {
+                    document.head.appendChild(
+                        document.importNode(style, true)
+                    );
+                });
+
+                /* Copy modal HTML */
+                bookingModal = doc.getElementById("bookingOverlay");
+
+                if (!bookingModal) {
+                    throw new Error("Booking modal HTML not found.");
+                }
+
+                document.body.appendChild(
+                    document.importNode(bookingModal, true)
+                );
+
+                bookingModal = document.getElementById("bookingOverlay");
+
+                initializeHomepageBooking();
+
+            } catch (error) {
+
+                console.error("Booking modal error:", error);
+
+                alert("Booking system could not be loaded. Please try again.");
+
+            }
+
+        } else {
+
+            openHomepageBooking();
+
+        }
+
+    });
+
+
+    function initializeHomepageBooking() {
+
+        const overlay = document.getElementById("bookingOverlay");
+        const closeButton = document.getElementById("closeBooking");
+        const form = document.getElementById("bookingForm");
+        const serviceTitle = document.getElementById("serviceTitle");
+
+        if (!overlay || !closeButton || !form || !serviceTitle) {
+            console.error("Booking modal elements missing.");
+            return;
+        }
+
+        /* Hide initially */
+        overlay.style.display = "none";
+
+        /* Homepage title */
+        serviceTitle.textContent = "Book Service";
+
+
+        /* Open */
+        window.openHomepageBooking = function () {
+
+            serviceTitle.textContent = "Book Service";
+
+            overlay.style.display = "flex";
+
+            document.body.style.overflow = "hidden";
+
+        };
+
+
+        /* Close */
+        function closeHomepageBooking() {
+
+            overlay.style.display = "none";
+
+            document.body.style.overflow = "";
+
+        }
+
+
+        closeButton.addEventListener(
+            "click",
+            closeHomepageBooking
+        );
+
+
+        /* Click outside */
+        overlay.addEventListener(
+            "click",
+            function (event) {
+
+                if (event.target === overlay) {
+                    closeHomepageBooking();
+                }
+
+            }
+        );
+
+
+        /* ESC */
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (event.key === "Escape") {
+                    closeHomepageBooking();
+                }
+
+            }
+        );
+
+
+        /* WhatsApp booking */
+        form.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+                const customerName =
+                    document.getElementById("customerName")
+                    .value
+                    .trim();
+
+                const customerMobile =
+                    document.getElementById("customerMobile")
+                    .value
+                    .trim();
+
+                const vehicleModel =
+                    document.getElementById("vehicleModel")
+                    .value
+                    .trim();
+
+                const preferredDate =
+                    document.getElementById("preferredDate")
+                    .value;
+
+                const preferredTime =
+                    document.getElementById("preferredTime")
+                    .value;
+
+                const additionalNotes =
+                    document.getElementById("additionalNotes")
+                    .value
+                    .trim();
+
+
+                /* Mobile validation */
+                const mobilePattern = /^[0-9]{10}$/;
+
+                if (!mobilePattern.test(customerMobile)) {
+
+                    alert(
+                        "Please enter a valid 10-digit mobile number."
+                    );
+
+                    return;
+
+                }
+
+
+                /* Format date */
+                let formattedDate = preferredDate;
+
+                if (preferredDate) {
+
+                    const date = new Date(preferredDate);
+
+                    formattedDate =
+                        date.toLocaleDateString(
+                            "en-IN",
+                            {
+                                day: "2-digit",
+                                month: "long",
+                                year: "numeric"
+                            }
+                        );
+
+                }
+
+
+                /* WhatsApp message */
+                const message =
+`Hello Mahaveer Car Care,
+
+I would like to book a service.
+
+Service:
+General Service Booking
+
+Name:
+${customerName}
+
+Mobile:
+${customerMobile}
+
+Vehicle:
+${vehicleModel}
+
+Preferred Date:
+${formattedDate}
+
+Preferred Time:
+${preferredTime || "Not specified"}
+
+Additional Notes:
+${additionalNotes || "None"}
+
+Thank you.`;
+
+
+                const whatsappURL =
+                    "https://wa.me/917008100859?text=" +
+                    encodeURIComponent(message);
+
+
+                window.open(
+                    whatsappURL,
+                    "_blank"
+                );
+
+            }
+        );
+
+
+        /* Finally open */
+        openHomepageBooking();
+
+    }
+
+});
+</script>
 </body>
 </html>
