@@ -2055,7 +2055,883 @@ PROCESS TIMELINE
     }
 
 }
+/* =========================================================
+   MAHAVEER CAR CARE
+   CAR REFINEMENT - MOBILE RESPONSIVE FIX
+   ========================================================= */
 
+@media (max-width: 768px) {
+
+    /* ================================
+       GLOBAL
+    ================================= */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    /* ================================
+       BACK HOME BUTTON
+    ================================= */
+
+    .back-home {
+        top: 14px;
+        right: 14px;
+        padding: 9px 15px;
+        font-size: 12px;
+    }
+
+
+    /* ================================
+       HERO
+    ================================= */
+
+    .hero {
+        height: auto;
+        min-height: 100svh;
+        padding: 100px 20px 55px;
+        align-items: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .badge {
+        padding: 8px 15px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        margin-bottom: 18px;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+        line-height: 1.15;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.75;
+        margin-bottom: 25px;
+    }
+
+    .features {
+        width: 100%;
+        flex-direction: column;
+        gap: 9px;
+        margin-bottom: 30px;
+    }
+
+    .features span {
+        width: 100%;
+        padding: 9px 12px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .buttons .btn {
+        width: 100%;
+        padding: 15px 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+
+    /* ================================
+       INTRO
+    ================================= */
+
+    .intro-section {
+        padding: 70px 20px 50px;
+    }
+
+    .intro-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .intro-tag {
+        padding: 8px 15px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        margin-bottom: 22px;
+    }
+
+    .intro-container h2 {
+        font-size: 32px;
+        line-height: 1.25;
+        margin-bottom: 24px;
+    }
+
+    .intro-container p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    /* ================================
+       SIGNATURE DIVIDER
+    ================================= */
+
+    .signature-divider {
+        margin-top: 45px;
+        gap: 10px;
+    }
+
+    .divider-circle {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    .divider-circle::before {
+        width: 4px;
+        height: 4px;
+    }
+
+
+    /* ================================
+       SERVICE OVERVIEW
+    ================================= */
+
+    .overview-section {
+        padding: 45px 20px 70px;
+    }
+
+    .overview-heading {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .overview-heading span {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .overview-heading h2 {
+        font-size: 31px;
+        line-height: 1.25;
+        margin: 16px 0 20px;
+    }
+
+    .overview-heading p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    /* ================================
+       OVERVIEW IMAGE
+    ================================= */
+
+    .overview-image {
+        width: 100%;
+        margin: 40px 0 30px;
+    }
+
+    .overview-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 18px;
+    }
+
+
+    /* ================================
+       OVERVIEW CONTENT
+    ================================= */
+
+    .overview-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 60px;
+    }
+
+    .overview-left,
+    .overview-right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .overview-left h3 {
+        font-size: 25px;
+        line-height: 1.3;
+        margin-bottom: 17px;
+    }
+
+    .overview-left p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 18px;
+    }
+
+    .overview-second {
+        margin-bottom: 20px !important;
+    }
+
+    .overview-button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .overview-button .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .overview-right {
+        min-height: auto;
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+
+    .overview-right h3 {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 22px;
+    }
+
+    .overview-right ul {
+        width: 100%;
+    }
+
+    .overview-right li {
+        padding-left: 28px;
+        margin-bottom: 14px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .overview-right li::before {
+        font-size: 18px;
+    }
+
+    .contact-button {
+        width: 100%;
+        margin-top: 22px;
+    }
+
+    .contact-btn {
+        width: 100%;
+        height: 56px;
+        font-size: 15px;
+    }
+
+
+    /* ================================
+       PROCESS HEADING
+    ================================= */
+
+    .process-heading {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+        margin: 0 auto 40px;
+    }
+
+    .process-tag {
+        padding: 8px 15px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .process-heading h2 {
+        font-size: 31px;
+        line-height: 1.25;
+        margin: 18px 0;
+    }
+
+    .process-heading p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    /* ================================
+       PROCESS TIMELINE
+       Desktop alternating layout
+       becomes vertical on mobile
+    ================================= */
+
+    .process-timeline {
+        width: 100%;
+        max-width: 100%;
+        margin: 40px auto 0;
+        padding: 0 20px;
+    }
+
+    .process-timeline::before {
+        left: 21px;
+        transform: none;
+        width: 2px;
+        height: 100%;
+    }
+
+    .process-step {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding-left: 52px;
+        margin-bottom: 28px;
+    }
+
+    .process-step:last-child {
+        margin-bottom: 0;
+    }
+
+    .step-node {
+        left: 21px;
+        top: 25px;
+        transform: translate(-50%, -50%);
+        width: 46px;
+        height: 46px;
+        border-width: 2px;
+    }
+
+    .step-node span {
+        font-size: 14px;
+    }
+
+    .process-step.left .process-card,
+    .process-step.right .process-card {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
+        min-height: 0;
+        margin: 0;
+        padding: 22px 18px;
+        border-radius: 18px;
+    }
+
+    .process-step.left .process-card:hover,
+    .process-step.right .process-card:hover {
+        transform: translateY(-3px);
+    }
+
+    .step-icon {
+        font-size: 27px;
+        margin-bottom: 12px;
+    }
+
+    .process-card h3 {
+        font-size: 19px;
+        line-height: 1.35;
+        margin-bottom: 10px;
+    }
+
+    .process-card p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* ================================
+       BEFORE & AFTER
+    ================================= */
+
+    .before-after-section {
+        padding: 60px 20px 75px;
+    }
+
+    .before-after-heading {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .before-after-heading .section-badge {
+        padding: 8px 15px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        margin-bottom: 18px;
+    }
+
+    .before-after-heading h2 {
+        font-size: 31px;
+        line-height: 1.25;
+        margin-bottom: 18px;
+    }
+
+    .before-after-heading p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .comparison-wrapper {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .comparison-card {
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+        border-radius: 18px;
+    }
+
+    .comparison-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .comparison-label {
+        top: 12px;
+        left: 12px;
+        padding: 7px 13px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .comparison-divider {
+        flex: none;
+        width: 80%;
+        max-width: 320px;
+        height: 3px;
+        margin: 0 auto;
+    }
+
+    .comparison-divider span {
+        width: 14px;
+        height: 14px;
+        margin: -5px auto 0;
+    }
+
+
+    /* ================================
+       BENEFITS
+    ================================= */
+
+    .benefits-section {
+        padding: 55px 20px 70px;
+    }
+
+    .benefits-heading {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .section-badge {
+        font-size: 10px;
+        padding: 8px 15px;
+        letter-spacing: 1.5px;
+    }
+
+    .benefits-heading h2 {
+        font-size: 31px;
+        line-height: 1.25;
+        margin: 17px 0 20px;
+    }
+
+    .benefits-heading p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .benefit-card {
+        min-height: 0;
+        padding: 24px 20px;
+        border-radius: 18px;
+    }
+
+    .benefit-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .benefit-card h3 {
+        font-size: 20px;
+        line-height: 1.35;
+        margin-bottom: 11px;
+    }
+
+    .benefit-card p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .benefits-divider {
+        width: 80%;
+        max-width: 300px;
+        height: 3px;
+        margin: 20px auto 30px;
+    }
+
+
+    /* ================================
+       PRICING
+    ================================= */
+
+    .pricing-section {
+        padding: 55px 20px 70px;
+    }
+
+    .pricing-heading {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 42px;
+    }
+
+    .pricing-heading h2 {
+        font-size: 31px;
+        line-height: 1.25;
+        margin: 17px 0;
+    }
+
+    .pricing-heading p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .pricing-divider {
+        width: 150px;
+        height: 3px;
+        margin-bottom: 22px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .pricing-card {
+        width: 100%;
+        padding: 27px 20px;
+        border-radius: 20px;
+    }
+
+    .plan-tag {
+        padding: 7px 15px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .popular-tag {
+        top: -12px;
+        right: 15px;
+        padding: 6px 12px;
+        font-size: 9px;
+    }
+
+    .pricing-card h3 {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-top: 21px;
+    }
+
+    .plan-desc {
+        font-size: 13px;
+        line-height: 1.7;
+        margin: 14px 0 22px;
+    }
+
+    .vehicle-pricing {
+        flex-direction: column;
+        gap: 11px;
+        margin-bottom: 24px;
+    }
+
+    .vehicle-box {
+        width: 100%;
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+    .vehicle-box span {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+
+    .vehicle-box h4 {
+        font-size: 27px;
+    }
+
+    .pricing-card ul {
+        margin-bottom: 24px;
+    }
+
+    .pricing-card ul li {
+        margin-bottom: 11px;
+        padding-left: 24px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .pricing-card .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 54px;
+        padding: 14px 16px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .price-btn {
+        width: 100%;
+        min-height: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+
+    /* ================================
+       FAQ
+    ================================= */
+
+    .faq-section {
+        padding: 55px 20px 70px;
+    }
+
+    .faq-heading {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 38px;
+    }
+
+    .faq-heading h2 {
+        font-size: 31px;
+        line-height: 1.25;
+        margin: 17px 0;
+    }
+
+    .faq-heading p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .faq-divider {
+        width: 150px;
+        height: 3px;
+        margin-bottom: 22px;
+    }
+
+    .faq-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .faq-item {
+        width: 100%;
+        border-radius: 16px;
+        margin-bottom: 13px;
+    }
+
+    .faq-question {
+        padding: 17px 16px;
+        gap: 10px;
+    }
+
+    .faq-question h3 {
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .faq-question span {
+        flex-shrink: 0;
+        font-size: 23px;
+    }
+
+    .faq-answer {
+        padding: 0 16px;
+    }
+
+    .faq-item.active .faq-answer {
+        max-height: 500px;
+        padding: 0 16px 18px;
+    }
+
+    .faq-answer p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+
+    /* ================================
+       FINAL CTA
+    ================================= */
+
+    .final-cta {
+        padding: 60px 20px 70px;
+    }
+
+    .cta-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cta-content h2 {
+        font-size: 32px;
+        line-height: 1.25;
+        margin: 18px 0;
+    }
+
+    .cta-divider {
+        width: 150px;
+        height: 3px;
+        margin-bottom: 25px;
+    }
+
+    .cta-content p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .cta-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 30px;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        width: 100%;
+        height: 56px;
+        font-size: 15px;
+    }
+
+    .cta-features {
+        margin-top: 35px;
+        grid-template-columns: 1fr;
+        gap: 11px;
+    }
+
+    .cta-features div {
+        padding: 15px;
+        border-radius: 14px;
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .back-home {
+        top: 11px;
+        right: 11px;
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 88px 16px 50px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .intro-section,
+    .overview-section,
+    .before-after-section,
+    .benefits-section,
+    .pricing-section,
+    .faq-section,
+    .final-cta {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .intro-container h2,
+    .overview-heading h2,
+    .process-heading h2,
+    .before-after-heading h2,
+    .benefits-heading h2,
+    .pricing-heading h2,
+    .faq-heading h2,
+    .cta-content h2 {
+        font-size: 29px;
+    }
+
+    .overview-right {
+        padding: 21px 17px;
+    }
+
+    .process-timeline {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .process-step {
+        padding-left: 49px;
+    }
+
+    .process-timeline::before {
+        left: 19px;
+    }
+
+    .step-node {
+        left: 19px;
+        width: 43px;
+        height: 43px;
+    }
+
+    .process-card {
+        padding: 20px 16px !important;
+    }
+
+    .pricing-card {
+        padding: 24px 17px;
+    }
+
+    .faq-question h3 {
+        font-size: 13px;
+    }
+
+}
 </style>
 
 </head>
