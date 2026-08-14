@@ -1705,28 +1705,28 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
             look its absolute best.
         </p>
 
-        <div class="final-cta-buttons">
+       <div class="final-cta-buttons">
 
-            <a href="#" class="final-cta-btn">
-                <i class="fa-solid fa-calendar-check"></i>
-                BOOK YOUR CAR CARE SERVICE
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
+    <a href="#" class="final-cta-btn" id="finalCtaBookNow">
+        <i class="fa-solid fa-calendar-check"></i>
+        BOOK YOUR CAR CARE SERVICE
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
 
-        </div>
+</div>
 
-        <a href="#" class="final-cta-contact">
-            <span class="final-cta-contact-icon">
-                <i class="fa-solid fa-phone"></i>
-            </span>
+<a href="tel:7008100859" class="final-cta-contact">
+    <span class="final-cta-contact-icon">
+        <i class="fa-solid fa-phone"></i>
+    </span>
 
-            <span>
-                Have questions?
-                <strong>Contact our team</strong>
-            </span>
+    <span>
+        Have questions?
+        <strong>Contact our team</strong>
+    </span>
 
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
 
     </div>
 
@@ -2359,6 +2359,22 @@ document.addEventListener("click", function(event) {
         event.target.closest("#servicesBookNow");
 
     if (!servicesBookButton) return;
+
+    event.preventDefault();
+
+    if (typeof window.openHomepageBooking === "function") {
+        window.openHomepageBooking();
+    }
+
+});
+</script>
+        <script>
+document.addEventListener("click", function(event) {
+
+    const finalCtaBookButton =
+        event.target.closest("#finalCtaBookNow");
+
+    if (!finalCtaBookButton) return;
 
     event.preventDefault();
 
