@@ -11,7 +11,7 @@
     <title>Used Cars | Mahaveer Car Care</title>
 
     <meta name="description"
-          content="Explore quality used cars at Mahaveer Car Care. Find trusted pre-owned cars and drive home with confidence.">
+          content="Find your dream car at an affordable price with Mahaveer Car Care. Explore quality pre-owned cars and trusted deals.">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
@@ -25,7 +25,7 @@
           href="https://fonts.gstatic.com"
           crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
           rel="stylesheet">
 
 
@@ -49,11 +49,11 @@
             width: 100%;
             min-height: 100vh;
 
-            font-family: 'Poppins', sans-serif;
-
             background: #050505;
 
             color: #ffffff;
+
+            font-family: 'Poppins', sans-serif;
 
             overflow-x: hidden;
         }
@@ -77,7 +77,9 @@
 
             width: 100%;
 
-            height: 90px;
+            height: 92px;
+
+            padding: 0 5%;
 
             display: flex;
 
@@ -85,9 +87,7 @@
 
             justify-content: space-between;
 
-            padding: 0 5%;
-
-            background: rgba(0, 0, 0, 0.72);
+            background: rgba(0, 0, 0, 0.68);
 
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
@@ -97,7 +97,9 @@
         }
 
 
-        /* Logo */
+        /* =========================
+           LOGO
+        ========================= */
 
         .used-cars-logo {
 
@@ -105,19 +107,18 @@
 
             align-items: center;
 
-            gap: 14px;
+            gap: 13px;
         }
 
         .used-cars-logo img {
 
-            width: 62px;
-            height: 62px;
+            width: 60px;
+            height: 60px;
 
             object-fit: contain;
 
             border-radius: 50%;
         }
-
 
         .used-cars-logo-text {
 
@@ -128,7 +129,7 @@
 
         .used-cars-logo-text strong {
 
-            font-size: 25px;
+            font-size: 24px;
 
             line-height: 1.1;
 
@@ -141,45 +142,33 @@
 
             margin-top: 5px;
 
-            font-size: 11px;
-
-            letter-spacing: 1.8px;
-
             color: #d0d0d0;
+
+            font-size: 10px;
+
+            letter-spacing: 1.6px;
         }
 
 
-        /* Header navigation */
+        /* =========================
+           HEADER ACTIONS
+        ========================= */
 
-        .used-cars-nav {
+        .used-cars-header-actions {
 
             display: flex;
 
             align-items: center;
 
-            gap: 30px;
-        }
-
-        .used-cars-nav a {
-
-            font-size: 13px;
-
-            font-weight: 500;
-
-            color: #eeeeee;
-
-            transition: 0.3s ease;
-        }
-
-        .used-cars-nav a:hover {
-
-            color: #ff7200;
+            gap: 12px;
         }
 
 
-        /* Header call button */
+        .header-action {
 
-        .header-call {
+            height: 46px;
+
+            padding: 0 17px;
 
             display: inline-flex;
 
@@ -189,24 +178,72 @@
 
             gap: 8px;
 
-            padding: 11px 18px;
-
             border-radius: 30px;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            transition: 0.3s ease;
+        }
+
+
+        /* Call */
+
+        .header-call {
 
             background: #ff7200;
 
-            color: #ffffff !important;
+            border: 1px solid #ff7200;
 
-            font-size: 12px !important;
-
-            font-weight: 700 !important;
-
-            transition: 0.3s ease;
+            color: #ffffff;
         }
 
         .header-call:hover {
 
             background: #ff8500;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* Email */
+
+        .header-email {
+
+            background: rgba(0, 0, 0, 0.45);
+
+            border: 1px solid #ff7200;
+
+            color: #ffffff;
+        }
+
+        .header-email:hover {
+
+            background: #ff7200;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* Review */
+
+        .header-review {
+
+            background: transparent;
+
+            border: 1px solid rgba(255, 255, 255, 0.45);
+
+            color: #ffffff;
+        }
+
+        .header-review:hover {
+
+            background: #ffffff;
+
+            color: #050505;
+
+            border-color: #ffffff;
 
             transform: translateY(-2px);
         }
@@ -222,13 +259,7 @@
 
             width: 100%;
 
-            min-height: 760px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
+            min-height: 820px;
 
             background-image: url('ucb.png');
 
@@ -238,11 +269,17 @@
 
             background-repeat: no-repeat;
 
+            display: flex;
+
+            justify-content: center;
+
+            align-items: flex-start;
+
             overflow: hidden;
         }
 
 
-        /* Dark premium overlay */
+        /* Premium dark overlay */
 
         .used-cars-hero::before {
 
@@ -254,17 +291,18 @@
 
             background:
                 linear-gradient(
-                    90deg,
-                    rgba(0, 0, 0, 0.78) 0%,
-                    rgba(0, 0, 0, 0.35) 50%,
-                    rgba(0, 0, 0, 0.78) 100%
+                    180deg,
+                    rgba(0, 0, 0, 0.72) 0%,
+                    rgba(0, 0, 0, 0.30) 28%,
+                    rgba(0, 0, 0, 0.08) 55%,
+                    rgba(0, 0, 0, 0.65) 100%
                 );
 
             z-index: 1;
         }
 
 
-        /* Bottom dark fade */
+        /* Bottom fade */
 
         .used-cars-hero::after {
 
@@ -276,7 +314,7 @@
             right: 0;
             bottom: 0;
 
-            height: 180px;
+            height: 170px;
 
             background:
                 linear-gradient(
@@ -284,47 +322,34 @@
                     #050505
                 );
 
-            z-index: 1;
+            z-index: 2;
 
             pointer-events: none;
         }
 
 
-        /* Hero content */
-
-        .used-cars-hero-content {
-
-            position: relative;
-
-            z-index: 2;
-
-            width: 100%;
-
-            max-width: 950px;
-
-            padding: 120px 25px 80px;
-
-            text-align: center;
-
-            margin: 0 auto;
-        }
-
-
-        /* Badge */
+        /* =====================================================
+           HERO BADGE
+           TOP LEFT
+        ===================================================== */
 
         .used-cars-hero-badge {
 
-            display: inline-block;
+            position: absolute;
 
-            padding: 9px 22px;
+            top: 135px;
 
-            margin-bottom: 25px;
+            left: 5%;
+
+            z-index: 5;
+
+            padding: 10px 22px;
 
             border: 1px solid #ff7200;
 
             border-radius: 50px;
 
-            background: rgba(0, 0, 0, 0.45);
+            background: rgba(0, 0, 0, 0.58);
 
             color: #ff7200;
 
@@ -333,51 +358,90 @@
             font-weight: 700;
 
             letter-spacing: 2.5px;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.35);
         }
 
 
-        /* Heading */
+        /* =====================================================
+           HERO CONTENT
+           HEADLINE ABOVE THE CARS
+        ===================================================== */
+
+        .used-cars-hero-content {
+
+            position: relative;
+
+            z-index: 4;
+
+            width: 100%;
+
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            padding: 205px 25px 120px;
+
+            text-align: center;
+        }
+
+
+        /* Main headline */
 
         .used-cars-hero-content h1 {
 
+            max-width: 1050px;
+
+            margin: 0 auto;
+
             color: #ffffff;
 
-            font-size: clamp(48px, 6vw, 82px);
+            font-size: clamp(48px, 6.2vw, 86px);
 
-            line-height: 1.05;
+            line-height: 1.02;
 
-            font-weight: 800;
+            font-weight: 900;
 
-            letter-spacing: -2px;
+            letter-spacing: -3px;
 
             text-shadow:
                 0 5px 25px rgba(0, 0, 0, 0.85);
         }
 
+
         .used-cars-hero-content h1 span {
 
             display: block;
 
+            margin-top: 7px;
+
             color: #ff7200;
+
+            text-shadow:
+                0 5px 25px rgba(0, 0, 0, 0.85),
+                0 0 25px rgba(255, 114, 0, 0.12);
         }
 
 
-        /* Description */
+        /* Tagline */
 
         .used-cars-hero-content p {
 
-            max-width: 680px;
+            max-width: 700px;
 
-            margin: 25px auto 35px;
+            margin: 28px auto 32px;
 
-            color: #eeeeee;
+            color: #ffffff;
 
             font-size: 17px;
 
-            line-height: 1.8;
+            line-height: 1.75;
+
+            font-weight: 400;
 
             text-shadow:
-                0 3px 15px rgba(0, 0, 0, 0.85);
+                0 3px 15px rgba(0, 0, 0, 0.9);
         }
 
 
@@ -389,23 +453,21 @@
 
             display: flex;
 
-            justify-content: center;
-
             align-items: center;
 
-            gap: 16px;
+            justify-content: center;
 
-            flex-wrap: wrap;
+            gap: 16px;
         }
 
 
         .used-cars-btn {
 
-            min-width: 190px;
+            min-width: 195px;
 
-            min-height: 55px;
+            min-height: 56px;
 
-            padding: 14px 25px;
+            padding: 15px 26px;
 
             display: inline-flex;
 
@@ -421,12 +483,11 @@
 
             font-weight: 700;
 
-            transition:
-                0.3s ease;
+            transition: 0.3s ease;
         }
 
 
-        /* Primary */
+        /* Explore Cars */
 
         .used-cars-btn.primary {
 
@@ -437,11 +498,21 @@
             color: #ffffff;
 
             box-shadow:
-                0 10px 30px rgba(255, 114, 0, 0.25);
+                0 10px 30px rgba(255, 114, 0, 0.28);
+        }
+
+        .used-cars-btn.primary:hover {
+
+            background: #ff8500;
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 15px 35px rgba(255, 114, 0, 0.38);
         }
 
 
-        /* Secondary */
+        /* Call Us */
 
         .used-cars-btn.secondary {
 
@@ -452,27 +523,64 @@
             color: #ffffff;
         }
 
-
-        /* Hover */
-
-        .used-cars-btn:hover {
-
-            transform: translateY(-3px);
-        }
-
-        .used-cars-btn.primary:hover {
-
-            background: #ff8500;
-
-            box-shadow:
-                0 14px 35px rgba(255, 114, 0, 0.35);
-        }
-
         .used-cars-btn.secondary:hover {
 
             background: #ff7200;
 
+            transform: translateY(-3px);
+        }
+
+
+        /* =====================================================
+           TEMPORARY NEXT SECTION
+        ===================================================== */
+
+        #available-cars {
+
+            min-height: 400px;
+
+            padding: 80px 20px;
+
+            background: #050505;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+        }
+
+        #available-cars span {
+
+            color: #ff7200;
+
+            font-size: 11px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+        }
+
+        #available-cars h2 {
+
+            margin-top: 15px;
+
             color: #ffffff;
+
+            font-size: 38px;
+
+            font-weight: 800;
+        }
+
+        #available-cars p {
+
+            margin-top: 15px;
+
+            color: #999999;
+
+            font-size: 14px;
         }
 
 
@@ -482,51 +590,62 @@
 
         @media (max-width: 768px) {
 
+
             /* Header */
 
             .used-cars-header {
 
                 height: 76px;
 
-                padding: 0 16px;
+                padding: 0 15px;
             }
 
             .used-cars-logo {
 
-                gap: 9px;
+                gap: 8px;
             }
 
             .used-cars-logo img {
 
-                width: 48px;
-                height: 48px;
+                width: 47px;
+
+                height: 47px;
             }
 
             .used-cars-logo-text strong {
 
-                font-size: 18px;
+                font-size: 17px;
             }
 
             .used-cars-logo-text span {
 
-                font-size: 8px;
+                font-size: 7px;
 
                 letter-spacing: 1px;
             }
 
-            .used-cars-nav {
 
-                display: none;
+            /* Header buttons */
+
+            .used-cars-header-actions {
+
+                gap: 7px;
             }
 
-            .header-call {
+            .header-action {
 
-                padding: 10px 13px;
+                width: 42px;
 
-                font-size: 11px !important;
+                height: 42px;
+
+                padding: 0;
+
+                border-radius: 12px;
+
+                font-size: 15px;
             }
 
-            .header-call span {
+            .header-action span {
 
                 display: none;
             }
@@ -536,57 +655,73 @@
 
             .used-cars-hero {
 
-                min-height: 700px;
+                min-height: 720px;
 
                 background-position: center center;
             }
+
 
             .used-cars-hero::before {
 
                 background:
                     linear-gradient(
                         180deg,
-                        rgba(0, 0, 0, 0.55) 0%,
-                        rgba(0, 0, 0, 0.55) 45%,
-                        rgba(0, 0, 0, 0.88) 100%
+                        rgba(0, 0, 0, 0.72) 0%,
+                        rgba(0, 0, 0, 0.38) 35%,
+                        rgba(0, 0, 0, 0.70) 72%,
+                        rgba(0, 0, 0, 0.92) 100%
                     );
             }
 
-            .used-cars-hero-content {
 
-                padding: 110px 20px 70px;
-            }
+            /* Badge */
 
             .used-cars-hero-badge {
 
-                font-size: 9px;
+                top: 102px;
 
-                letter-spacing: 1.8px;
+                left: 18px;
 
-                padding: 8px 16px;
+                padding: 8px 15px;
 
-                margin-bottom: 20px;
+                font-size: 8px;
+
+                letter-spacing: 1.6px;
+            }
+
+
+            /* Headline */
+
+            .used-cars-hero-content {
+
+                padding: 155px 18px 80px;
             }
 
             .used-cars-hero-content h1 {
 
-                font-size: 43px;
+                font-size: 42px;
 
-                line-height: 1.1;
+                line-height: 1.08;
 
-                letter-spacing: -1px;
+                letter-spacing: -1.5px;
             }
+
+
+            /* Tagline */
 
             .used-cars-hero-content p {
 
-                max-width: 370px;
+                max-width: 350px;
 
-                font-size: 14px;
+                margin: 22px auto 28px;
+
+                font-size: 13px;
 
                 line-height: 1.7;
-
-                margin: 22px auto 30px;
             }
+
+
+            /* Buttons */
 
             .used-cars-hero-buttons {
 
@@ -594,7 +729,7 @@
 
                 flex-direction: column;
 
-                gap: 12px;
+                gap: 11px;
             }
 
             .used-cars-btn {
@@ -603,7 +738,9 @@
 
                 max-width: 330px;
 
-                min-height: 54px;
+                min-height: 53px;
+
+                font-size: 13px;
             }
         }
 
@@ -614,34 +751,63 @@
 
         @media (max-width: 480px) {
 
+            .used-cars-header {
+
+                padding: 0 12px;
+            }
+
             .used-cars-logo-text strong {
 
-                font-size: 16px;
+                font-size: 15px;
             }
 
             .used-cars-logo-text span {
 
-                font-size: 7px;
+                font-size: 6px;
             }
+
+            .used-cars-header-actions {
+
+                gap: 5px;
+            }
+
+            .header-action {
+
+                width: 39px;
+
+                height: 39px;
+
+                border-radius: 10px;
+            }
+
 
             .used-cars-hero {
 
-                min-height: 650px;
+                min-height: 680px;
+            }
+
+            .used-cars-hero-badge {
+
+                top: 98px;
+
+                left: 15px;
             }
 
             .used-cars-hero-content {
 
-                padding: 100px 16px 55px;
+                padding: 150px 16px 65px;
             }
 
             .used-cars-hero-content h1 {
 
                 font-size: 36px;
+
+                letter-spacing: -1px;
             }
 
             .used-cars-hero-content p {
 
-                font-size: 13px;
+                font-size: 12.5px;
             }
 
             .used-cars-btn {
@@ -660,19 +826,24 @@
 
     <!-- =====================================================
          HEADER
-    ====================================================== -->
+    ===================================================== -->
 
     <header class="used-cars-header">
 
-        <a href="index.html" class="used-cars-logo">
 
-            <!-- Change logo filename if your logo has another name -->
+        <!-- Logo -->
+
+        <a href="index.html"
+           class="used-cars-logo">
+
             <img src="logo.png"
                  alt="Mahaveer Car Care">
 
             <div class="used-cars-logo-text">
 
-                <strong>Mahaveer Car Care</strong>
+                <strong>
+                    Mahaveer Car Care
+                </strong>
 
                 <span>
                     Premium Car Spa &amp; Detailing
@@ -683,46 +854,59 @@
         </a>
 
 
-        <nav class="used-cars-nav">
+        <!-- Only required header actions -->
 
-            <a href="index.html">
-                Home
-            </a>
+        <div class="used-cars-header-actions">
 
-            <a href="index.html#services">
-                Services
-            </a>
 
-            <a href="index.html#packages">
-                Packages
-            </a>
-
-            <a href="used-cars.html">
-                Used Cars
-            </a>
-
-            <a href="index.html#gallery">
-                Gallery
-            </a>
-
-            <a href="index.html#reviews">
-                Reviews
-            </a>
-
-            <a href="index.html#contact">
-                Contact
-            </a>
+            <!-- Call Us -->
 
             <a href="tel:7008100859"
-               class="header-call">
+               class="header-action header-call"
+               aria-label="Call Mahaveer Car Care">
 
                 <i class="fa-solid fa-phone"></i>
 
-                <span>Call Us</span>
+                <span>
+                    Call Us
+                </span>
 
             </a>
 
-        </nav>
+
+            <!-- Email Us -->
+
+            <!-- Replace YOUR-EMAIL@example.com
+                 with the actual business email -->
+
+            <a href="mailto:YOUR-EMAIL@example.com"
+               class="header-action header-email"
+               aria-label="Email Mahaveer Car Care">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <span>
+                    Email Us
+                </span>
+
+            </a>
+
+
+            <!-- Reviews -->
+
+            <a href="index.html#reviews"
+               class="header-action header-review"
+               aria-label="View Reviews">
+
+                <i class="fa-solid fa-star"></i>
+
+                <span>
+                    Reviews
+                </span>
+
+            </a>
+
+        </div>
 
     </header>
 
@@ -730,35 +914,41 @@
 
     <!-- =====================================================
          USED CARS HERO
-    ====================================================== -->
+    ===================================================== -->
 
     <section class="used-cars-hero">
 
-        <div class="used-cars-hero-content">
 
-            <span class="used-cars-hero-badge">
-                PREMIUM USED CARS
-            </span>
+        <!-- Badge -->
+
+        <span class="used-cars-hero-badge">
+            PREMIUM USED CARS
+        </span>
+
+
+        <!-- Main Hero Content -->
+
+        <div class="used-cars-hero-content">
 
 
             <h1>
 
                 Find Your
-
                 <span>
-                    Perfect Car
+                    Dream Car
                 </span>
 
             </h1>
 
 
             <p>
-                Quality Pre-Owned Cars. Trusted Deals.
-                Drive Home With Confidence.
+                Premium Pre-Owned Cars at Affordable Prices.
+                Trusted Deals. Drive Home With Confidence.
             </p>
 
 
             <div class="used-cars-hero-buttons">
+
 
                 <a href="#available-cars"
                    class="used-cars-btn primary">
@@ -779,6 +969,7 @@
 
                 </a>
 
+
             </div>
 
         </div>
@@ -788,46 +979,25 @@
 
 
     <!-- =====================================================
-         TEMPORARY NEXT SECTION
-         We will build this next.
-    ====================================================== -->
+         TEMPORARY SECTION
+         We will replace this with the actual used-car
+         listing section next.
+    ===================================================== -->
 
-    <section id="available-cars"
-             style="
-                min-height:400px;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                text-align:center;
-                padding:60px 20px;
-                background:#050505;
-             ">
+    <section id="available-cars">
 
         <div>
 
-            <span style="
-                color:#ff7200;
-                font-size:12px;
-                font-weight:700;
-                letter-spacing:2px;
-            ">
+            <span>
                 USED CARS
             </span>
 
-            <h2 style="
-                margin-top:15px;
-                font-size:36px;
-                color:#ffffff;
-            ">
-                Cars Coming Soon
+            <h2>
+                Explore Our Cars
             </h2>
 
-            <p style="
-                margin-top:15px;
-                color:#aaa;
-                font-size:15px;
-            ">
-                Our available pre-owned cars will be displayed here.
+            <p>
+                Quality pre-owned cars selected for you.
             </p>
 
         </div>
