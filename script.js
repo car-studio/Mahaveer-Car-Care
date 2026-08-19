@@ -85,3 +85,142 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+/* ==================================================
+   CINEMATIC GALLERY EXPANSION
+   ================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const galleryGrid = document.querySelector(".gallery-grid");
+
+    if (!galleryGrid) return;
+
+    const galleryItems =
+        galleryGrid.querySelectorAll(".gallery-item");
+
+    galleryItems.forEach(function (item) {
+
+        item.addEventListener("mouseenter", function () {
+
+            if (window.innerWidth <= 1000) return;
+
+            const gridRect =
+                galleryGrid.getBoundingClientRect();
+
+            const itemRect =
+                item.getBoundingClientRect();
+
+            const left =
+                itemRect.left - gridRect.left;
+
+            const top =
+                itemRect.top - gridRect.top;
+
+            const width =
+                itemRect.width;
+
+            const height =
+                itemRect.height;
+
+            item.style.setProperty(
+                "--gallery-left",
+                left + "px"
+            );
+
+            item.style.setProperty(
+                "--gallery-top",
+                top + "px"
+            );
+
+            item.style.setProperty(
+                "--gallery-width",
+                width + "px"
+            );
+
+            item.style.setProperty(
+                "--gallery-height",
+                height + "px"
+            );
+
+            item.style.left = left + "px";
+            item.style.top = top + "px";
+            item.style.width = width + "px";
+            item.style.height = height + "px";
+
+            item.offsetHeight;
+
+            galleryGrid.classList.add(
+                "gallery-has-expanded"
+            );
+
+            item.classList.add(
+                "gallery-expanding"
+            );
+
+            requestAnimationFrame(function () {
+
+                item.style.left = "0px";
+                item.style.top = "0px";
+
+                item.style.width =
+                    galleryGrid.clientWidth + "px";
+
+                item.style.height =
+                    galleryGrid.clientHeight + "px";
+
+            });
+
+        });
+
+
+        item.addEventListener("mouseleave", function () {
+
+            if (window.innerWidth <= 1000) return;
+
+            const left =
+                item.style.getPropertyValue(
+                    "--gallery-left"
+                );
+
+            const top =
+                item.style.getPropertyValue(
+                    "--gallery-top"
+                );
+
+            const width =
+                item.style.getPropertyValue(
+                    "--gallery-width"
+                );
+
+            const height =
+                item.style.getPropertyValue(
+                    "--gallery-height"
+                );
+
+            item.style.left = left;
+            item.style.top = top;
+            item.style.width = width;
+            item.style.height = height;
+
+            item.classList.remove(
+                "gallery-expanding"
+            );
+
+            setTimeout(function () {
+
+                galleryGrid.classList.remove(
+                    "gallery-has-expanded"
+                );
+
+                item.style.left = "";
+                item.style.top = "";
+                item.style.width = "";
+                item.style.height = "";
+
+            }, 600);
+
+        });
+
+    });
+
+});
