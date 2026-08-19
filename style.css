@@ -7304,3 +7304,150 @@ height:70px;
     font-size: 11px;
     line-height: 1.5;
 }
+/* ==================================================
+   CINEMATIC GALLERY EXPANSION
+   ================================================== */
+
+.gallery-grid {
+    position: relative;
+    isolation: isolate;
+}
+
+
+/* Smooth image expansion */
+.gallery-item {
+    transition:
+        left 0.6s cubic-bezier(.22,.61,.36,1),
+        top 0.6s cubic-bezier(.22,.61,.36,1),
+        width 0.6s cubic-bezier(.22,.61,.36,1),
+        height 0.6s cubic-bezier(.22,.61,.36,1),
+        opacity 0.45s ease,
+        transform 0.45s ease,
+        border-color 0.45s ease,
+        box-shadow 0.45s ease,
+        filter 0.45s ease;
+
+    will-change: left, top, width, height;
+}
+
+
+/* Background gallery items become subtle */
+.gallery-grid.gallery-has-expanded
+.gallery-item:not(.gallery-expanding) {
+    opacity: 0.16;
+    transform: scale(.985);
+    filter: brightness(.35);
+}
+
+
+/* Expanded image */
+.gallery-item.gallery-expanding {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 100;
+
+    border-color: #ff6500;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 35px 100px rgba(0,0,0,.65),
+        0 0 60px rgba(255,101,0,.25);
+
+    overflow: hidden;
+}
+
+
+/* Cinematic image zoom */
+.gallery-item.gallery-expanding > img {
+    transform: scale(1.05);
+
+    transition:
+        transform 0.8s cubic-bezier(.22,.61,.36,1),
+        filter 0.6s ease;
+}
+
+
+/* Dark cinematic overlay */
+.gallery-item.gallery-expanding::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.05) 35%,
+            rgba(0,0,0,.72) 100%
+        );
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* Existing overlay becomes visible */
+.gallery-item.gallery-expanding .gallery-overlay {
+    opacity: 1;
+
+    z-index: 2;
+
+    padding: 30px;
+}
+
+
+/* Expanded label */
+.gallery-item.gallery-expanding .gallery-overlay > span {
+    font-size: 13px;
+    letter-spacing: 2.5px;
+}
+
+
+/* Expanded view button */
+.gallery-item.gallery-expanding .gallery-view {
+    transform: translateY(0);
+
+    width: 52px;
+    height: 52px;
+
+    font-size: 16px;
+
+    box-shadow:
+        0 10px 30px rgba(255,101,0,.35);
+}
+
+
+/* ==================================================
+   DESKTOP ONLY
+   ================================================== */
+
+@media (max-width: 1000px) {
+
+    .gallery-item.gallery-expanding {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: auto;
+        height: auto;
+
+        z-index: auto;
+    }
+
+    .gallery-grid.gallery-has-expanded
+    .gallery-item:not(.gallery-expanding) {
+        opacity: 1;
+        transform: none;
+        filter: none;
+    }
+
+}
