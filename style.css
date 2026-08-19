@@ -7451,3 +7451,43 @@ height:70px;
     }
 
 }
+/*==========================================
+        CUSTOMER REVIEWS → FAQ GAP FIX
+===========================================*/
+
+/* Desktop */
+.customer-reviews {
+    padding-bottom: 45px !important;
+}
+
+.faq-section {
+    padding-top: 55px !important;
+}
+
+
+/* Tablet */
+@media (max-width: 1000px) {
+
+    .customer-reviews {
+        padding-bottom: 50px !important;
+    }
+
+    .faq-section {
+        padding-top: 60px !important;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .customer-reviews {
+        padding-bottom: 50px !important;
+    }
+
+    .faq-section {
+        padding-top: 55px !important;
+    }
+
+}
